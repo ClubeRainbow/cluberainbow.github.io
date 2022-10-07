@@ -5,7 +5,18 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,vue}",
   ],
   theme: {
-    extend: {},
+    fontFamily: {
+      "shrikhand": ["Shrikhand", "sans-serif"],
+    },
+    extend: {
+      colors: {
+      "cr-beige": "#e8ded4",
+      "cr-brown": "#745952",
+      "cr-purple": "#9b59b6",
+      "cr-orange": "#e67e22",
+      "cr-teal": "#1abc9c",
+      }
+    }
   },
   plugins: [],
 }
