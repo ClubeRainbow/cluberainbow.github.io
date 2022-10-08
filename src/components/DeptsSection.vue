@@ -2,7 +2,7 @@
 export interface Dept {
     name: string;
     desc: string;
-    members: string[];
+    members: string[][];
 }
 </script>
 
@@ -24,7 +24,14 @@ const depts : Dept[] = [
       <hl>servidor do Discord</hl>
       e outros eventos online. </p>
     `,
-    members: ["a","b","c"],
+    members: [
+      ["Haz", "haz#0535"],
+      ["Vee", "@vikill06 / hashida's artits#9801"],
+      ["Beatriz Fonseca", "@imnobody_sci"],
+      ["Vítor Gonçalves", "@alas.itsvik / Vik Dumagon#9652"],
+      ["Bruno Gião", "@gr3ybrun1x / GreyBrunix#0359"],
+      ["Ana Alice"],
+    ],
   },
   {
     name: "de Comunicação",
@@ -38,7 +45,13 @@ const depts : Dept[] = [
       <p> A equipa de design deste departamento ajuda também no 
       <hl>desenvolvimento de merch</hl> cuja venda ajuda a 
       financiar o Clube e as suas atividades. </p>`,
-    members: ["d","e","f"],
+    members: [
+      ["Lee", "@mr_apple.pie"],
+      ["Dee", "@2bar6atos"],
+      ["Haz", "haz#0535"],
+      ["Tomé Azevedo", "@tomevazevedo"],
+      ["Janaina Buvana", "@janebuvana"],
+    ],
   },
   {
     name: "Pedagógico",
@@ -50,7 +63,12 @@ const depts : Dept[] = [
       <hl>palestras</hl> 
       e outros eventos educativos
       para discutir temas de grande importância com pessoas conhecedoras dos mesmos. </p>`,
-    members: ["g","h","i"],
+    members: [
+      ["Vee", "@vikill06 / hashida's artits#9801"],
+      ["André Rodrigues", "@andrerodrigues47"],
+      ["Sandra", "@sandraibf"],
+      ["André", "@the.goofy.blue"],
+    ],
   }
 ]
 </script>

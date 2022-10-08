@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import DeptsSection from "./components/DeptsSection.vue";
 import ContactsSection from "./components/ContactsSection.vue";
+import PartnersSection from "./components/PartnersSection.vue";
+import ApplySection from "./components/ApplySection.vue";
 </script>
 
 <template>
@@ -11,7 +13,7 @@ import ContactsSection from "./components/ContactsSection.vue";
     <div class="bg-cr-beige text-cr-brown px-8 py-2">
 
       <h1 class="text-4xl md:text-5xl text-center font-shrikhand pt-14 mx-4 mb-4">
-        ✧ Clube Rainbow ✧
+        Clube Rainbow
       </h1>
 
       <div class="grid grid-cols-2 text-sm md:text-base md:grid-cols-3 gap-4 mb-4">
@@ -26,21 +28,8 @@ import ContactsSection from "./components/ContactsSection.vue";
       </div>
 
       <DeptsSection />
-
-      <div class="mb-4">
-        <p class ="font-shrikhand text-2xl">Candidaturas</p>
-        <div>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-          dolore magna aliqua.
-        </div>
-      </div>
-
-      <div class ="mb-8" > 
-        <p class ="font-shrikhand text-2xl">Parcerias</p>
-        <div class="bg-cr-off-white py-1 px-2 rounded-lg flex justify-center my-1">
-          etc etc etc
-        </div>
-      </div>
+      <ApplySection />
+      <PartnersSection /> 
 
     </div>
 
