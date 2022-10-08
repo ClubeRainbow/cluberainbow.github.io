@@ -11,6 +11,7 @@ module.exports = {
     extend: {
       colors: {
       "cr-beige": "#e8ded4",
+      "cr-off-white": "#f2efeb",
       "cr-brown": "#745952",
       "cr-purple": "#9b59b6",
       "cr-orange": "#e67e22",

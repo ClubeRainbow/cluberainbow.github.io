@@ -7,15 +7,15 @@
             Páginas & Contactos
         </div>
 
-        <div class="my-1 font-semibold">
+        <div class="bg-cr-off-white py-1 px-2 rounded-lg my-1 font-semibold text-sm md:text-base">
             <img src="../imgs/insta_icon.webp" alt="instagram" class="h-8 w-8 inline mr-1"> 
             <a href="https://www.instagram.com/clube.rainbow/" class="hover:underline">@clube.rainbow</a>
         </div>
-        <div class="my-1 font-semibold">
+        <div class="bg-cr-off-white py-1 px-2 rounded-lg my-2 font-semibold text-sm md:text-base">
             <img src="../imgs/discord_icon.webp" alt="discord" class="h-8 w-8 inline mr-1"> 
             <a href="" class="hover:underline">Discord</a>
         </div>
-        <div class="my-1 font-semibold break-all">
+        <div class="bg-cr-off-white py-1 px-2 rounded-lg my-1 font-semibold text-sm md:text-base break-all">
             <img src="../imgs/email_icon.webp" alt="email" class="h-8 w-8 inline"> 
             rainbow.clube.estudantes@gmail.com
         </div>

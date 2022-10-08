@@ -12,17 +12,44 @@ import DeptInfo from "./DeptInfo.vue";
 const depts : Dept[] = [
   {
     name: "Recreativo",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit",
+    desc: ` <p> O Departamento Recreativo é o responsável pela organização de 
+      <hl>encontros e atividades</hl> 
+      mais informais, focando-se especialmente na 
+      <hl>componente social e de convívio</hl> 
+      do Clube. 
+      Os encontros organizados por este departamento servem também para fomentar discussões 
+      sobre temas relacionados com a comunidade LGBT+ </p>
+      <br>
+      <p> Para além disto, este é também responsável por gerir o 
+      <hl>servidor do Discord</hl>
+      e outros eventos online. </p>
+    `,
     members: ["a","b","c"],
   },
   {
     name: "de Comunicação",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit",
+    desc: ` <p> O Departamento de Comunicação é o responsável por 
+      <hl>gerir as nossas redes sociais</hl> 
+      (Instagram), <hl>criar posts</hl>
+      informativos, e 
+      <hl>divulgar</hl>
+      atividades e eventos do Clube. </p>
+      <br>
+      <p> A equipa de design deste departamento ajuda também no 
+      <hl>desenvolvimento de merch</hl> cuja venda ajuda a 
+      financiar o Clube e as suas atividades. </p>`,
     members: ["d","e","f"],
   },
   {
     name: "Pedagógico",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit",
+    desc: ` <p> O Departamento Pedagógico é responsável pela 
+      <hl>componente educativa</hl> 
+      do Clube, e pela 
+      <hl>organização de parcerias</hl>
+      com outras organizações. Graças a ele podemos organizar 
+      <hl>palestras</hl> 
+      e outros eventos educativos
+      para discutir temas de grande importância com pessoas conhecedoras dos mesmos. </p>`,
     members: ["g","h","i"],
   }
 ]

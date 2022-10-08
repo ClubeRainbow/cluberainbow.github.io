@@ -20,11 +20,9 @@ const showmembers : Ref<boolean> = ref(false);
     </h1>
 
     <div class="text-xs md:text-sm">
-      <p class = "text-cr-brown mb-2">
-        {{ dept.desc }}
-      </p>
+      <div class = "text-cr-brown mb-2" v-html="dept.desc"></div>
 
-      <button class="font-bold float-right hover:underline"
+      <button class="bg-cr-off-white py-1 px-2 rounded-lg -mr-2 font-bold float-right hover:underline"
         @click="showmembers = !showmembers">
         <p v-if="showmembers">- Membros</p>
         <p v-else>+ Membros</p>
