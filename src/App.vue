@@ -3,6 +3,7 @@ import DeptsSection from "./components/DeptsSection.vue";
 import ContactsSection from "./components/ContactsSection.vue";
 import PartnersSection from "./components/PartnersSection.vue";
 import ApplySection from "./components/ApplySection.vue";
+import FAQSection from "./components/FAQSection.vue";
 </script>
 
 <template>
@@ -16,17 +17,21 @@ import ApplySection from "./components/ApplySection.vue";
         Clube Rainbow
       </h1>
 
-      <div class="grid grid-cols-2 text-sm md:text-base md:grid-cols-3 gap-4 mb-4">
-        <p class="col-span-2">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
-          ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
-          eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-          deserunt mollit anim id est laborum.
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-4">
+        <p class="col-span-2 text-sm md:text-base">
+          <hl>Bem vinde ao Clube Rainbow!</hl> 🏳‍🌈
+          <br>
+          Somos uma iniciativa formada por estudantes da Universide do Minho com o objetivo de promover
+          a educação sobre temas LGBT+ e o convívio entre a comunidade. Garantimos assim que existe um
+          espaço para nós disponível todo o ano!
+          <br>
+          Organizamos vários encontros, palestras, e outros eventos sobre os quais te podes manter a par
+          através da nossa página de Instagram e/ou Discord. Qualquer dúvida, não hesites em nos contactar :)
         </p>
         <ContactsSection class="col-span-2 md:col-span-1"/>
       </div>
 
+      <FAQSection />
       <DeptsSection />
       <ApplySection />
       <PartnersSection /> 

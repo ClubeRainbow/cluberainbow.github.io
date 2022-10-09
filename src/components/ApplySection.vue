@@ -6,7 +6,7 @@
     <div class="mb-4">
         <p class ="font-shrikhand text-2xl">Candidaturas</p>
 
-        <div>
+        <div class="text-sm md:text-base">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
             dolore magna aliqua.
         </div>

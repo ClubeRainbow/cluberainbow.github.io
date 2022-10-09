@@ -4,11 +4,10 @@
 </script>
 
 <template>
-
-    <div class="mb-8">
+    <div class="mb-4">
         
         <button class="flex items-center justify-center hover:text-cr-light-brown" @click="show = !show">
-            <span class ="font-shrikhand text-2xl mr-1">Parcerias</span>
+            <span class ="font-shrikhand text-2xl mr-1">FAQ</span>
             <svg
               class="float-right w-7 h-7 mt-1"
               xmlns="http://www.w3.org/2000/svg"
@@ -25,11 +24,11 @@
         </button>
 
         <Transition>
-            <div v-show="show" class="bg-cr-off-white py-1 px-2 rounded-lg flex justify-center my-1 text-xs md:text-sm">
-                etc etc etc
+            <div v-show="show" class="my-2 text-sm md:text-base">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua.
             </div>
         </Transition>
         
     </div>
-
 </template>

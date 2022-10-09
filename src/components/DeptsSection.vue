@@ -2,7 +2,10 @@
 export interface Dept {
     name: string;
     desc: string;
-    members: string[][];
+    members: {
+      name: string,
+      contact?: string,
+    }[];
 }
 </script>
 
@@ -25,12 +28,29 @@ const depts : Dept[] = [
       e outros eventos online. </p>
     `,
     members: [
-      ["Haz", "haz#0535"],
-      ["Vee", "@vikill06 / hashida's artits#9801"],
-      ["Beatriz Fonseca", "@imnobody_sci"],
-      ["Vítor Gonçalves", "@alas.itsvik / Vik Dumagon#9652"],
-      ["Bruno Gião", "@gr3ybrun1x / GreyBrunix#0359"],
-      ["Ana Alice"],
+      {
+        name: "Haz", 
+        contact: "haz#0535"
+      },
+      {
+        name: "Vee", 
+        contact: "@vikill06 / hashida's artits#9801"
+      },
+      {
+        name: "Beatriz Fonseca",
+        contact: "@imnobody_sci"
+      },
+      {
+        name: "Vítor Gonçalves", 
+        contact: "@alas.itsvik / Vik Dumagon#9652"
+      },
+      {
+        name: "Bruno Gião", 
+        contact: "@gr3ybrun1x / GreyBrunix#0359"
+      },
+      {
+        name: "Ana Alice"
+      },
     ],
   },
   {
@@ -46,11 +66,26 @@ const depts : Dept[] = [
       <hl>desenvolvimento de merch</hl> cuja venda ajuda a 
       financiar o Clube e as suas atividades. </p>`,
     members: [
-      ["Lee", "@mr_apple.pie"],
-      ["Dee", "@2bar6atos"],
-      ["Haz", "haz#0535"],
-      ["Tomé Azevedo", "@tomevazevedo"],
-      ["Janaina Buvana", "@janebuvana"],
+      {
+        name: "Lee", 
+        contact: "@mr_apple.pie"
+      },
+      { 
+        name: "Dee", 
+        contact: "@2bar6atos"
+      },
+      { 
+        name: "Haz", 
+        contact: "haz#0535"
+      },
+      {
+        name: "Tomé Azevedo", 
+        contact: "@tomevazevedo"
+      },
+      {
+        name: "Janaina Buvana", 
+        contact: "@janebuvana"
+      },
     ],
   },
   {
@@ -64,10 +99,22 @@ const depts : Dept[] = [
       e outros eventos educativos
       para discutir temas de grande importância com pessoas conhecedoras dos mesmos. </p>`,
     members: [
-      ["Vee", "@vikill06 / hashida's artits#9801"],
-      ["André Rodrigues", "@andrerodrigues47"],
-      ["Sandra", "@sandraibf"],
-      ["André", "@the.goofy.blue"],
+      {
+        name: "Vee", 
+        contact: "@vikill06 / hashida's artits#9801"
+      },
+      {
+        name: "André Rodrigues", 
+        contact: "@andrerodrigues47"
+      },
+      {
+        name: "Sandra", 
+        contact: "@sandraibf"
+      },
+      {
+        name: "André", 
+        contact: "@the.goofy.blue"
+      },
     ],
   }
 ]
