@@ -1,42 +1,36 @@
 <script setup lang="ts">
-import DeptsSection from "./components/DeptsSection.vue";
-import ContactsSection from "./components/ContactsSection.vue";
-import PartnersSection from "./components/PartnersSection.vue";
-import ApplySection from "./components/ApplySection.vue";
-import FAQSection from "./components/FAQSection.vue";
+  import { useRouter } from 'vue-router';
+  import TopBar from './components/TopBar.vue';
+  import FooterVue from './components/Footer.vue'
+  const router = useRouter();
 </script>
 
 <template>
-  <div class="bg-gradient-to-r from-cr-purple via-cr-teal to-cr-orange px-[9vw] pt-8">
-    
-    <img src="./imgs/logo.webp" alt="logo clube rainbow" class="w-32 h-32 md:w-36 md:h-36 flex justify-center mx-auto -mb-12">
-    
-    <div class="bg-cr-beige text-cr-brown px-8 py-2">
+  <div class="bg-cr-beige min-h-screen min-w-screen py-8" 
+      :class="{ 'bg-gradient' : router.currentRoute.value.name !== 'home'}">
 
-      <h1 class="text-4xl md:text-5xl text-center font-shrikhand pt-14 mx-4 mb-4">
-        Clube Rainbow
-      </h1>
+    <TopBar />
 
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-4">
-        <p class="col-span-2 text-sm md:text-base">
-          <hl>Bem vinde ao Clube Rainbow!</hl> 🏳‍🌈
-          <br>
-          Somos uma iniciativa formada por estudantes da Universide do Minho com o objetivo de promover
-          a educação sobre temas LGBT+ e o convívio entre a comunidade. Garantimos assim que existe um
-          espaço para nós disponível todo o ano!
-          <br>
-          Organizamos vários encontros, palestras, e outros eventos sobre os quais te podes manter a par
-          através da nossa página de Instagram e/ou Discord. Qualquer dúvida, não hesites em nos contactar :)
-        </p>
-        <ContactsSection class="col-span-2 md:col-span-1"/>
-      </div>
-
-      <FAQSection />
-      <DeptsSection />
-      <ApplySection />
-      <PartnersSection /> 
-
+    <div class="border-y-2" 
+      :class="{ 'p-8 mx-8' : router.currentRoute.value.name === 'home',
+                'py-8 px-16 bg-cr-beige' : router.currentRoute.value.name !== 'home' }">
+      <router-view></router-view>
     </div>
 
+    <FooterVue />
+
   </div>
+
 </template>
+
+<style scoped>
+  .bg-gradient {
+    background: linear-gradient(
+        90deg, 
+        #FF9393 0%, 
+        #F3A86A 25%, 
+        #FFD85A 50%, 
+        #79E8AC 75%, 
+        #A3A0E7 100% )
+  }
+</style>
