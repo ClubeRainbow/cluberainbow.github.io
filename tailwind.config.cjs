@@ -10,7 +10,7 @@ module.exports = {
       "comic-neue": ["Comic Neue", "sans-serif"],
     },
     borderColor: {
-      DEFAULT: 'cr-brown',
+      DEFAULT: 'currentColor',
     },
     extend: {
       colors: {

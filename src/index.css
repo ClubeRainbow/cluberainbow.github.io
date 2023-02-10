@@ -7,7 +7,27 @@
 
 @layer base {
     html {
-        @apply text-cr-brown font-comic-neue font-semibold;
+        @apply bg-cr-beige font-comic-neue font-semibold text-cr-brown;
+    }
+}
+
+@layer components {
+    .title {
+        @apply rounded-t-lg px-4 font-shrikhand font-normal text-xl text-cr-brown text-outline-white;
+    }
+    .text-outline-white {
+        text-shadow:
+            -1px -1px 0 white,  
+            1px -1px 0 white,
+            -1px 1px 0 white,
+            1px 1px 0 white;
+    }
+    .text-outline-brown {
+        text-shadow:
+            -1px -1px 0 #745952,  
+            1px -1px 0 #745952,
+            -1px 1px 0 #745952,
+            1px 1px 0 #745952;
     }
 }
 
