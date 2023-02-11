@@ -25,8 +25,8 @@
     <FooterVue />
 
     <template v-if="router.currentRoute.value.name === 'home'">
-      <img src="./imgs/top_bg.png" alt="imagem de fundo 1" class="-z-10 w-full absolute top-0 right-0"/>
-      <img src="./imgs/bottom_bg.png" alt="imagem de fundo 2" class="-z-10 w-full absolute bottom-0 right-0"/>
+      <img src="./imgs/bg_top.png" alt="imagem de fundo 1" class="-z-10 w-full absolute top-0 right-0"/>
+      <img src="./imgs/bg_bottom.png" alt="imagem de fundo 2" class="-z-10 w-full absolute bottom-0 right-0"/>
     </template>
 
   </div>

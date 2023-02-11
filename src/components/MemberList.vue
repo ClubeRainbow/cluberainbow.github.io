@@ -4,6 +4,11 @@
     const show_members = ref(false)
     const list_size = ref('')
 
+    const toggleMemberList = (members: Member[]) => {
+        show_members.value = !show_members.value
+        list_size.value = (60*(Math.ceil(members.length/2))) + 'px' //value always has at least 16px extra
+    }
+
     interface Member {
         name: string,
         pronouns?: string,
@@ -18,8 +23,7 @@
 
 <template>
     <div>
-        <button class="font-shrikhand font-normal hover:brightness-125" 
-            @click="show_members = !show_members; list_size = (60*(members.length/2) - 16) + 'px'">
+        <button class="font-shrikhand font-normal hover:brightness-125" @click="toggleMemberList(members)">
             {{ show_members ? 'Membros -' : 'Membros +'}}
         </button>
 
@@ -43,14 +47,14 @@
 
 <style scoped>
     .v-enter-active, .v-leave-active {
-        height: v-bind(list_size);
-        transition: height 0.5s ease;
+        max-height: v-bind(list_size);
+        transition: max-height 0.5s ease;
         overflow: hidden;
     }
 
     .v-enter-from, .v-leave-to {    
-        height: 0px;
-        transition: height 0.5s ease;
+        max-height: 0px;
+        transition: max-height 0.5s ease;
         overflow: hidden;
     }
 </style>

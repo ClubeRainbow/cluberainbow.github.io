@@ -36,15 +36,15 @@
 
         <div class="flex flex-col items-center justify-center sm:justify-start gap-3">
             <a class="hover:brightness-110" href="https://discord.gg/5Z9YshrZah" target="_blank">
-                <img src="../imgs/discord.svg" alt="discord" class="h-10 w-10 shrink-0"/>
+                <img src="../imgs/icon_discord.svg" alt="discord" class="h-10 w-10 shrink-0"/>
             </a>
 
             <a class="hover:brightness-110" href="https://www.instagram.com/clube.rainbow/" target="_blank">
-                <img src="../imgs/insta.svg" alt="instagram" class="h-10 w-10 shrink-0"/>
+                <img src="../imgs/icon_insta.svg" alt="instagram" class="h-10 w-10 shrink-0"/>
             </a>
 
             <button class="hover:brightness-110" @click="$router.push({name: 'contacts'})">
-                <img src="../imgs/email.svg" alt="email" class="h-10 w-10 shrink-0"/>
+                <img src="../imgs/icon_email.svg" alt="email" class="h-10 w-10 shrink-0"/>
             </button>
         </div>
 
