@@ -23,19 +23,3 @@
             1px 1px 0 white;
     }
 }
-
-/*
-.v-enter-active,
-.v-leave-active {
-    height: 100px;
-    transition: height 0.5s ease;
-    overflow: hidden;
-}
-
-.v-enter-from,
-.v-leave-to {    
-    height: 0px;
-    transition: height 0.5s ease;
-    overflow: hidden;
-}
-*/

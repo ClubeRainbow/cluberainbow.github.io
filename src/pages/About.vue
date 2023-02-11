@@ -1,11 +1,15 @@
 <script setup lang="ts">
+    import recreativo from '../jsons/recreativo.json';
+    import pedagogico from '../jsons/pedagogico.json';
+    import comms from '../jsons/comms.json';
+    import MemberList from '../components/MemberList.vue';
 </script>
 
 <template>
     <div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             
-            <div class="border-y p-4 flex flex-col gap-2">
+            <div class="border-y rounded-lg p-4 flex flex-col gap-2">
                 <p class="text-2xl font-shrikhand font-normal text-cr-purple text-outline-white">
                     Departamento Recreativo
                 </p>
@@ -19,9 +23,10 @@
                     Para além disto, este é também responsável por gerir o <b>servidor do Discord</b>
                     e outros eventos online. 
                 </p>
+                <MemberList :members="recreativo.members" />
             </div>
 
-            <div class="border-y p-4 flex flex-col gap-2">
+            <div class="border-y rounded-lg p-4 flex flex-col gap-2">
                 <p class="text-2xl font-shrikhand font-normal text-cr-orange text-outline-white">
                     Departamento Pedagógico
                 </p>
@@ -31,9 +36,10 @@
                     <b>palestras</b> e outros eventos educativos para discutir temas de grande importância 
                     com pessoas conhecedoras dos mesmos. 
                 </p>
+                <MemberList :members="pedagogico.members" />
             </div>
 
-            <div class="border-y p-4 flex flex-col gap-2">
+            <div class="border-y rounded-lg p-4 flex flex-col gap-2">
                 <p class="text-2xl font-shrikhand font-normal text-cr-teal text-outline-white">
                     Departamento de Comunicação
                 </p>
@@ -45,7 +51,17 @@
                     A equipa de design deste departamento ajuda também no <b>desenvolvimento de merch</b> 
                     cuja venda ajuda a financiar o Clube e as suas atividades. 
                 </p>
-            </div>    
+                <MemberList :members="comms.members" />
+            </div> 
+            
+            <div class="border-y rounded-lg p-4 flex flex-col gap-2">
+                <p class="text-2xl font-shrikhand font-normal text-outline-white">
+                    Candidaturas
+                </p>
+                <p>
+                    work in progress!
+                </p>
+            </div>
 
         </div>
     </div>
