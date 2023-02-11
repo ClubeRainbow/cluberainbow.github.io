@@ -12,11 +12,11 @@
         </button>
       
         <button class="title hover:bg-[rgba(255,110,0,0.25)]" @click="$router.push({name: 'about'})">
-            Sobre Nós
+            Quem Somos
         </button>
 
         <button class="title hover:bg-[rgba(255,140,0,0.25)]" @click="$router.push({name: 'info'})">
-            Informa-te
+            Informação
         </button>
 
         <img src="../imgs/logo.webp" alt="logo clube rainbow" class="w-20 h-20 -mb-10 -mx-8"/>
@@ -36,7 +36,9 @@
     </div>
 
     <div v-else class="mx-8 flex items-center justify-center relative">
-        <button class="absolute left-0 ">test btn</button>
-        <img src="../imgs/logo.webp" alt="logo clube rainbow" class="w-20 h-20 -mb-10"/>
+      <button class="absolute left-0 hover:text-cr-light-brown" @click="$emit('show_options')">
+        Menu Btn
+      </button>
+      <img src="../imgs/logo.webp" alt="logo clube rainbow" class="w-20 h-20 -mb-10"/>
     </div>
 </template>

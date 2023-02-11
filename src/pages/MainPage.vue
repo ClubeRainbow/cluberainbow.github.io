@@ -17,7 +17,7 @@
             através da nossa página de Instagram e/ou Discord. Qualquer dúvida, não hesites em nos contactar :)
             <br>
             <br>
-            Não somos uma iniciativa com capacidade para ajudar pessoa da comunidade que precisem de apoio urgente
+            Não somos uma iniciativa com capacidade para ajudar pessoas da comunidade que precisem de apoio urgente
             ou mais direto, mas disponibilizamos informação e contactos de outras associações que possam ajudar.
             <b class="text-black">Clica no botão abaixo se precisares de apoio!</b>
         </p>

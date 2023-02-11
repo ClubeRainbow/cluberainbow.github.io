@@ -1,20 +1,25 @@
 <script setup lang="ts">
+  import { ref } from "vue";
   import { useRouter } from 'vue-router';
   import TopBar from './components/TopBar.vue';
-  import FooterVue from './components/Footer.vue'
+  import MobileOptions from "./components/MobileOptions.vue";
+  import FooterVue from './components/Footer.vue';
+  
   const router = useRouter();
+  const show_options = ref(false);
 </script>
 
 <template>
   <div class="relative min-h-screen min-w-screen py-8 overflow-hidden" 
-      :class="{ 'bg-gradient' : router.currentRoute.value.name !== 'home'}">
+      :class="{ 'bg-gradient' : router.currentRoute.value.name !== 'home' || show_options }">
 
-    <TopBar />
+    <TopBar id="topbar" @show_options="show_options = !show_options"/>
 
     <div class="border-y-2 pt-16 pb-8 " 
-      :class="{ 'md:px-12 mx-8' : router.currentRoute.value.name === 'home',
-                'px-8 md:px-16 bg-cr-beige' : router.currentRoute.value.name !== 'home' }">
-      <router-view></router-view>
+      :class="{ 'md:px-12 mx-8' : router.currentRoute.value.name === 'home' && !show_options,
+                'px-8 md:px-16 bg-cr-beige' : router.currentRoute.value.name !== 'home' || show_options }">
+      <MobileOptions v-if="show_options" @close="show_options = !show_options"/>
+      <router-view v-else></router-view>
     </div>
 
     <FooterVue />
