@@ -16,6 +16,7 @@ module.exports = {
       colors: {
       "cr-beige": "#e8ded4",
       "cr-brown": "#745952",
+      "cr-red-beige": "#e9c9b7",
       "cr-off-white": "#f2efeb",
       "cr-purple": "#9b59b6",
       "cr-orange": "#e67e22",

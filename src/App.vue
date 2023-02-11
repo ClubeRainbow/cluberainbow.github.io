@@ -15,9 +15,9 @@
 
     <TopBar id="topbar" @show_options="show_options = !show_options"/>
 
-    <div class="border-y-2 pb-8" 
-      :class="{ 'pt-16 md:px-12 mx-8' : router.currentRoute.value.name === 'home' && !show_options,
-                'pt-12 px-8 md:px-16 bg-cr-beige' : router.currentRoute.value.name !== 'home' || show_options }">
+    <div class="border-y-2 pt-16 pb-8" 
+      :class="{ 'md:px-12 mx-8' : router.currentRoute.value.name === 'home' && !show_options,
+                'px-8 md:px-16 bg-cr-beige' : router.currentRoute.value.name !== 'home' || show_options }">
       <MobileOptions v-if="show_options" @close="show_options = !show_options"/>
       <router-view v-else></router-view>
     </div>

@@ -25,4 +25,9 @@
             -1px 1px 0 white,
             1px 1px 0 white;
     }
+    .custom_btn {
+        @apply w-10/12 bg-cr-red-beige border-2 rounded-lg p-2 
+        text-2xl font-shrikhand font-normal
+        hover:brightness-110
+    }
 }

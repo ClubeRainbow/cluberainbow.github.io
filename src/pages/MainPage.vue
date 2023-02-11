@@ -25,9 +25,8 @@
                 <b>Clica no botão abaixo se precisares de apoio!</b>
             </p>
 
-            <div class="flex justify-center mt-4">
-                <button class="border-2 rounded-lg font-shrikhand font-normal text-2xl py-2 px-4 hover:text-cr-light-brown"
-                    @click="$router.push({name: 'associations'})">
+            <div class="flex justify-center mt-6">
+                <button class="custom_btn" @click="$router.push({name: 'associations'})">
                     Onde Pedir Ajuda
                 </button>
             </div>
