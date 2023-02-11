@@ -9,7 +9,7 @@
         </button>
 
         <button class="option title" @click="$router.push({name: 'info'}); $emit('close');">
-            Informação
+            Informa-te
         </button>
 
         <button class="option title" @click="$router.push({name: 'support'}); $emit('close');">
@@ -28,6 +28,6 @@
 
 <style scoped>
     .option {
-        @apply border-2 rounded-md w-full p-2 text-center hover:text-cr-light-brown
+        @apply border-2 rounded-md w-full p-2 text-center hover:brightness-125
     }
 </style>

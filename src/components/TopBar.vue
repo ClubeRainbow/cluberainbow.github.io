@@ -16,7 +16,7 @@
         </button>
 
         <button class="title hover:bg-[rgba(255,140,0,0.25)]" @click="$router.push({name: 'info'})">
-            Informação
+            Informa-te
         </button>
 
         <img src="../imgs/logo.webp" alt="logo clube rainbow" class="w-20 h-20 -mb-10 -mx-8"/>

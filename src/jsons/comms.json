@@ -1,0 +1,24 @@
+{
+    "members": [
+        {
+          "name": "Lee", 
+          "contact": "@mr_apple.pie"
+        },
+        { 
+          "name": "Dee", 
+          "contact": "@2bar6atos"
+        },
+        { 
+          "name": "Ezra", 
+          "contact": "haz#0535"
+        },
+        {
+          "name": "Tomé Azevedo", 
+          "contact": "@tomevazevedo"
+        },
+        {
+          "name": "Janaina Buvana", 
+          "contact": "@janebuvana"
+        }
+    ]
+}
