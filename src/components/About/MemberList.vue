@@ -23,8 +23,11 @@
 
 <template>
     <div>
-        <button class="font-shrikhand font-normal hover:brightness-125" @click="toggleMemberList(members)">
-            {{ show_members ? 'Membros -' : 'Membros +'}}
+        <button class="flex flex-row items-center gap-1.5 hover:brightness-125" @click="toggleMemberList(members)">
+            <p class="font-shrikhand font-normal">
+                Membros
+            </p>
+            <img src="../../imgs/arrow_down.svg" alt="toggle list" class="h-3 w-3" :class="{ 'rotate-180' : show_members }"/>
         </button>
 
         <Transition>

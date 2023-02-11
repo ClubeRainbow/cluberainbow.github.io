@@ -21,9 +21,9 @@
             </button>
         </div>
 
-        <div class="col-span-1 flex flex-col items-center text-sm whitespace-nowrap">
-            <p class="title">Clube Rainbow</p>
-            <p class="text-outline-white">rainbow.clube.estudantes@gmail.com</p>
+        <div class="col-span-1 flex flex-col items-center text-outline-white whitespace-nowrap">
+            <p class="font-shrikhand font-normal text-xl">Clube Rainbow</p>
+            <p class="text-sm">rainbow.clube.estudantes@gmail.com</p>
         </div>
 
         <button class="absolute right-0 top-4 flex items-center justify-end" @click="scrollToTop()">

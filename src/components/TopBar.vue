@@ -19,7 +19,7 @@
             Informa-te
         </button>
 
-        <img src="../imgs/logo.webp" alt="logo clube rainbow" class="w-20 h-20 -mb-10 -mx-8"/>
+        <img src="../imgs/logo.webp" alt="logo clube rainbow" class="z-20 w-20 h-20 -mb-10 -mx-8"/>
 
         <button class="title hover:bg-[rgba(0,200,0,0.25)]" @click="$router.push({name: 'support'})">
             Como Apoiar
@@ -39,6 +39,6 @@
       <button class="absolute left-0 hover:text-cr-light-brown" @click="$emit('show_options')">
         Menu Btn
       </button>
-      <img src="../imgs/logo.webp" alt="logo clube rainbow" class="w-20 h-20 -mb-10"/>
+      <img src="../imgs/logo.webp" alt="logo clube rainbow" class="z-20 w-20 h-20 -mb-10"/>
     </div>
 </template>

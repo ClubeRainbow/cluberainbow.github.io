@@ -10,7 +10,7 @@
             </p>
 
             <p>
-                <b class="text-black">Bem vinde ao Clube Rainbow!</b> 🏳‍🌈
+                <b>Bem vinde ao Clube Rainbow!</b> 🏳‍🌈
                 <br>
                 Somos uma iniciativa formada por estudantes da Universide do Minho com o objetivo de promover
                 a educação sobre temas LGBT+ e o convívio entre a comunidade. Garantimos assim que existe um
@@ -22,7 +22,7 @@
                 <br>
                 Não somos uma iniciativa com capacidade para ajudar pessoas da comunidade que precisem de apoio urgente
                 ou mais direto, mas disponibilizamos informação e contactos de outras associações que possam ajudar.
-                <b class="text-black">Clica no botão abaixo se precisares de apoio!</b>
+                <b>Clica no botão abaixo se precisares de apoio!</b>
             </p>
 
             <div class="flex justify-center mt-4">
