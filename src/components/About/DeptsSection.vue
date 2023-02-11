@@ -1,14 +1,18 @@
 <script setup lang="ts">
+    import { ref } from 'vue';
     import recreativo from '../../jsons/recreativo.json';
     import pedagogico from '../../jsons/pedagogico.json';
     import comms from '../../jsons/comms.json';
     import MemberList from './MemberList.vue';
+    import ApplySection from './ApplySection.vue';
+
+    const show_apply = ref(false)
 </script>
 
 <template>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8">
             
-        <div class="border-y-2 p-4 flex flex-col gap-2">
+        <div class="border-t-2 p-4 flex flex-col gap-2">
             <p class="text-2xl font-shrikhand font-normal text-cr-purple text-outline-white">
                 Departamento Recreativo
             </p>
@@ -25,7 +29,7 @@
             <MemberList :members="recreativo.members" />
         </div>
 
-        <div class="border-y-2 p-4 flex flex-col gap-2">
+        <div class="border-t-2 p-4 flex flex-col gap-2">
             <p class="text-2xl font-shrikhand font-normal text-cr-orange text-outline-white">
                 Departamento Pedagógico
             </p>
@@ -38,7 +42,7 @@
             <MemberList :members="pedagogico.members" />
         </div>
 
-        <div class="border-y-2 p-4 flex flex-col gap-2">
+        <div class="border-t-2 md:border-y-2 p-4 flex flex-col gap-2">
             <p class="text-2xl font-shrikhand font-normal text-cr-teal text-outline-white">
                 Departamento de Comunicação
             </p>
@@ -53,13 +57,15 @@
             <MemberList :members="comms.members" />
         </div>
         
-        <div class="border-y-2 p-4 flex flex-col items-center justify-center">
+        <div v-if="!show_apply" class="border-y-2 p-4 flex flex-col items-center justify-center">
             <img src="../../imgs/kaku.png" alt="panda" class="w-80" />
             
-            <button class="-mt-6 z-20 custom_btn">
+            <button class="-mt-6 z-20 custom_btn" @click="show_apply = !show_apply">
                 Candidaturas
             </button>
         </div>
+
+        <ApplySection v-else @close="show_apply = !show_apply"/>
 
     </div>
 </template>

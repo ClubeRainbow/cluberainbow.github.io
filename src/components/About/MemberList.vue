@@ -22,7 +22,7 @@
 </script>
 
 <template>
-    <div>
+    <div class="mb-2">
         <button class="flex flex-row items-center gap-1.5 hover:brightness-125" @click="toggleMemberList(members)">
             <p class="font-shrikhand font-normal">
                 Membros
