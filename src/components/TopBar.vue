@@ -16,17 +16,17 @@
         </button>
 
         <button class="title hover:bg-[rgba(255,140,0,0.25)]" @click="$router.push({name: 'info'})">
-            Informa-te
+            Informações
         </button>
 
         <img src="../imgs/logo.webp" alt="logo clube rainbow" class="z-20 w-20 h-20 -mb-10 -mx-8"/>
 
-        <button class="title hover:bg-[rgba(0,200,0,0.25)]" @click="$router.push({name: 'support'})">
-            Como Apoiar
+        <button class="title hover:bg-[rgba(0,200,0,0.25)]" @click="$router.push({name: 'merch'})">
+            Apoia-nos
         </button>
 
-        <button class="title hover:bg-[rgba(0,180,110,0.25)]" @click="$router.push({name: 'associations'})">
-            Associações
+        <button class="title hover:bg-[rgba(0,180,110,0.25)]" @click="$router.push({name: 'resources'})">
+            Recursos
         </button>
 
         <button class="title hover:bg-[rgba(40,0,190,0.25)]" @click="$router.push({name: 'contacts'})">

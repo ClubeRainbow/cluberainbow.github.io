@@ -24,7 +24,7 @@
             <b>Candidaturas abertas até xx/xx/xxxx</b>
         </p>
 
-        <div class="w-full flex gap-2 whitespace-nowrap">
+        <div class="flex flex-wrap justify-center gap-2 whitespace-nowrap">
             <button class="dept_btn text-cr-purple" @click="">
                 Dept. Recreativo
             </button>
@@ -41,6 +41,6 @@
 
 <style scoped>
     .dept_btn {
-        @apply border-2 rounded-md w-full p-2 font-shrikhand font-normal hover:brightness-125
+        @apply flex-1 border-2 rounded-md p-2 font-shrikhand font-normal hover:brightness-125
     }
 </style>

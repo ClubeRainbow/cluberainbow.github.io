@@ -3,6 +3,6 @@
 
 <template>
     <div>
-        test! - support us
+        useful links, associations
     </div>
 </template>

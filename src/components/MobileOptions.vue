@@ -9,15 +9,15 @@
         </button>
 
         <button class="option title" @click="$router.push({name: 'info'}); $emit('close');">
-            Informa-te
+            Informações
         </button>
 
-        <button class="option title" @click="$router.push({name: 'support'}); $emit('close');">
-            Como Apoiar
+        <button class="option title" @click="$router.push({name: 'merch'}); $emit('close');">
+            Apoia-nos
         </button>
 
-        <button class="option title" @click="$router.push({name: 'associations'}); $emit('close');">
-            Associações
+        <button class="option title" @click="$router.push({name: 'resources'}); $emit('close');">
+            Recursos
         </button>
 
         <button class="option title" @click="$router.push({name: 'contacts'}); $emit('close');">

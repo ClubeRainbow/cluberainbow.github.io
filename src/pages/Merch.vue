@@ -3,6 +3,6 @@
 
 <template>
     <div>
-        test! - associations
+        merch
     </div>
 </template>

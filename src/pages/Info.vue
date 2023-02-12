@@ -3,6 +3,6 @@
 
 <template>
     <div>
-        test! - info
+        instagram preview, next event
     </div>
 </template>

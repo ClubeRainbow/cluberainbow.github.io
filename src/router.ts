@@ -19,14 +19,14 @@ export const router = createRouter({
       name: "info",
     },
     {
-      path: "/support",
-      component: () => import("./pages/Support.vue"),
-      name: "support",
+      path: "/merch",
+      component: () => import("./pages/Merch.vue"),
+      name: "merch",
     },
     {
-      path: "/associations",
-      component: () => import("./pages/Associations.vue"),
-      name: "associations",
+      path: "/resources",
+      component: () => import("./pages/Resources.vue"),
+      name: "resources",
     },
     {
       path: "/contacts",

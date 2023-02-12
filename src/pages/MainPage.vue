@@ -2,7 +2,8 @@
 </script>
 
 <template>
-    <div class="flex items-start justify-between gap-8">
+    <div class="flex flex-col-reverse items-center md:flex-row md:items-start md:justify-between gap-y-8 gap-x-12">
+        
         <div class="my-auto border-2 rounded-lg shadow-md bg-cr-beige w-full md:w-[600px] p-8">
             
             <p class="text-4xl font-shrikhand font-normal mb-2">
@@ -33,17 +34,17 @@
 
         </div>
 
-        <div class="flex flex-col items-center justify-center sm:justify-start gap-3">
+        <div class="shrink-0 flex -my-2 md:my-0 md:flex-col gap-4">
             <a class="hover:brightness-110" href="https://discord.gg/5Z9YshrZah" target="_blank">
-                <img src="../imgs/icon_discord.svg" alt="discord" class="h-10 w-10 shrink-0"/>
+                <img src="../imgs/icon_discord.svg" alt="discord" class="h-10 w-10"/>
             </a>
 
             <a class="hover:brightness-110" href="https://www.instagram.com/clube.rainbow/" target="_blank">
-                <img src="../imgs/icon_insta.svg" alt="instagram" class="h-10 w-10 shrink-0"/>
+                <img src="../imgs/icon_insta.svg" alt="instagram" class="h-10 w-10"/>
             </a>
 
             <button class="hover:brightness-110" @click="$router.push({name: 'contacts'})">
-                <img src="../imgs/icon_email.svg" alt="email" class="h-10 w-10 shrink-0"/>
+                <img src="../imgs/icon_email.svg" alt="email" class="h-10 w-10"/>
             </button>
         </div>
 

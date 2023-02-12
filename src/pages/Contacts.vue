@@ -3,6 +3,6 @@
 
 <template>
     <div>
-        test! - contacts
+        contacts
     </div>
 </template>
