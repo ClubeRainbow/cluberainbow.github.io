@@ -12,7 +12,10 @@
     interface Member {
         name: string,
         pronouns?: string,
-        contact?: string,
+        contacts?: {
+            insta?: string,
+            discord?: string,
+        },
     }
 
     interface Props {
@@ -40,7 +43,11 @@
                         {{ member.pronouns ? '('+member.pronouns+')' : '' }}
                     </p>
                     <p>
-                        {{ member.contact }}
+                        <a class="hover:underline" :href="'https://www.instagram.com/' + member.contacts?.insta" target="_blank">
+                            {{ member.contacts?.insta }}
+                        </a>
+                        <span v-if="member.contacts?.insta && member.contacts?.discord"> / </span>
+                        <span> {{ member.contacts?.discord }} </span>
                     </p>
                 </div>
             </div>

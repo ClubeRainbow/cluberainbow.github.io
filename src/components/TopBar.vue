@@ -5,31 +5,31 @@
 </script>
 
 <template>
-    <div v-if="windowWidth >= 1180" class="mx-8 flex justify-between gap-x-4">
+    <div v-if="windowWidth >= 1200" class="mx-8 flex justify-between gap-x-4">
       
-        <button class="title hover:bg-[rgba(190,0,0,0.25)]" @click="$router.push({name: 'home'})">
+        <button class="topbar_option hover:bg-[rgba(190,0,0,0.25)]" @click="$router.push({name: 'home'})">
             Página Inicial
         </button>
       
-        <button class="title hover:bg-[rgba(255,110,0,0.25)]" @click="$router.push({name: 'about'})">
+        <button class="topbar_option hover:bg-[rgba(255,110,0,0.25)]" @click="$router.push({name: 'about'})">
             Quem Somos
         </button>
 
-        <button class="title hover:bg-[rgba(255,140,0,0.25)]" @click="$router.push({name: 'info'})">
+        <button class="topbar_option hover:bg-[rgba(255,140,0,0.25)]" @click="$router.push({name: 'info'})">
             Informações
         </button>
 
-        <img src="../imgs/logo.webp" alt="logo clube rainbow" class="z-20 w-20 h-20 -mb-10 -mx-8"/>
+        <img src="../imgs/logo.webp" alt="logo clube rainbow" class="z-20 w-20 h-20 -mb-10"/>
 
-        <button class="title hover:bg-[rgba(0,200,0,0.25)]" @click="$router.push({name: 'merch'})">
+        <button class="topbar_option hover:bg-[rgba(0,200,0,0.25)]" @click="$router.push({name: 'merch'})">
             Apoia-nos
         </button>
 
-        <button class="title hover:bg-[rgba(0,180,110,0.25)]" @click="$router.push({name: 'resources'})">
-            Recursos
+        <button class="topbar_option hover:bg-[rgba(0,180,110,0.25)]" @click="$router.push({name: 'resources'})">
+            Recursos Úteis
         </button>
 
-        <button class="title hover:bg-[rgba(40,0,190,0.25)]" @click="$router.push({name: 'contacts'})">
+        <button class="topbar_option hover:bg-[rgba(40,0,190,0.25)]" @click="$router.push({name: 'contacts'})">
             Contactos
         </button>
       

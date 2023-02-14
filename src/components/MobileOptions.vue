@@ -17,7 +17,7 @@
         </button>
 
         <button class="option title" @click="$router.push({name: 'resources'}); $emit('close');">
-            Recursos
+            Recursos Úteis
         </button>
 
         <button class="option title" @click="$router.push({name: 'contacts'}); $emit('close');">

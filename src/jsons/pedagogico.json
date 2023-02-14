@@ -2,19 +2,32 @@
     "members": [
       {
         "name": "Vee", 
-        "contact": "@vikill06 / hashida's artits#9801"
+        "pronouns": "she/he",
+        "contacts": {
+          "insta": "@vikill06",
+          "discord": "hashida's artits#9801"
+        }
       },
       {
         "name": "André Rodrigues", 
-        "contact": "@andrerodrigues47"
+        "pronouns": "he/him",
+        "contacts": {
+          "insta": "@andrerodrigues47"
+        }
       },
       {
         "name": "Sandra", 
-        "contact": "@sandraibf"
+        "pronouns": "she/her",
+        "contacts": {
+          "insta": "@sandraibf"
+        }
       },
       {
         "name": "André", 
-        "contact": "@the.goofy.blue"
+        "pronouns": "he/him",
+        "contacts": {
+          "insta": "@the.goofy.blue"
+        }
       }
     ]
   }

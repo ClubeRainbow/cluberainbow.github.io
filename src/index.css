@@ -15,8 +15,8 @@
 }
 
 @layer components {
-    .title {
-        @apply rounded-t-lg px-4 font-shrikhand font-normal text-xl text-outline-white;
+    .topbar_option {
+        @apply whitespace-nowrap w-full rounded-t-lg font-shrikhand font-normal text-xl text-outline-white;
     }
     .text-outline-white {
         text-shadow:

@@ -2,24 +2,36 @@
     "members": [
         {
           "name": "Lee", 
-          "contact": "@mr_apple.pie"
+          "contacts": {
+            "insta": "@mr_apple.pie"
+          }
         },
         { 
           "name": "Dee", 
-          "contact": "@2bar6atos"
+          "contacts": {
+            "insta": "@2bar6atos"
+          }
         },
         { 
           "name": "Ezra", 
           "pronouns": "he/they",
-          "contact": "haz#0535"
+          "contacts": {
+            "discord": "haz#0535"
+          }
         },
         {
           "name": "Tomé Azevedo", 
-          "contact": "@tomevazevedo"
+          "pronouns": "qualquer pronome",
+          "contacts": {
+            "insta": "@tomevazevedo"
+          }
         },
         {
           "name": "Janaina Buvana", 
-          "contact": "@janebuvana"
+          "pronouns": "she/her",
+          "contacts": {
+            "insta": "@janebuvana"
+          }
         }
     ]
 }

@@ -47,11 +47,17 @@
                 Departamento de Comunicação
             </p>
             <p> 
-                O Departamento de Comunicação é o responsável por <b>gerir as nossas redes sociais</b> 
-                (Instagram), <b>criar posts</b> informativos, e <b>divulgar</b> atividades e eventos do Clube. 
+                O Departamento de Comunicação é o responsável por <b>gerir as nossas redes sociais</b>, 
+                <b>criar posts</b> informativos, e <b>divulgar</b> atividades e eventos do Clube. 
             </p>
             <p> 
-                A equipa de design deste departamento ajuda também no <b>desenvolvimento de merch</b> 
+                A equipa de design deste departamento ajuda também no 
+                <b>
+                    desenvolvimento de 
+                    <button class="underline hover:text-cr-brown" @click="$router.push({name: 'merch'})">
+                        merch
+                    </button>
+                </b>
                 cuja venda ajuda a financiar o Clube e as suas atividades. 
             </p>
             <MemberList :members="comms.members" />
