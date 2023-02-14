@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 
 export const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory('cluberainbow.github.io'),
   routes: [
     {
       path: "/",
