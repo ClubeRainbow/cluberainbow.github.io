@@ -20,7 +20,7 @@ import ContactIcons from '../components/ContactIcons.vue';
                 <p>
                     Somos uma iniciativa formada por estudantes da Universide do Minho com o objetivo de <b>promover
                     a educação sobre temas LGBT+ e o convívio entre a comunidade</b>. Garantimos assim que existe um
-                    espaço para nós disponível todo o ano. ❤
+                    espaço para nós disponível todo o ano.
                 </p>
 
                 <p>

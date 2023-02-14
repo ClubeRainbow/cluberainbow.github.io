@@ -8,15 +8,15 @@
 <template>
     <div>
         <a class="hover:brightness-110" href="https://discord.gg/5Z9YshrZah" target="_blank">
-            <img src="../imgs/icon_discord.svg" alt="discord" :class="size" />
+            <img src="../imgs/contacts/icon_discord.svg" alt="discord" :class="size" />
         </a>
 
         <a class="hover:brightness-110" href="https://www.instagram.com/clube.rainbow/" target="_blank">
-            <img src="../imgs/icon_insta.svg" alt="instagram" :class="size" />
+            <img src="../imgs/contacts/icon_insta.svg" alt="instagram" :class="size" />
         </a>
         
         <button class="hover:brightness-110" @click="$router.push({ name: 'contacts' })">
-            <img src="../imgs/icon_email.svg" alt="email" :class="size" />
+            <img src="../imgs/contacts/icon_email.svg" alt="email" :class="size" />
         </button>
     </div>
 </template>

@@ -6,7 +6,11 @@
 
     const toggleMemberList = (members: Member[]) => {
         show_members.value = !show_members.value
-        list_size.value = (60*(Math.ceil(members.length/2))) + 'px' //value always has at least 16px extra
+        list_size.value = (60*(Math.ceil(members.length/2))) + 20 + 'px' 
+        /*
+            list_size is bigger than necessary on purpose, so that the sliding animation 
+            doesn't stop short regardless of number of members
+        */
     }
 
     interface Member {
