@@ -19,7 +19,7 @@
             Informações
         </button>
 
-        <img src="../imgs/logo.webp" alt="logo clube rainbow" class="z-20 w-20 h-20 -mb-10"/>
+        <img src="../assets/logo.webp" alt="logo clube rainbow" class="z-20 w-20 h-20 -mb-10"/>
 
         <button class="topbar_option hover:bg-[rgba(0,200,0,0.25)]" @click="$router.push({name: 'merch'})">
             Apoia-nos
@@ -39,6 +39,6 @@
       <button class="absolute left-0 hover:text-cr-light-brown" @click="$emit('show_options')">
         Menu Btn
       </button>
-      <img src="../imgs/logo.webp" alt="logo clube rainbow" class="z-20 w-20 h-20 -mb-10"/>
+      <img src="../assets/logo.webp" alt="logo clube rainbow" class="z-20 w-20 h-20 -mb-10"/>
     </div>
 </template>

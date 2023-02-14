@@ -3,7 +3,7 @@
 
         <div class="flex items-center gap-2">
             <button class="hover:brightness-110" @click="$emit('close')">
-                <img src="../../imgs/icon_up.svg" alt="scroll up" class="h-7 w-7 -rotate-90"/>
+                <img src="../../assets/icon_up.svg" alt="scroll up" class="h-7 w-7 -rotate-90"/>
             </button>
             
             <p class="text-2xl font-shrikhand font-normal text-outline-white">

@@ -64,7 +64,7 @@
         </div>
         
         <div v-if="!show_apply" class="border-y-2 p-4 flex flex-col items-center justify-center">
-            <img src="../../imgs/kaku.png" alt="panda" class="w-80" />
+            <img src="../../assets/kaku.png" alt="panda" class="w-80" />
             
             <button class="-mt-6 z-20 custom_btn" @click="show_apply = !show_apply">
                 Candidaturas
