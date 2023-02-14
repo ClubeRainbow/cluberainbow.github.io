@@ -6,7 +6,7 @@ import ContactIcons from '../components/ContactIcons.vue';
 <template>
     <div class="flex flex-col-reverse items-center md:flex-row md:items-start md:justify-between gap-y-8 gap-x-12">
 
-        <div class="my-auto border-2 rounded-lg shadow-md bg-cr-beige w-full md:w-[600px] p-8 flex flex-col gap-y-4">
+        <div class="my-auto border-2 rounded-xl drop-shadow-lg bg-cr-beige w-full md:w-[600px] p-8 flex flex-col gap-y-4">
 
             <p class="text-4xl font-shrikhand font-normal">
                 Clube Rainbow
@@ -18,7 +18,7 @@ import ContactIcons from '../components/ContactIcons.vue';
                 </p>
 
                 <p>
-                    Somos uma iniciativa formada por estudantes da Universide do Minho com o objetivo de <b>promover
+                    Somos uma iniciativa formada por estudantes da Universidade do Minho com o objetivo de <b>promover
                     a educação sobre temas LGBT+ e o convívio entre a comunidade</b>. Garantimos assim que existe um
                     espaço para nós disponível todo o ano.
                 </p>
