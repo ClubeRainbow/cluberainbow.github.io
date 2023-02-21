@@ -26,7 +26,7 @@ jobs:
         run: npm run build
 
       - name: Create custom 404 file
-        run: cp index.html 404.html
+        run: cp dist/index.html dist/404.html
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v2
