@@ -4,7 +4,7 @@
     import pedagogico from '../../jsons/pedagogico.json';
     import comms from '../../jsons/comms.json';
     import MemberList from './MemberList.vue';
-    import ApplySection from './ApplySection.vue';
+    import ApplyDetails from './ApplyDetails.vue';
 
     const show_apply = ref(false)
 </script>
@@ -71,7 +71,7 @@
             </button>
         </div>
 
-        <ApplySection v-else @close="show_apply = !show_apply"/>
+        <ApplyDetails v-else @close="show_apply = !show_apply"/>
 
     </div>
 </template>
