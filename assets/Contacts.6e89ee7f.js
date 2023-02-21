@@ -1,0 +1,1 @@
+import{_ as r,o as e,c as n,d as _,e as o}from"./index.2105147b.js";const s={};function a(c,t){return e(),n("div",null," form ")}const f=r(s,[["render",a]]),d={};function i(c,t){return e(),n("div",null," info ")}const l=r(d,[["render",i]]),m={class:"flex gap-8"},x=_({__name:"Contacts",setup(c){return(t,u)=>(e(),n("div",m,[o(f),o(l)]))}});export{x as default};
