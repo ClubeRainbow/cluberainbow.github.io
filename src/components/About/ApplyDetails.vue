@@ -1,5 +1,5 @@
 <template>
-    <div class="border-y-2 p-4 flex flex-col gap-2">
+    <div>
 
         <div class="flex items-center gap-2">
             <button class="hover:brightness-110" @click="$emit('close')">
