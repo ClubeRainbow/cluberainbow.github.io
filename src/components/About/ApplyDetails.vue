@@ -15,10 +15,17 @@
             Gostarias de fazer parte do Clube?
         </p>
         <p>
-            Podes te candidatar a um (ou mais) dos departamentos via os botões abaixo, que te irão
-            <b>redirecionar para os formulários de candidatura</b>. O trabalho é voluntário, e qualquer estudante
+            Podes te candidatar a um (ou mais) dos departamentos via os botões abaixo, que te <b>irão
+            redirecionar para os formulários de candidatura</b>. O trabalho é voluntário, e qualquer estudante
             da Universidade do Minho se pode candidatar. Mais informações estarão disponíveis nos formulários,
-            mas qualquer dúvida não hesites em nos contactar!
+            mas 
+            <b>
+                qualquer dúvida não hesites em nos 
+                <button class="underline hover:text-cr-brown" @click="$router.push({name: 'contacts'})">
+                    contactar
+                </button>
+                <span>!</span>
+            </b>
         </p>
         <p class="text-center">
             <b>Candidaturas abertas até xx/xx/xxxx</b>

@@ -78,10 +78,10 @@
 
 <style scoped>
     .custom_grid {
-        @apply grid grid-cols-1 md:grid-cols-2 bg-cr-brown gap-[2px] outline outline-2 rounded-xl
+        @apply grid grid-cols-1 md:grid-cols-2 gap-4
     }
 
     .custom_grid > div {
-        @apply bg-cr-beige py-5 px-8 flex flex-col gap-2
+        @apply border-2 rounded-xl bg-cr-beige drop-shadow-lg py-4 px-6 flex flex-col gap-2
     }
 </style>

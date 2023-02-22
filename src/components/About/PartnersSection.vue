@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div class="flex flex-col gap-4 md:mt-2">
+    <div class="flex flex-col gap-4">
         <p class="text-4xl font-shrikhand font-normal text-outline-white">
             Parcerias
         </p>
