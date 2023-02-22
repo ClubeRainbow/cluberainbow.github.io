@@ -4,8 +4,8 @@
 </script>
 
 <template>
-    <div class="flex flex-col-reverse md:flex-row justify-center gap-8">
-        <ContactForm />
+    <div class="flex flex-col lg:flex-row justify-center gap-8">
         <ContactInfo />
+        <ContactForm />
     </div>
 </template>

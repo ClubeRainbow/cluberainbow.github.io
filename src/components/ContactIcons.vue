@@ -3,13 +3,13 @@
     import { useRouter } from 'vue-router';
 
     const router = useRouter()
-    const copied = ref(false)
+    const hover_email = ref(false)
+    const copy_confirm = ref(false)
     const email = 'rainbow.clube.estudantes@gmail.com'
 
     const clickEmail = (text?: boolean) => {
-        if (text) {
+        if (text)
             navigator.clipboard.writeText(email)
-        }
         else
             router.push({ name: 'contacts' })
     }
@@ -22,10 +22,10 @@
 </script>
 
 <template>
-    <div>
+    <div class="relative">
         <a href="https://discord.gg/5Z9YshrZah" target="_blank">
             <img src="../assets/icon_discord.svg" alt="discord" :class="size" />
-            <span v-if="text" class="hover:underline">discord.gg/5Z9YshrZah</span>
+            <span v-if="text">discord.gg/5Z9YshrZah</span>
         </a>
 
         <a href="https://www.instagram.com/clube.rainbow/" target="_blank">
@@ -33,19 +33,23 @@
             <span v-if="text">@clube.rainbow</span>
         </a>
         
-        <button @click="clickEmail(text)" @focusin="copied = true" @focusout="copied = false">
+        <button @click="clickEmail(text)" 
+            @mouseover="hover_email=true" @mouseleave="hover_email=false"
+            @focusin="copy_confirm=true" @focusout="copy_confirm=false">
+
             <img src="../assets/icon_email.svg" alt="email" :class="size" />
-            <template v-if="text">
-                <span>{{ email }}</span>
-                <span v-if="copied" class="brightness-125">Email copiado!</span>
-            </template>
+            <span v-if="text">{{ email }}</span>
         </button>
+
+        <div v-if="text" class="absolute -bottom-3 left-0 right-0 mx-auto w-[100px] text-sm brightness-125 whitespace-nowrap">
+            <span v-if="copy_confirm">Email copiado!</span>
+            <span v-else-if="hover_email">Clica para copiar</span>
+        </div>
     </div>
 </template>
 
 <style scoped>
-    a, 
-    button {
+    a, button {
         @apply flex items-center gap-2 hover:brightness-110
     }
 
