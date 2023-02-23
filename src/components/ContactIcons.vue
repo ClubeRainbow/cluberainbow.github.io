@@ -22,15 +22,15 @@
 </script>
 
 <template>
-    <div class="relative">
+    <div class="relative sm:text-lg">
         <a href="https://discord.gg/5Z9YshrZah" target="_blank">
             <img src="../assets/icon_discord.svg" alt="discord" :class="size" />
-            <span v-if="text">discord.gg/5Z9YshrZah</span>
+            <span v-if="text" class="text-outline-white">discord.gg/5Z9YshrZah</span>
         </a>
 
         <a href="https://www.instagram.com/clube.rainbow/" target="_blank">
             <img src="../assets/icon_insta.svg" alt="instagram" :class="size" />
-            <span v-if="text">@clube.rainbow</span>
+            <span v-if="text" class="text-outline-white">@clube.rainbow</span>
         </a>
         
         <button @click="clickEmail(text)" 
@@ -38,7 +38,7 @@
             @focusin="copy_confirm=true" @focusout="copy_confirm=false">
 
             <img src="../assets/icon_email.svg" alt="email" :class="size" />
-            <span v-if="text">{{ email }}</span>
+            <span v-if="text" class="text-outline-white">{{ email }}</span>
         </button>
 
         <div v-if="text" class="absolute -bottom-3 left-0 right-0 mx-auto w-[100px] text-sm brightness-125 whitespace-nowrap">
@@ -51,10 +51,5 @@
 <style scoped>
     a, button {
         @apply flex items-center gap-2 hover:brightness-110
-    }
-
-    a:hover > span, 
-    button:hover > span:nth-child(2) {
-        @apply underline
     }
 </style>

@@ -16,7 +16,7 @@
 
 @layer components {
     .topbar_option {
-        @apply whitespace-nowrap font-shrikhand font-normal text-xl text-outline-white w-full rounded-t-lg;
+        @apply whitespace-nowrap font-shrikhand font-normal text-lg lg-topbar:text-xl text-outline-white w-full rounded-t-lg;
     }
     .mobile_menu_option {
         @apply whitespace-nowrap font-shrikhand font-normal text-xl text-outline-white w-full border-2 rounded-md p-2 text-center hover:brightness-125;
@@ -29,7 +29,7 @@
             1px 1px 0 white;
     }
     .custom_btn {
-        @apply w-10/12 bg-cr-red-beige border-2 rounded-lg p-2 
+        @apply w-full xs:w-10/12 bg-cr-red-beige border-2 rounded-lg p-2 
         text-2xl font-shrikhand font-normal
         hover:brightness-110
     }

@@ -21,6 +21,10 @@ module.exports = {
       "cr-purple": "#9b59b6",
       "cr-orange": "#e67e22",
       "cr-teal": "#1abc9c",
+      },
+      screens: {
+        "lg-topbar": "1200px",
+        "xs": "400px",
       }
     }
   },

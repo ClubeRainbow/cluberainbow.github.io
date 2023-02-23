@@ -22,7 +22,7 @@
         <form class="flex flex-col items-center gap-3 w-full h-full" @submit.prevent="sendEmail()">
             <input v-model="title" type="text" placeholder="Título" required>
             <input v-model="sender" type="email" placeholder="O teu email" required>
-            <textarea v-model="text" type="text" placeholder="A tua mensagem" class="h-[200px] lg:h-full"></textarea>
+            <textarea v-model="text" type="text" placeholder="A tua mensagem" class="h-[200px] lg:h-full" required></textarea>
 
             <button class="custom_btn mt-4" type="submit">
                 Enviar
@@ -37,6 +37,6 @@
     }
 
     ::placeholder {
-        @apply text-cr-brown brightness-125
+        @apply text-cr-brown opacity-70
     }
 </style>

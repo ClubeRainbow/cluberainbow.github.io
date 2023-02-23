@@ -5,7 +5,7 @@
 </script>
 
 <template>
-    <div v-if="windowWidth >= 1200" class="mx-8 flex justify-between gap-x-4">
+    <div v-if="windowWidth >= 1050" class="mx-8 flex justify-between gap-x-4">
       
         <button class="topbar_option hover:bg-[rgba(190,0,0,0.25)]" @click="$router.push({name: 'home'})">
             Página Inicial
@@ -36,8 +36,8 @@
     </div>
 
     <div v-else class="mx-8 flex items-center justify-center relative">
-      <button class="absolute left-0 hover:text-cr-light-brown" @click="$emit('show_options')">
-        Menu Btn
+      <button class="absolute left-0 bottom-2 hover:brightness-110" @click="$emit('show_options')">
+        <img src="../assets/icon_menu.svg" alt="menu" class="h-8 w-8"/>
       </button>
       <img src="../assets/logo.webp" alt="logo clube rainbow" class="z-20 w-20 h-20 -mb-10"/>
     </div>
