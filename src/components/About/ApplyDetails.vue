@@ -1,3 +1,18 @@
+<script setup lang="ts">
+    interface App {
+        open: boolean,
+        link: string,
+        timelimit: string,
+    }
+
+    interface Props {
+        recr: App,
+        ped: App,
+        comms: App,
+    }
+    defineProps<Props>();
+</script>
+
 <template>
     <div>
 
@@ -15,8 +30,8 @@
             Gostarias de fazer parte do Clube?
         </p>
         <p>
-            Podes te candidatar a um (ou mais) dos departamentos via os botões abaixo, que te <b>irão
-            redirecionar para os formulários de candidatura</b>. O trabalho é voluntário, e qualquer estudante
+            Podes te candidatar aos departamentos em aberto via os botões abaixo, que te <b>irão
+            redirecionar para o respetivo formulário de candidatura</b>. O trabalho é voluntário, e qualquer estudante
             da Universidade do Minho se pode candidatar. Mais informações estarão disponíveis nos formulários,
             mas 
             <b>
@@ -28,19 +43,22 @@
             </b>
         </p>
         <p class="text-center">
-            <b>Candidaturas abertas até xx/xx/xxxx</b>
+            <b>
+                Candidaturas abertas até 
+                {{ recr.open ? recr.timelimit : ped.open ? ped.timelimit : comms.open ? comms.timelimit : '' }}
+            </b>
         </p>
 
         <div class="flex flex-wrap justify-center gap-2 whitespace-nowrap">
-            <button class="dept_btn text-cr-purple" @click="">
+            <a v-if="recr.open" class="dept_btn text-cr-purple" :href="recr.link" target="_blank">
                 Dept. Recreativo
-            </button>
-            <button class="dept_btn text-cr-orange" @click="">
+            </a>
+            <a v-if="ped.open" class="dept_btn text-cr-orange" :href="ped.link" target="_blank">
                 Dept. Pedagógico
-            </button>
-            <button class="dept_btn text-cr-teal" @click="">
+            </a>
+            <a v-if="comms.open" class="dept_btn text-cr-teal" :href="comms.link" target="_blank">
                 Dept. Comunicação
-            </button>
+            </a>
         </div>
 
     </div>
@@ -48,6 +66,6 @@
 
 <style scoped>
     .dept_btn {
-        @apply flex-1 border-2 rounded-md p-2 font-shrikhand font-normal hover:brightness-125
+        @apply flex-1 border-2 rounded-md p-2 font-shrikhand font-normal text-center hover:brightness-125
     }
 </style>

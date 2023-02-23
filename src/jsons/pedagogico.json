@@ -1,4 +1,10 @@
 {
+    "apps_data": {
+      "open": true,
+      "link": "https://google.com",
+      "timelimit": "xx/xx/xxxx"
+    },
+
     "members": [
       {
         "name": "Vee", 
