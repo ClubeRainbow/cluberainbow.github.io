@@ -2,17 +2,17 @@
     "partners": [
         {
             "name": "Disque.pt",
-            "logo": "/imgs/logo_disque.webp",
+            "logo": "/partners/logo_disque.webp",
             "link": "https://www.instagram.com/disque.pt/"
         },
         {
             "name": "Rede Ex Aequo",
-            "logo": "/imgs/logo_rea.webp",
+            "logo": "/partners/logo_rea.webp",
             "link": "https://www.rea.pt/"
         },
         {
             "name": "CECRI",
-            "logo": "/imgs/logo_cecri.webp",
+            "logo": "/partners/logo_cecri.webp",
             "link": "https://cecri.pt/"
         }
     ]
