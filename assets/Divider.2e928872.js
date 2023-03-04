@@ -1,0 +1,1 @@
+import{_ as s,o,c,a as e}from"./index.c3f553ae.js";const t={},r={class:"flex items-center gap-x-2"},n=e("hr",{class:"border w-full"},null,-1),_=e("div",null,"\u2726",-1),l=e("hr",{class:"border w-full"},null,-1),a=[n,_,l];function d(i,f){return o(),c("div",r,a)}const u=s(t,[["render",d]]);export{u as D};
