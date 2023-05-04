@@ -10,7 +10,7 @@
         "name": "Vee", 
         "pronouns": "she/he",
         "contacts": {
-          "insta": "@vikill06",
+          "insta": "vikill06",
           "discord": "hashida's artits#9801"
         }
       },
@@ -18,21 +18,51 @@
         "name": "André Rodrigues", 
         "pronouns": "he/him",
         "contacts": {
-          "insta": "@andrerodrigues47"
+          "insta": "andrerodrigues47"
+        }
+      },
+      {
+        "name": "Andreia Marques", 
+        "pronouns": "she/her",
+        "contacts": {
+          "insta": "andreiamarquescello",
+          "discord": "Josefa Ayala#4973"
+        }
+      },
+      {
+        "name": "Bea", 
+        "pronouns": "she/her",
+        "contacts": {
+          "discord": "rae(ven)#4892"
         }
       },
       {
         "name": "Sandra", 
         "pronouns": "she/her",
         "contacts": {
-          "insta": "@sandraibf"
+          "insta": "sandraibf",
+          "discord": "snadra#3665"
+        }
+      },
+      {
+        "name": "Inês", 
+        "pronouns": "she/they",
+        "contacts": {
+          "discord": "broke_sugardaddy#4386"
+        }
+      },
+      {
+        "name": "Maria", 
+        "pronouns": "she/her",
+        "contacts": {
+          "discord": "maru#3065"
         }
       },
       {
         "name": "André", 
         "pronouns": "he/him",
         "contacts": {
-          "insta": "@the.goofy.blue"
+          "insta": "the.goofy.blue"
         }
       }
     ]

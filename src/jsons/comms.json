@@ -6,38 +6,36 @@
     },
 
     "members": [
-        {
-          "name": "Lee", 
-          "contacts": {
-            "insta": "@mr_apple.pie"
-          }
-        },
-        { 
-          "name": "Dee", 
-          "contacts": {
-            "insta": "@2bar6atos"
-          }
-        },
-        { 
-          "name": "Ezra", 
-          "pronouns": "he/they",
-          "contacts": {
-            "discord": "haz#0535"
-          }
-        },
-        {
-          "name": "Tomé Azevedo", 
-          "pronouns": "qualquer pronome",
-          "contacts": {
-            "insta": "@tomevazevedo"
-          }
-        },
-        {
-          "name": "Janaina Buvana", 
-          "pronouns": "she/her",
-          "contacts": {
-            "insta": "@janebuvana"
-          }
+      { 
+        "name": "Ezra", 
+        "pronouns": "he/they",
+        "contacts": {
+          "discord": "haz#0535"
         }
+      },
+      {
+        "name": "Lee", 
+        "pronouns": "he/she/they",
+        "contacts": {
+          "insta": "mr_apple.pie",
+          "discord": "ඞ Leeඔ#7974"
+        }
+      },
+      {
+        "name": "Tomé Azevedo", 
+        "pronouns": "qualquer pronome",
+        "contacts": {
+          "insta": "tomevazevedo",
+          "discord": "Tomé#4735"
+        }
+      },
+      {
+        "name": "Ema", 
+        "pronouns": "she/her",
+        "contacts": {
+          "insta": "midwestema",
+          "discord": "midwestema#2932"
+        }
+      }
     ]
 }

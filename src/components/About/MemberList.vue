@@ -47,8 +47,8 @@
                         {{ member.pronouns ? '('+member.pronouns+')' : '' }}
                     </p>
                     <p>
-                        <a class="hover:underline" :href="'https://www.instagram.com/' + member.contacts?.insta" target="_blank">
-                            {{ member.contacts?.insta }}
+                        <a v-if="member.contacts?.insta" class="hover:underline" :href="'https://www.instagram.com/' + member.contacts.insta" target="_blank">
+                            @{{ member.contacts?.insta }}
                         </a>
                         <span v-if="member.contacts?.insta && member.contacts?.discord"> / </span>
                         <span> {{ member.contacts?.discord }} </span>
