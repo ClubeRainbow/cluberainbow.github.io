@@ -38,7 +38,7 @@
 
         <TransitionGroup name="imgs" tag="div" class="overflow-hidden relative w-52 h-40">
             <div v-for="i in [img_id]" :key="i">
-                <img :src="path + img_id + '.png'" alt="sticker" class="absolute inset-x-0 mx-auto"
+                <img :src="path + img_id + '.webp'" alt="sticker" class="absolute inset-x-0 mx-auto"
                     :class="{'h-32 top-3' : shrink, 'h-40' : !shrink }" />
             </div>
         </TransitionGroup>

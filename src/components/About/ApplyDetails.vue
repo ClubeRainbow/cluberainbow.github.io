@@ -27,13 +27,22 @@
         </div>
         
         <p>
-            Gostarias de fazer parte do Clube?
+            Gostarias de fazer parte do Clube? As candidaturas estão abertas para
+            {{ recr.open && ped.open && comms.open ? 'todos os departamentos' : 
+                recr.open && ped.open ? 'o departamento recreativo e pedagógico' :
+                recr.open && comms.open ? 'o departamento recreativo e de comunicação' :
+                ped.open && comms.open ? 'o departamento pedagógico e de comunicação' :
+                recr.open ? 'o departamento recreativo' :
+                comms.open ? 'o departamento de comunicação' :
+                ped.open ? 'o departamento pedagógico' : '' }}!
         </p>
         <p>
-            Podes te candidatar aos departamentos em aberto via os botões abaixo, que te <b>irão
-            redirecionar para o respetivo formulário de candidatura</b>. O trabalho é voluntário, e qualquer estudante
-            da Universidade do Minho se pode candidatar. Mais informações estarão disponíveis nos formulários,
-            mas 
+            Podes te candidatar 
+                {{ (recr.open && ped.open) || (recr.open && comms.open) || (ped.open && comms.open) ?
+                    'via os botões abaixo, que te irão' :
+                    'via o botão abaixo, que te irá' }}
+            redirecionar para o respetivo formulário de candidatura. 
+            Mais informações estarão disponíveis nos formulários, mas 
             <b>
                 qualquer dúvida não hesites em nos 
                 <button class="underline hover:text-cr-brown" @click="$router.push({name: 'contacts'})">
