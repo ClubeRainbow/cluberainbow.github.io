@@ -7,7 +7,7 @@
     <div class="flex flex-col gap-4">
         
         <p class="text-4xl font-shrikhand font-normal text-outline-white whitespace-nowrap">
-            Apoia-nos
+            Autocolantes
         </p>
 
         <div>
@@ -20,18 +20,37 @@
             </p>
         </div>
 
-        <Divider />
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mx-auto mt-2">
 
-        <div class="flex flex-wrap gap-5 justify-center lg:justify-start">
-            <Slides path="/stickers/flags/" :multiple="true" />
-            <div class="flex flex-col">
-                <p class="text-2xl font-shrikhand font-normal">
-                    Bandeiras
-                </p>
-                <p> Bandeiras de várias identidades LGBT+. </p>
-                <p> Disponível nos nossos eventos! </p>
-                <p class="mt-auto"> work in progress </p>
+            <div class="flex flex-col gap-2 py-4 px-8 border-2 rounded-xl drop-shadow-lg bg-cr-beige">
+                <Slides path="/stickers/flags/" :max="10" :shrink="true"/>
+                <div class="flex flex-col">
+                    <p class="text-2xl font-shrikhand font-normal text-outline-white">
+                        Bandeiras
+                    </p>
+                    <p class="mt-1.5"> Bandeiras de várias identidades LGBTQIA+ </p>
+                    <p class="italic"> Disponível nos nossos eventos! </p>
+                </div>
             </div>
+
+            <div class="flex flex-col gap-2 py-4 px-8 border-2 rounded-xl drop-shadow-lg bg-cr-beige">
+                <Slides path="/stickers/kittens/" :max="11"/>
+                <div class="flex flex-col">
+                    <p class="text-2xl font-shrikhand font-normal text-outline-white">
+                        Gatinhos
+                    </p>
+                    <p>
+                        <span class="font-shrikhand font-normal">Design: </span>
+                        Lee -
+                        <a class="hover:underline" href="https://www.instagram.com/mr_apple.pie" target="_blank">
+                            @mr_apple.pie
+                        </a>
+                    </p>
+                    <p class="mt-1.5"> Gatinhos com as cores de várias bandeiras LGBTQIA+ </p>
+                    <p class="italic"> Disponível nos nossos eventos! </p>
+                </div>
+            </div>
+
         </div>
         
     </div>
