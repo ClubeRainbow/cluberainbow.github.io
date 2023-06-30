@@ -18,8 +18,8 @@
                 <option value="[CR Website] Parceria">Parceria ou Colaboração</option>
                 <option value="[CR Website] Outro">Outro</option>
             </select>
-            <input name="email" type="email" placeholder="O teu email..." required>
-            <textarea name="message" type="text" placeholder="A tua mensagem..." class="h-[200px] lg:h-full" required></textarea>
+            <input name="From:" type="email" placeholder="O teu email..." required>
+            <textarea name="Message:" type="text" placeholder="A tua mensagem..." class="h-[200px] lg:h-full" required></textarea>
 
             <button class="custom_btn mt-4" type="submit">
                 Enviar
