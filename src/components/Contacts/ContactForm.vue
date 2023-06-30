@@ -1,3 +1,7 @@
+<script setup lang="ts">
+    import { ref } from 'vue';
+    const subject = ref('')
+</script>
 
 <template>
     <div class="border-2 rounded-xl bg-cr-beige drop-shadow-lg p-8 flex flex-col gap-3 flex-1">
@@ -8,7 +12,7 @@
         </div>
         <form class="flex flex-col items-center gap-3 w-full h-full" 
             action="https://formspree.io/f/xdornybk" method="POST">
-            <select name="subject" required>
+            <select name="subject" v-model="subject" required>
                 <option value="" disabled>Motivo da mensagem</option>
                 <option value="[CR Website] Dúvida Geral">Dúvida (Geral)</option>
                 <option value="[CR Website] Dúvida LGBTQIA+">Dúvida LGBTQIA+</option>
