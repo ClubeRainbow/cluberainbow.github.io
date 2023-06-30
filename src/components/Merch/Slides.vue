@@ -32,7 +32,7 @@
 
 <template>
     <div class="flex items-center gap-2 mx-auto">
-        <button v-if="max > 0" @click="previous(max)">
+        <button v-if="max > 1" @click="previous(max)">
             <img src="../../assets/arrow_down.svg" alt="toggle list" class="h-5 w-5 rotate-90 hover:brightness-125"/>
         </button>
 
@@ -43,7 +43,7 @@
             </div>
         </TransitionGroup>
 
-        <button v-if="max > 0" @click="next(max)">
+        <button v-if="max > 1" @click="next(max)">
             <img src="../../assets/arrow_down.svg" alt="toggle list" class="h-5 w-5 -rotate-90 hover:brightness-125"/>
         </button>
     </div>
