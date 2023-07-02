@@ -1,18 +1,12 @@
 <script setup lang="ts">
   import { ref } from "vue";
   import { useRouter } from 'vue-router';
-  import { watch } from "vue";
   import TopBar from './components/TopBar.vue';
   import MobileOptions from "./components/MobileOptions.vue";
   import FooterVue from './components/Footer.vue';
   
   const router = useRouter();
   const show_options = ref(false);
-
-  watch(
-    () => router.currentRoute.value.fullPath,
-    async () => { show_options.value = false }
-  );
 </script>
 
 <template>

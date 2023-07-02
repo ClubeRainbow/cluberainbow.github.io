@@ -9,10 +9,8 @@
   addEventListener("resize", () => { windowWidth.value = window.innerWidth});
   
   const redirect = (dest: string) => {
-    if (router.currentRoute.value.name === dest)
-        emit('close')
-    else
-        router.push({name: dest})
+    router.push({name: dest})
+    emit('close')
   }
 </script>
 
