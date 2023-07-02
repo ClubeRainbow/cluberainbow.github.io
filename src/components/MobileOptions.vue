@@ -5,7 +5,7 @@
         </button>
 
         <button class="mobile_menu_option" @click="$router.push({name: 'about'}); $emit('close');">
-            Quem Somos
+            Sobre Nós
         </button>
 
         <button class="mobile_menu_option" @click="$router.push({name: 'info'}); $emit('close');">
@@ -13,7 +13,7 @@
         </button>
 
         <button class="mobile_menu_option" @click="$router.push({name: 'merch'}); $emit('close');">
-            Apoia-nos
+            Merch
         </button>
 
         <button class="mobile_menu_option" @click="$router.push({name: 'resources'}); $emit('close');">
