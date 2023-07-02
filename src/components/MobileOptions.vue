@@ -1,26 +1,40 @@
+<script setup lang="ts">
+  import { useRouter } from 'vue-router';
+
+  const router = useRouter();
+  const emit = defineEmits(['close']);
+  
+  const redirect = (dest: string) => {
+    if (router.currentRoute.value.name === dest)
+        emit('close')
+    else
+        router.push({name: dest})
+  }
+</script>
+
 <template>
     <div class="flex flex-col gap-1 w-full">
-        <button class="mobile_menu_option" @click="$router.push({name: 'home'}); $emit('close');">
+        <button class="mobile_menu_option" @click="redirect('home')">
             Página Inicial
         </button>
 
-        <button class="mobile_menu_option" @click="$router.push({name: 'about'}); $emit('close');">
+        <button class="mobile_menu_option" @click="redirect('about')">
             Sobre Nós
         </button>
 
-        <button class="mobile_menu_option" @click="$router.push({name: 'info'}); $emit('close');">
+        <button class="mobile_menu_option" @click="redirect('info')">
             Informações
         </button>
 
-        <button class="mobile_menu_option" @click="$router.push({name: 'merch'}); $emit('close');">
+        <button class="mobile_menu_option" @click="redirect('merch')">
             Merch
         </button>
 
-        <button class="mobile_menu_option" @click="$router.push({name: 'resources'}); $emit('close');">
+        <button class="mobile_menu_option" @click="redirect('resources')">
             Recursos Úteis
         </button>
 
-        <button class="mobile_menu_option" @click="$router.push({name: 'contacts'}); $emit('close');">
+        <button class="mobile_menu_option" @click="redirect('contacts')">
             Contactos
         </button>
     </div>

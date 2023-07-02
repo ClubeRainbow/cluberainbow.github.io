@@ -1,6 +1,8 @@
 <script setup lang="ts">
     import { ref } from 'vue';
     const subject = ref('')
+    const email = ref('')
+    const message = ref('')
 </script>
 
 <template>
@@ -22,8 +24,8 @@
                 <option value="[CR Website] Parceria">Parceria ou Colaboração</option>
                 <option value="[CR Website] Outro">Outro</option>
             </select>
-            <input name="From:" type="email" placeholder="O teu email..." required>
-            <textarea name="Message:" type="text" placeholder="A tua mensagem..." class="h-[200px] lg:h-full" required></textarea>
+            <input name="From:" v-model="email" type="email" placeholder="O teu email..." required>
+            <textarea name="Message:" v-model="message" type="text" placeholder="A tua mensagem..." class="h-[200px] lg:h-full" required></textarea>
 
             <button class="custom_btn mt-4" type="submit">
                 Enviar

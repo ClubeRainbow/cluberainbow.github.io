@@ -3,48 +3,57 @@
   import { useRouter } from 'vue-router';
 
   const router = useRouter();
+  const emit = defineEmits(['close']);
   const windowWidth = ref(window.innerWidth);
 
   addEventListener("resize", () => { windowWidth.value = window.innerWidth});
+  
+  const redirect = (dest: string) => {
+    if (router.currentRoute.value.name === dest)
+        emit('close')
+    else
+        router.push({name: dest})
+  }
 </script>
 
 <template>
     <div v-if="windowWidth >= 1050" class="mx-8 flex justify-between gap-x-4">
       
-        <button class="topbar_option hover:bg-[rgba(190,0,0,0.25)]" @click="$router.push({name: 'home'})">
+        <button class="topbar_option hover:bg-[rgba(190,0,0,0.25)]" 
+            @click="redirect('home')">
             Página Inicial
         </button>
       
         <button class="topbar_option hover:bg-[rgba(255,110,0,0.25)]" 
             :class="{ 'bg-[rgba(255,110,0,0.25)]' : router.currentRoute.value.name === 'about'}"
-            @click="$router.push({name: 'about'})">
+            @click="redirect('about')">
             Sobre Nós
         </button>
 
         <button class="topbar_option hover:bg-[rgba(255,140,0,0.25)]" 
             :class="{ 'bg-[rgba(255,140,0,0.25)]' : router.currentRoute.value.name === 'info'}"
-            @click="$router.push({name: 'info'})">
+            @click="redirect('info')">
             Informações
         </button>
 
         <img src="../assets/logo.webp" alt="logo clube rainbow" class="z-20 w-20 h-20 -mb-10 cursor-pointer"
-            @click="$router.push({name: 'home'})"/>
+            @click="redirect('home')"/>
 
         <button class="topbar_option hover:bg-[rgba(0,200,0,0.25)]"
             :class="{ 'bg-[rgba(0,200,0,0.25)]' : router.currentRoute.value.name === 'merch'}"
-            @click="$router.push({name: 'merch'})">
+            @click="redirect('merch')">
             Merch
         </button>
 
         <button class="topbar_option hover:bg-[rgba(0,180,110,0.25)]"
             :class="{ 'bg-[rgba(0,180,110,0.25)]' : router.currentRoute.value.name === 'resources'}" 
-            @click="$router.push({name: 'resources'})">
+            @click="redirect('resources')">
             Recursos Úteis
         </button>
 
         <button class="topbar_option hover:bg-[rgba(40,0,190,0.25)]" 
             :class="{ 'bg-[rgba(40,0,190,0.25)]' : router.currentRoute.value.name === 'contacts'}" 
-            @click="$router.push({name: 'contacts'})">
+            @click="redirect('contacts')">
             Contactos
         </button>
       
@@ -55,6 +64,6 @@
             <img src="../assets/icon_menu.svg" alt="menu" class="h-8 w-8"/>
         </button>
         <img src="../assets/logo.webp" alt="logo clube rainbow" class="z-20 w-20 h-20 -mb-10 cursor-pointer"
-            @click="$router.push({name: 'home'})"/>
+            @click="redirect('home')"/>
     </div>
 </template>

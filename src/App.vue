@@ -1,24 +1,30 @@
 <script setup lang="ts">
   import { ref } from "vue";
   import { useRouter } from 'vue-router';
+  import { watch } from "vue";
   import TopBar from './components/TopBar.vue';
   import MobileOptions from "./components/MobileOptions.vue";
   import FooterVue from './components/Footer.vue';
   
   const router = useRouter();
   const show_options = ref(false);
+
+  watch(
+    () => router.currentRoute.value.fullPath,
+    async () => { show_options.value = false }
+  );
 </script>
 
 <template>
   <div class="relative min-h-screen min-w-screen py-8 overflow-hidden" 
       :class="{ 'bg-gradient' : router.currentRoute.value.name !== 'home' || show_options }">
 
-    <TopBar id="topbar" @show_options="show_options = !show_options"/>
+    <TopBar id="topbar" @show_options="show_options = !show_options" @close="show_options = false"/>
 
     <div class="border-y-2 pt-16 pb-8" 
       :class="{ 'md:px-12 mx-8' : router.currentRoute.value.name === 'home' && !show_options,
                 'px-8 md:px-16 bg-cr-beige' : router.currentRoute.value.name !== 'home' || show_options }">
-      <MobileOptions v-if="show_options" @close="show_options = !show_options"/>
+      <MobileOptions v-if="show_options" @close="show_options = false"/>
       <router-view v-else></router-view>
     </div>
 
