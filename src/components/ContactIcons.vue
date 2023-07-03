@@ -8,8 +8,10 @@
     const email = 'rainbow.clube.estudantes@gmail.com'
 
     const clickEmail = (text?: boolean) => {
-        if (text)
+        if (text) {
             navigator.clipboard.writeText(email)
+            copy_confirm.value = true
+        }
         else
             router.push({ name: 'contacts' })
     }
@@ -34,8 +36,8 @@
         </a>
         
         <button @click="clickEmail(text)" 
-            @mouseover="hover_email=true" @mouseleave="hover_email=false"
-            @focusin="copy_confirm=true" @focusout="copy_confirm=false">
+            @mouseover="hover_email=true" @mouseleave="hover_email=false" 
+            @focusin="hover_email=true" @focusout="copy_confirm=false; hover_email=false">
 
             <img src="../assets/icon_email.svg" alt="email" :class="size" />
             <span v-if="text" class="text-outline-white">{{ email }}</span>

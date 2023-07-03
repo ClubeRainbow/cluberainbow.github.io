@@ -3,6 +3,12 @@
     const subject = ref('')
     const email = ref('')
     const message = ref('')
+
+    window.onload = () => {
+        subject.value = ''
+        email.value = ''
+        message.value = ''
+    }
 </script>
 
 <template>

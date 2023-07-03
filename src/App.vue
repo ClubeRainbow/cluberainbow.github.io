@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import { ref } from "vue";
+  import { ref, watch } from "vue";
   import { useRouter } from 'vue-router';
   import TopBar from './components/TopBar.vue';
   import MobileOptions from "./components/MobileOptions.vue";
@@ -7,6 +7,11 @@
   
   const router = useRouter();
   const show_options = ref(false);
+
+  watch(
+    () => router.currentRoute.value.fullPath,
+    async () => { show_options.value = false }
+  );
 </script>
 
 <template>

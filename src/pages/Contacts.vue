@@ -4,7 +4,7 @@
 </script>
 
 <template>
-    <div class="flex flex-col lg:flex-row justify-center gap-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <ContactInfo />
         <ContactForm />
     </div>

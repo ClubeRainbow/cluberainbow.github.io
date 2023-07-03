@@ -5,8 +5,10 @@
   const emit = defineEmits(['close']);
   
   const redirect = (dest: string) => {
-    router.push({name: dest})
-    emit('close')
+    if (router.currentRoute.value.name === dest)
+        emit('close')
+    else
+        router.push({name: dest})
   }
 </script>
 
@@ -29,7 +31,7 @@
         </button>
 
         <button class="mobile_menu_option" @click="redirect('resources')">
-            Recursos Úteis
+            Recursos
         </button>
 
         <button class="mobile_menu_option" @click="redirect('contacts')">
