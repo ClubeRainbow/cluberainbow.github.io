@@ -20,7 +20,7 @@
 </script>
 
 <template>
-    <div v-if="windowWidth >= 1050" class="mx-8 flex justify-between gap-x-4">
+    <div v-if="windowWidth >= 1180" class="mx-8 flex justify-between gap-x-4">
       
         <button class="topbar_option hover:bg-[rgba(190,0,0,0.25)] focus:bg-[rgba(190,0,0,0.25)]" 
             @click="redirect('home')">
@@ -29,13 +29,14 @@
       
         <div class="w-full relative" @mouseover="about_options=true" @mouseleave="about_options=false" @focusin="about_options=true">
             
-            <button class="topbar_option h-full hover:bg-[rgba(255,110,0,0.25)] focus:bg-[rgba(255,110,0,0.25)]" 
-                :class="{ 'bg-[rgba(255,110,0,0.25)]' : router.currentRoute.value.name === 'about'}"
+            <button class="topbar_option sub_button hover:bg-[rgba(255,110,0,0.25)] focus:bg-[rgba(255,110,0,0.25)]" 
+                :class="{ 'bg-[rgba(255,110,0,0.25)]' : router.currentRoute.value.name === 'about' || about_options }"
                 @click="redirect('about')">
                 Sobre Nós
+                <img src="../assets/arrow_down.svg" alt="toggle list" class="h-3 w-3 xl-topbar:h-4 xl-topbar:w-4" :class="{ 'rotate-180' : about_options }"/>
             </button>
 
-            <div v-if="about_options" class="sub_section" >
+            <div v-if="about_options" class="sub_section">
                 <button class="sub_option" @click="">
                     Sobre o Clube Rainbow
                 </button>
@@ -46,18 +47,18 @@
                     Parcerias
                 </button>
             </div>
-
         </div>
             
         <div class="w-full relative" @mouseover="info_options=true" @mouseleave="info_options=false" @focusin="info_options=true">
             
-            <button class="topbar_option h-full hover:bg-[rgba(255,140,0,0.25)] focus:bg-[rgba(255,140,0,0.25)]" 
-                :class="{ 'bg-[rgba(255,140,0,0.25)]' : router.currentRoute.value.name === 'info'}"
+            <button class="topbar_option sub_button hover:bg-[rgba(255,140,0,0.25)] focus:bg-[rgba(255,140,0,0.25)]" 
+                :class="{ 'bg-[rgba(255,140,0,0.25)]' : router.currentRoute.value.name === 'info' || info_options }"
                 @click="redirect('info')" >
                 Informações
+                <img src="../assets/arrow_down.svg" alt="toggle list" class="h-3 w-3 xl-topbar:h-4 xl-topbar:w-4" :class="{ 'rotate-180' : info_options }"/>
             </button>
 
-            <div v-if="info_options" class="sub_section" >
+            <div v-if="info_options" class="sub_section">
                 <button class="sub_option" @click="">
                     Calendário
                 </button>
@@ -105,6 +106,9 @@
 </template>
 
 <style scoped>
+    .sub_button {
+        @apply flex justify-between items-center gap-2 px-2 xl-topbar:px-3 h-full
+    }
     .sub_section {
         @apply absolute top-full w-full flex flex-col gap-1 z-20
     }

@@ -23,7 +23,7 @@ module.exports = {
       "cr-teal": "#1abc9c",
       },
       screens: {
-        "lg-topbar": "1200px",
+        "xl-topbar": "1300px",
         "xs": "400px",
       }
     }

@@ -16,7 +16,7 @@
 
 @layer components {
     .topbar_option {
-        @apply whitespace-nowrap font-shrikhand font-normal text-lg lg-topbar:text-xl text-outline-white 
+        @apply whitespace-nowrap font-shrikhand font-normal text-lg xl-topbar:text-xl text-outline-white 
         w-full rounded-t-lg
     }
     .mobile_menu_option {
