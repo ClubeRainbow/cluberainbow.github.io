@@ -6,6 +6,9 @@
   const emit = defineEmits(['close', 'show_options']);
   const windowWidth = ref(window.innerWidth);
 
+  const about_options = ref(false)
+  const info_options = ref(false)
+
   addEventListener("resize", () => { windowWidth.value = window.innerWidth});
   
   const redirect = (dest: string) => {
@@ -19,40 +22,71 @@
 <template>
     <div v-if="windowWidth >= 1050" class="mx-8 flex justify-between gap-x-4">
       
-        <button class="topbar_option hover:bg-[rgba(190,0,0,0.25)]" 
+        <button class="topbar_option hover:bg-[rgba(190,0,0,0.25)] focus:bg-[rgba(190,0,0,0.25)]" 
             @click="redirect('home')">
             Página Inicial
         </button>
       
-        <button class="topbar_option hover:bg-[rgba(255,110,0,0.25)]" 
-            :class="{ 'bg-[rgba(255,110,0,0.25)]' : router.currentRoute.value.name === 'about'}"
-            @click="redirect('about')">
-            Sobre Nós
-        </button>
+        <div class="w-full relative" @mouseover="about_options=true" @mouseleave="about_options=false" @focusin="about_options=true">
+            
+            <button class="topbar_option h-full hover:bg-[rgba(255,110,0,0.25)] focus:bg-[rgba(255,110,0,0.25)]" 
+                :class="{ 'bg-[rgba(255,110,0,0.25)]' : router.currentRoute.value.name === 'about'}"
+                @click="redirect('about')">
+                Sobre Nós
+            </button>
 
-        <button class="topbar_option hover:bg-[rgba(255,140,0,0.25)]" 
-            :class="{ 'bg-[rgba(255,140,0,0.25)]' : router.currentRoute.value.name === 'info'}"
-            @click="redirect('info')">
-            Informações
-        </button>
+            <div v-if="about_options" class="sub_section" >
+                <button class="sub_option" @click="">
+                    Sobre o Clube Rainbow
+                </button>
+                <button class="sub_option" @click="">
+                    Departamentos
+                </button>
+                <button class="sub_option rounded-b-lg" @click="" @focusout="about_options=false">
+                    Parcerias
+                </button>
+            </div>
+
+        </div>
+            
+        <div class="w-full relative" @mouseover="info_options=true" @mouseleave="info_options=false" @focusin="info_options=true">
+            
+            <button class="topbar_option h-full hover:bg-[rgba(255,140,0,0.25)] focus:bg-[rgba(255,140,0,0.25)]" 
+                :class="{ 'bg-[rgba(255,140,0,0.25)]' : router.currentRoute.value.name === 'info'}"
+                @click="redirect('info')" >
+                Informações
+            </button>
+
+            <div v-if="info_options" class="sub_section" >
+                <button class="sub_option" @click="">
+                    Calendário
+                </button>
+                <button class="sub_option" @click="">
+                    Candidaturas
+                </button>
+                <button class="sub_option rounded-b-lg" @click="" @focusout="info_options=false">
+                    FAQ
+                </button>
+            </div>
+        </div>
 
         <button class="w-20 shrink-0" @click="redirect('home')">
             <img src="../assets/logo.webp" alt="logo clube rainbow" class="z-20 -mb-11" />
         </button>
 
-        <button class="topbar_option hover:bg-[rgba(0,200,0,0.25)]"
+        <button class="topbar_option hover:bg-[rgba(0,200,0,0.25)] focus:bg-[rgba(0,200,0,0.25)]"
             :class="{ 'bg-[rgba(0,200,0,0.25)]' : router.currentRoute.value.name === 'merch'}"
             @click="redirect('merch')">
             Merch
         </button>
 
-        <button class="topbar_option hover:bg-[rgba(0,180,110,0.25)]"
+        <button class="topbar_option hover:bg-[rgba(0,180,110,0.25)] focus:bg-[rgba(0,180,110,0.25)]"
             :class="{ 'bg-[rgba(0,180,110,0.25)]' : router.currentRoute.value.name === 'resources'}" 
             @click="redirect('resources')">
             Recursos
         </button>
 
-        <button class="topbar_option hover:bg-[rgba(40,0,190,0.25)]" 
+        <button class="topbar_option hover:bg-[rgba(40,0,190,0.25)] focus:bg-[rgba(40,0,190,0.25)]" 
             :class="{ 'bg-[rgba(40,0,190,0.25)]' : router.currentRoute.value.name === 'contacts'}" 
             @click="redirect('contacts')">
             Contactos
@@ -61,7 +95,7 @@
     </div>
 
     <div v-else class="mx-8 flex items-center justify-center relative">
-        <button class="absolute left-0 bottom-2 hover:brightness-110" @click="$emit('show_options')">
+        <button class="absolute left-0 bottom-2 hover:brightness-110 focus:brightness-110" @click="$emit('show_options')">
             <img src="../assets/icon_menu.svg" alt="menu" class="h-8 w-8"/>
         </button>
         <button class="w-20 shrink-0" @click="redirect('home')">
@@ -69,3 +103,12 @@
         </button>
     </div>
 </template>
+
+<style scoped>
+    .sub_section {
+        @apply absolute top-full w-full flex flex-col gap-1 z-20
+    }
+    .sub_option {
+        @apply bg-cr-red-beige border py-1 hover:brightness-110 hover:underline focus:brightness-110 focus:underline
+    }
+</style>

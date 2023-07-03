@@ -15,7 +15,7 @@
             <p class="text-sm">rainbow.clube.estudantes@gmail.com</p>
         </div>
 
-        <button class="absolute right-0 top-4 flex items-center justify-end hover:brightness-110" @click="scrollToTop()">
+        <button class="absolute right-0 top-4 flex items-center justify-end hover:brightness-110 focus:brightness-110" @click="scrollToTop()">
             <img src="../assets/icon_up.svg" alt="scroll up" class="h-8 w-8"/>
         </button>
         

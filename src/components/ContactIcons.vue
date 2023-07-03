@@ -52,6 +52,6 @@
 
 <style scoped>
     a, button {
-        @apply flex items-center gap-2 hover:brightness-110
+        @apply flex items-center gap-2 hover:brightness-110 focus:brightness-110
     }
 </style>
