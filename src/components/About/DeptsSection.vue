@@ -1,19 +1,14 @@
 <script setup lang="ts">
-    import { ref } from 'vue';
     import recreativo from '../../jsons/recreativo.json';
     import pedagogico from '../../jsons/pedagogico.json';
     import comms from '../../jsons/comms.json';
     import MemberList from './MemberList.vue';
-    import ApplyDetails from './ApplyDetails.vue';
-
-    const show_apply = ref(false)
-    const apps_open = (recreativo.apps_data.open || pedagogico.apps_data.open || comms.apps_data.open)
 </script>
 
 <template>
     <div class="flex flex-col gap-4">
         <p class="text-4xl font-shrikhand font-normal text-outline-white whitespace-nowrap">
-            Quem Somos
+            Departamentos
         </p>
         <div class="custom_grid">
 
@@ -67,21 +62,6 @@
                 </p>
                 <MemberList :members="comms.members" />
             </div>
-
-            <div v-if="!show_apply" class="items-center justify-center">
-                <img src="../../assets/kaku.png" alt="panda" class="w-80" />
-
-                <button class="-mt-8 z-20 custom_btn" :class="{ 'saturate-50 hover:brightness-100': !apps_open }" 
-                    @click="show_apply = !show_apply" :disabled="!apps_open">
-                    {{
-                        apps_open ? 'Candidaturas' : 'Candidaturas Fechadas'
-                    }}
-                </button>
-            </div>
-
-            <ApplyDetails v-else @close="show_apply = !show_apply" 
-                :recr="recreativo.apps_data" :ped="pedagogico.apps_data" :comms="comms.apps_data"/>
-
         </div>
     </div>
 </template>

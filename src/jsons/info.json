@@ -1,0 +1,11 @@
+{
+    "next_event" : "https://www.instagram.com/p/Cs3w1JfN5G-/",
+    "candidaturas": {
+        "open" : true,
+        "timelimit" : "xx/xx/xxxx",
+        "deps" : ["recr", "ped", "comms"],
+        "recr_link" : "https://google.com",
+        "ped_link" : "https://google.com",
+        "comms_link" : "https://google.com"
+    }
+}
