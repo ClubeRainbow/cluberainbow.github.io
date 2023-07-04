@@ -6,7 +6,7 @@
 <template>
     <div class="flex flex-col gap-8">
         
-        <div class="flex flex-col gap-4">
+        <div id="clube" class="flex flex-col gap-4">
             <p class="text-4xl font-shrikhand font-normal text-outline-white whitespace-nowrap">
                 Sobre o Clube Rainbow
             </p>
@@ -15,8 +15,8 @@
             </p>
         </div>
         
-        <DeptsSection />
-        <PartnersSection />
+        <DeptsSection id="depts" />
+        <PartnersSection id="partners" />
     </div>
 </template>
 

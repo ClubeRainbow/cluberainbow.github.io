@@ -12,18 +12,30 @@
     () => router.currentRoute.value.fullPath,
     async () => { show_options.value = false }
   );
+
+  const delay = (ms: number) => new Promise(res => setTimeout(res, ms));
+
+  const scrollTo = async (scroll: string) => {
+    show_options.value = false
+    if (scroll) {
+      await delay(10)
+      document.querySelector(scroll)?.scrollIntoView({ behavior: 'smooth' })
+    }
+    else 
+      document.querySelector('#topbar')?.scrollIntoView({ block: 'end' })
+  }
 </script>
 
 <template>
   <div class="relative min-h-screen min-w-screen py-8 overflow-hidden" 
       :class="{ 'bg-gradient' : router.currentRoute.value.name !== 'home' || show_options }">
 
-    <TopBar id="topbar" @show_options="show_options = !show_options" @close="show_options = false"/>
+    <TopBar id="topbar" @show_options="show_options = !show_options" @close="s => scrollTo(s)"/>
 
     <div class="border-y-2 pt-16 pb-8" 
       :class="{ 'md:px-12 mx-8' : router.currentRoute.value.name === 'home' && !show_options,
                 'px-8 md:px-16 bg-cr-beige' : router.currentRoute.value.name !== 'home' || show_options }">
-      <MobileOptions v-if="show_options" @close="show_options = false"/>
+      <MobileOptions v-if="show_options" @close="s => scrollTo(s)"/>
       <router-view v-else></router-view>
     </div>
 

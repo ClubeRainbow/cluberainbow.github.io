@@ -8,11 +8,11 @@
   const about_options = ref(false)
   const info_options = ref(false)
   
-  const redirect = (dest: string) => {
+  const redirect = (dest: string, scroll?: string) => {
     if (router.currentRoute.value.name === dest)
-        emit('close')
+        emit('close', scroll)
     else
-        router.push({name: dest})
+        router.push({name: dest, hash: scroll})
   }
 </script>
 
@@ -33,10 +33,10 @@
                     <button class="sub_option mt-4" @click="redirect('about')">
                         Sobre o Clube Rainbow
                     </button>
-                    <button class="sub_option" @click="redirect('about')">
+                    <button class="sub_option" @click="redirect('about', '#depts')">
                         Departamentos
                     </button>
-                    <button class="sub_option mb-4" @click="redirect('about')">
+                    <button class="sub_option mb-4" @click="redirect('about', '#partners')">
                         Parcerias
                     </button>
                 </div>
@@ -54,10 +54,10 @@
                     <button class="sub_option mt-4" @click="redirect('info')">
                         Calendário
                     </button>
-                    <button class="sub_option" @click="redirect('info')">
+                    <button class="sub_option" @click="redirect('info', '#apps')">
                         Candidaturas
                     </button>
-                    <button class="sub_option mb-4" @click="redirect('info')">
+                    <button class="sub_option mb-4" @click="redirect('info', '#faq')">
                         FAQ
                     </button>
                 </div>

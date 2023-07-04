@@ -7,8 +7,8 @@
 
 <template>
     <div class="flex flex-col gap-8">
-        <Calendar :next_event="info.next_event" />
-        <Applications :cand="info.candidaturas" />
-        <Faq />
+        <Calendar id="calendar" :next_event="info.next_event" />
+        <Applications id="apps" :cand="info.candidaturas" />
+        <Faq id="faq"/>
     </div>
 </template>

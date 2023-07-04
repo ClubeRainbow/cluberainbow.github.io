@@ -1,7 +1,5 @@
 <script setup lang="ts">
-    import recreativo from '../../jsons/recreativo.json';
-    import pedagogico from '../../jsons/pedagogico.json';
-    import comms from '../../jsons/comms.json';
+    import members from '../../jsons/members.json';
     import MemberList from './MemberList.vue';
 </script>
 
@@ -26,7 +24,7 @@
                     Para além disto, este é também responsável por gerir o <b>servidor do Discord</b>
                     e outros eventos online.
                 </p>
-                <MemberList :members="recreativo.members" />
+                <MemberList :members="members.recr" />
             </div>
 
             <div>
@@ -39,7 +37,7 @@
                     <b>palestras</b> e outros eventos educativos para discutir temas de grande importância
                     com pessoas conhecedoras dos mesmos.
                 </p>
-                <MemberList :members="pedagogico.members" />
+                <MemberList :members="members.ped" />
             </div>
 
             <div>
@@ -60,7 +58,7 @@
                     </b>
                     cuja venda ajuda a financiar o Clube e as suas atividades.
                 </p>
-                <MemberList :members="comms.members" />
+                <MemberList :members="members.comms" />
             </div>
         </div>
     </div>

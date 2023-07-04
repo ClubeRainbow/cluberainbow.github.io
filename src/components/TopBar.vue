@@ -11,11 +11,11 @@
 
   addEventListener("resize", () => { windowWidth.value = window.innerWidth});
   
-  const redirect = (dest: string) => {
+  const redirect = (dest: string, scroll?: string) => {
     if (router.currentRoute.value.name === dest)
-        emit('close')
+        emit('close', scroll)
     else
-        router.push({name: dest})
+        router.push({name: dest, hash: scroll})
   }
 </script>
 
@@ -37,13 +37,13 @@
             </button>
 
             <div v-if="about_options" class="sub_section">
-                <button class="sub_option" @click="">
+                <button class="sub_option" @click="redirect('about')">
                     Sobre o Clube Rainbow
                 </button>
-                <button class="sub_option" @click="">
+                <button class="sub_option" @click="redirect('about', '#depts')">
                     Departamentos
                 </button>
-                <button class="sub_option rounded-b-lg" @click="" @focusout="about_options=false">
+                <button class="sub_option rounded-b-lg" @click="redirect('about', '#partners')" @focusout="about_options=false">
                     Parcerias
                 </button>
             </div>
@@ -59,13 +59,13 @@
             </button>
 
             <div v-if="info_options" class="sub_section">
-                <button class="sub_option" @click="">
+                <button class="sub_option" @click="redirect('info')">
                     Calendário
                 </button>
-                <button class="sub_option" @click="">
+                <button class="sub_option" @click="redirect('info', '#apps')">
                     Candidaturas
                 </button>
-                <button class="sub_option rounded-b-lg" @click="" @focusout="info_options=false">
+                <button class="sub_option rounded-b-lg" @click="redirect('info', '#faq')" @focusout="info_options=false">
                     FAQ
                 </button>
             </div>

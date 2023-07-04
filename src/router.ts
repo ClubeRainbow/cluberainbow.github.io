@@ -35,7 +35,14 @@ export const router = createRouter({
     },
   ],
   scrollBehavior(to, from, savedPosition) {
-    // always scroll to top
-    return { top: 0 }
+    // scroll to element
+    if (to.hash) {
+      return {
+        el: to.hash,
+        behavior: 'smooth',
+      }
+    }
+    // scroll to top
+    else return { top: 0 }
   },
 });

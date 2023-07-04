@@ -3,7 +3,7 @@
     "candidaturas": {
         "open" : true,
         "timelimit" : "xx/xx/xxxx",
-        "deps" : ["recr", "ped", "comms"],
+        "depts" : ["recr", "ped", "comms"],
         "recr_link" : "https://google.com",
         "ped_link" : "https://google.com",
         "comms_link" : "https://google.com"
