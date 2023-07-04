@@ -13,16 +13,9 @@
     async () => { show_options.value = false }
   );
 
-  const delay = (ms: number) => new Promise(res => setTimeout(res, ms));
-
   const scrollTo = async (scroll: string) => {
     show_options.value = false
-    if (scroll) {
-      await delay(10)
-      document.querySelector(scroll)?.scrollIntoView({ behavior: 'smooth' })
-    }
-    else 
-      document.querySelector('#topbar')?.scrollIntoView({ block: 'end' })
+    router.push({hash: scroll ? scroll : ''})
   }
 </script>
 
