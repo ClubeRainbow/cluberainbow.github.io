@@ -7,7 +7,7 @@
     <div class="flex flex-col gap-8">
         
         <div id="clube" class="flex flex-col gap-4">
-            <p class="text-4xl font-shrikhand font-normal text-outline-white whitespace-nowrap">
+            <p class="text-4xl font-shrikhand font-normal text-outline-white">
                 Sobre o Clube Rainbow
             </p>
             <p>

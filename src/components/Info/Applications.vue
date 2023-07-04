@@ -19,7 +19,7 @@
 <template>
     <div class="flex flex-col gap-4">
 
-        <p class="text-4xl font-shrikhand font-normal text-outline-white whitespace-nowrap">
+        <p class="text-4xl font-shrikhand font-normal text-outline-white">
             Candidaturas
         </p>
 
@@ -79,6 +79,7 @@
 <style scoped>
     .dept_btn {
         @apply border-2 rounded-md py-2 px-4
+        flex items-center justify-center
         font-shrikhand font-normal text-xl lg:text-2xl text-center align-middle
         hover:brightness-125 focus:brightness-125
     }
