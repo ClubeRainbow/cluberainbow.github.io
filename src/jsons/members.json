@@ -1,4 +1,13 @@
 {
+    "direçao": {
+
+    },
+    "mesa": {
+
+    },
+    "fiscal": {
+
+    },
     "recr": [
         {
           "name": "Bruno Gião", 
@@ -6,13 +15,6 @@
           "contacts": {
             "insta": "gr3ybrun1x",
             "discord": "greybrunix#3889"
-          }
-        },
-        {
-          "name": "Ezra", 
-          "pronouns": "he/they",
-          "contacts": {
-            "discord": "haz#0535"
           }
         },
         {

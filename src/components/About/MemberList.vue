@@ -14,6 +14,7 @@
     }
 
     interface Member {
+        role?: string,
         name: string,
         pronouns?: string,
         contacts?: {
@@ -29,9 +30,9 @@
 </script>
 
 <template>
-    <div class="mb-2">
+    <div>
         <button class="flex flex-row items-center gap-1.5 hover:brightness-125 focus:brightness-125" @click="toggleMemberList(members)">
-            <p class="font-shrikhand font-normal">
+            <p class="font-shrikhand font-normal text-lg">
                 Membros
             </p>
             <img src="../../assets/arrow_down.svg" alt="toggle list" class="h-3 w-3" :class="{ 'rotate-180' : show_members }"/>
