@@ -69,7 +69,7 @@
         </button>
 
         <button class="mobile_menu_option" @click="redirect('resources')">
-            Recursos
+            Recursos Úteis
         </button>
 
         <button class="mobile_menu_option" @click="redirect('contacts')">

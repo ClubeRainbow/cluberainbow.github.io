@@ -84,7 +84,7 @@
         <button class="topbar_option hover:bg-[rgba(0,180,110,0.25)] focus:bg-[rgba(0,180,110,0.25)]"
             :class="{ 'bg-[rgba(0,180,110,0.25)]' : router.currentRoute.value.name === 'resources'}" 
             @click="redirect('resources')">
-            Recursos
+            Recursos Úteis
         </button>
 
         <button class="topbar_option hover:bg-[rgba(40,0,190,0.25)] focus:bg-[rgba(40,0,190,0.25)]" 
