@@ -21,9 +21,9 @@
                 <p class="text-2xl font-shrikhand font-normal text-outline-white">
                     Próximo Evento:
                 </p>
-                <a class="mx-auto md:mx-0" :href="next_event.link" target="_blank">
+                <button class="mx-auto md:mx-0" :href="next_event.link" target="_blank">
                     <img :src="next_event.img" alt="próximo evento" class="max-w-96 max-h-96 border-2 rounded-xl" />
-                </a>
+                </button>
             </div>
             
             <div class="flex flex-col gap-2">

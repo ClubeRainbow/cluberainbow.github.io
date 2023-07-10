@@ -52,4 +52,10 @@
     ::placeholder {
         @apply text-cr-brown opacity-70
     }
+
+    .custom_btn {
+        @apply w-full xs:w-10/12 bg-cr-red-beige border-2 rounded-lg p-2 
+        text-2xl font-shrikhand font-normal
+        hover:brightness-110 focus:brightness-110
+    }
 </style>

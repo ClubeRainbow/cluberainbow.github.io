@@ -10,7 +10,10 @@
         @apply bg-cr-beige font-comic-neue font-semibold text-cr-brown;
     }
     b { 
-        @apply text-black 
+        @apply bg-cr-red-beige
+    }
+    a {
+        @apply hover:brightness-125 focus:brightness-125 hover:underline focus:underline
     }
 }
 
@@ -32,10 +35,7 @@
             -1px 1px 0 white,
             1px 1px 0 white;
     }
-    .custom_btn {
-        @apply w-full xs:w-10/12 bg-cr-red-beige border-2 rounded-lg p-2 
-        text-2xl font-shrikhand font-normal
-        hover:brightness-110
-        focus:brightness-110
+    .click {
+        @apply underline brightness-125 hover:brightness-100 focus:brightness-100
     }
 }

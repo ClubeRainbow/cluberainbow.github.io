@@ -88,8 +88,4 @@ import associations_json from '../jsons/associations.json';
     .item {
         @apply flex items-center gap-1 
     }
-
-    a {
-        @apply hover:brightness-110 hover:underline focus:brightness-110 focus:underline
-    }
 </style>

@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import Divider from '../components/Divider.vue';
 import ContactIcons from '../components/ContactIcons.vue';
 </script>
 
@@ -8,13 +7,13 @@ import ContactIcons from '../components/ContactIcons.vue';
 
         <div class="my-auto border-2 rounded-xl drop-shadow-lg bg-cr-beige w-full md:w-[600px] p-8 flex flex-col gap-y-4">
 
-            <p class="text-4xl font-shrikhand font-normal">
+            <p class="text-4xl font-shrikhand font-normal text-outline-white">
                 Clube Rainbow
             </p>
 
-            <div>
-                <p>
-                    <b>Bem vinde ao Clube Rainbow!</b> 🏳‍🌈
+            <div class="flex flex-col gap-2">
+                <p class="text-xl font-shrikhand font-normal">
+                    Bem vinde ao Clube Rainbow! 🌈
                 </p>
 
                 <p>
@@ -24,47 +23,45 @@ import ContactIcons from '../components/ContactIcons.vue';
                 </p>
 
                 <p>
-                    Organizamos vários encontros, palestras, e outros eventos sobre os quais te podes manter a par
+                    Organizamos vários <b>encontros, palestras, e outros eventos</b> sobre os quais te podes manter a par
                     através da nossa página de Instagram e/ou Discord. 
                 </p>
 
                 <p>
                     Qualquer dúvida,
-                    <button class="text-black hover:text-cr-brown" @click="$router.push({ name: 'contacts' })">
-                        <u>não hesites em nos contactar!</u>
+                    <button class="click" @click="$router.push({ name: 'contacts' })">
+                        não hesites em nos contactar!
                     </button>
                 </p>
             </div>
 
-            <Divider />
+            <hr class="border my-2">
 
-            <p>
-                Caso queiras saber mais sobre as nossas atividades, podes consultar o nosso
-                <a class="text-black hover:text-cr-brown" href="https://www.instagram.com/clube.rainbow/"
-                    target="_blank">
-                    <u>Instagram</u>
-                </a>
-                ou clicar no botão abaixo!
+            <p class="text-xl font-shrikhand font-normal">
+                Que eventos organizam?
             </p>
 
-            <div class="flex justify-center">
-                <button class="custom_btn" @click="$router.push({ name: 'info' })">
-                    Informações
-                </button>
-            </div>
-
-            <Divider />
-
             <p>
-                Caso estejas à procura de <b>apoio ou recursos informativos</b>, consulta a nossa secção de recursos!
-                Lá também estão disponíveis os contactos de várias organizações portuguesas que te poderão ajudar.
+                Caso queiras saber mais sobre os nossos eventos e atividades, podes acompanhar o nosso
+                <a class="click" href="https://www.instagram.com/clube.rainbow/" target="_blank">
+                    Instagram</a>
+                ou consultar a nossa
+                <button class="click" @click="$router.push({ name: 'info' })">
+                    página de informações!
+                </button>
             </p>
 
-            <div class="flex justify-center">
-                <button class="custom_btn" @click="$router.push({ name: 'resources' })">
-                    Recursos Úteis
+            <p class="text-xl font-shrikhand font-normal">
+                Preciso de ajuda...
+            </p>
+
+            <p>
+                Caso estejas à procura de <b>apoio ou recursos informativos</b>, consulta a nossa 
+                <button class="click" @click="$router.push({ name: 'resources' })">
+                    secção de recursos úteis!
                 </button>
-            </div>
+                Lá estão disponíveis os contactos de várias organizações portuguesas que te poderão ajudar.
+            </p>
 
         </div>
 

@@ -1,12 +1,11 @@
 <script setup lang="ts">
-    import Divider from '../components/Divider.vue';
-    import Slides from '../components/Merch/Slides.vue';
+import Slides from '../components/Merch/Slides.vue';
 </script>
 
 <template>
     <div class="flex flex-col gap-4">
         
-        <p class="text-4xl font-shrikhand font-normal text-outline-white whitespace-nowrap">
+        <p class="text-4xl font-shrikhand font-normal text-outline-white">
             Autocolantes
         </p>
 
@@ -43,7 +42,7 @@
                     <p>
                         <span class="font-shrikhand font-normal">Design: </span>
                         Lee -
-                        <a class="hover:underline" href="https://www.instagram.com/mr_apple.pie" target="_blank">
+                        <a href="https://www.instagram.com/mr_apple.pie" target="_blank">
                             @mr_apple.pie
                         </a>
                     </p>

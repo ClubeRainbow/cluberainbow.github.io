@@ -25,15 +25,15 @@
 
 <template>
     <div class="relative sm:text-lg">
-        <a href="https://discord.gg/5Z9YshrZah" target="_blank">
+        <button href="https://discord.gg/5Z9YshrZah" target="_blank">
             <img src="../assets/icon_discord.svg" alt="discord" :class="size" />
             <span v-if="text" class="text-outline-white">discord.gg/5Z9YshrZah</span>
-        </a>
+        </button>
 
-        <a href="https://www.instagram.com/clube.rainbow/" target="_blank">
+        <button href="https://www.instagram.com/clube.rainbow/" target="_blank">
             <img src="../assets/icon_insta.svg" alt="instagram" :class="size" />
             <span v-if="text" class="text-outline-white">@clube.rainbow</span>
-        </a>
+        </button>
         
         <button @click="clickEmail(text)" 
             @mouseover="hover_email=true" @mouseleave="hover_email=false" 

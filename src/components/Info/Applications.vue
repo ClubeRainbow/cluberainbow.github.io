@@ -45,10 +45,9 @@
                     Mais informações estarão disponíveis nos formulários -  
                     <b>
                         qualquer dúvida não hesites em nos 
-                        <button class="underline hover:text-cr-brown" @click="">
+                        <button class="click" @click="$router.push({ name: 'contacts' })">
                             contactar
-                        </button>
-                        <span>!</span>
+                        </button>!
                     </b>
                 </p>
 
@@ -61,18 +60,18 @@
 
 
             <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-1 gap-4">
-                <a v-if="cand.depts.includes('recr')" :href="cand.recr_link" target="_blank"
+                <button v-if="cand.depts.includes('recr')" :href="cand.recr_link" target="_blank"
                     class="dept_btn text-cr-purple bg-cr-light-purple">
                     Dept. Recreativo
-                </a>
-                <a v-if="cand.depts.includes('ped')" :href="cand.ped_link" target="_blank"
+                </button>
+                <button v-if="cand.depts.includes('ped')" :href="cand.ped_link" target="_blank"
                     class="dept_btn text-cr-orange bg-cr-light-orange">
                     Dept. Pedagógico
-                </a>
-                <a v-if="cand.depts.includes('comms')" :href="cand.comms_link" target="_blank"
+                </button>
+                <button v-if="cand.depts.includes('comms')" :href="cand.comms_link" target="_blank"
                     class="dept_btn text-cr-teal bg-cr-light-teal">
                     Dept. Comunicação
-                </a>
+                </button>
             </div>
 
         </div>

@@ -50,7 +50,7 @@
                         sobre temas relacionados com a comunidade LGBT+
                     </p>
                     <p>
-                        Para além disto, este é também responsável por gerir o <b>servidor do Discord</b>
+                        Para além disto, este é também responsável por gerir o nosso <b>servidor do Discord</b>
                         e outros eventos online.
                     </p>
                     <MemberList :members="members.recr" />
@@ -87,7 +87,7 @@
                         A equipa de design deste departamento ajuda também no
                         <b>
                             desenvolvimento de
-                            <button class="underline hover:text-cr-brown" @click="$router.push({ name: 'merch' })">
+                            <button class="click" @click="$router.push({ name: 'merch' })">
                                 merch
                             </button>
                         </b>

@@ -31,7 +31,7 @@
 
 <template>
     <div>
-        <button class="flex flex-row items-center gap-1.5 hover:brightness-125 focus:brightness-125" @click="toggleMemberList(members)">
+        <button class="flex flex-row items-center gap-1.5" @click="toggleMemberList(members)">
             <p class="font-shrikhand font-normal text-lg">
                 Membros
             </p>
@@ -48,7 +48,7 @@
                         {{ member.pronouns ? '('+member.pronouns+')' : '' }}
                     </p>
                     <p>
-                        <a v-if="member.contacts?.insta" class="hover:underline" :href="'https://www.instagram.com/' + member.contacts.insta" target="_blank">
+                        <a v-if="member.contacts?.insta" :href="'https://www.instagram.com/' + member.contacts.insta" target="_blank">
                             @{{ member.contacts?.insta }}
                         </a>
                         <span v-if="member.contacts?.insta && member.contacts?.discord"> / </span>
@@ -61,6 +61,9 @@
 </template>
 
 <style scoped>
+    button {
+        @apply hover:brightness-125 focus:brightness-125 hover:underline focus:underline
+    }
     .v-enter-active, .v-leave-active {
         max-height: v-bind(list_size);
         transition: max-height 0.5s ease;
