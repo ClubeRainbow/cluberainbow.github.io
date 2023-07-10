@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import ContactIcons from '../components/ContactIcons.vue';
+import info from '../jsons/info.json';
 </script>
 
 <template>
@@ -40,25 +41,29 @@ import ContactIcons from '../components/ContactIcons.vue';
             </p>
 
             <p>
-                Caso queiras saber mais sobre os nossos eventos e atividades, podes acompanhar o nosso
+                Queres saber mais sobre os nossos eventos e atividades? Segue o nosso
                 <a class="click" href="https://www.instagram.com/clube.rainbow/" target="_blank">
                     Instagram</a>
-                ou consultar a nossa
+                ou consulta a nossa
                 <button class="click" @click="$router.push({ name: 'info' })">
                     página de informações!
                 </button>
             </p>
 
             <p class="text-xl font-shrikhand font-normal">
-                Preciso de ajuda...
+                Como posso ajudar?
             </p>
 
             <p>
-                Caso estejas à procura de <b>apoio ou recursos informativos</b>, consulta a nossa 
-                <button class="click" @click="$router.push({ name: 'resources' })">
-                    secção de recursos úteis!
-                </button>
-                Lá estão disponíveis os contactos de várias organizações portuguesas que te poderão ajudar.
+                Caso queiras ajudar na organização das atividades do Clube, podes candidatar-te a 
+                um dos nossos 
+                <button class="click" @click="$router.push({name: 'about', hash: '#depts'})">
+                    departamentos
+                </button>, dependendo daquilo que gostarias de ajudar com.
+                Atualmente, as <b>candidaturas estão 
+                <button class="click" @click="$router.push({name: 'info', hash: '#apps'})">
+                    {{ info.candidaturas.open ? 'abertas' : 'fechadas' }}
+                </button>.</b>
             </p>
 
         </div>

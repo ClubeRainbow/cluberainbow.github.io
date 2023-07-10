@@ -13,7 +13,7 @@
         @apply bg-cr-red-beige
     }
     a {
-        @apply hover:brightness-125 focus:brightness-125 hover:underline focus:underline
+        @apply hover:brightness-110 focus:brightness-110 hover:underline focus:underline
     }
 }
 
