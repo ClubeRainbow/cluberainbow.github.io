@@ -4,45 +4,57 @@
             "name": "Rede Ex Aequo",
             "desc": "Associação de jovens LGBTI e apoiantes",
             "logo": "/associations/logo_rea.webp",
-            "page": "www.rea.pt",
+            "page": "https://rea.pt/",
             "insta": "redeexaequo",
-            "email": "geral@rea.pt / educacao@rea.pt (Projeto Educação LGBTI)",
+            "email": "geral@rea.pt/educacao@rea.pt (Projeto Educação)",
             "phone": "968 781 841",
-            "location": "",
-            "schedule": ""
-        },
-        {
-            "name": "Bússola",
-            "desc": "Serviço de atendimento a pessoas LGBTI+ e famílias",
-            "logo": "/associations/logo_bussola.webp",
-            "page": "www.somoscpf.pt/projeto-bussola",
-            "insta": "bussola.cpf",
-            "email": "bussola@somoscpf.pt",
-            "phone": "253 559 130",
-            "location": "Largo Casa do Povo, 4800-096 Fermentões, Guimarães",
-            "schedule": "Quartas, 14h-19h"
-        },
-        {
-            "name": "Centro Gis",
-            "desc": "Estrutura de atendimento e apoio a pessoas LGBTI",
-            "logo": "/associations/logo_gis.webp",
-            "page": "www.associacaoplanoi.org/centrogis",
-            "insta": "centro_gis",
-            "email": "gis@associacaoplanoi.org",
-            "phone": "966 090 117",
-            "location": "Rua Brito Capelo, 223 4450-041 Matosinhos",
-            "schedule": "Segunda à sexta, 10h-13h e 14h-18h"
+            "useful_links": [
+                {
+                    "desc": "Guia Trans",
+                    "link": "https://rea.pt/apoio/guia-trans"
+                },
+                {
+                    "desc": "Projeto Educação",
+                    "link": "https://rea.pt/educacao/apresentacao"
+                }
+            ]
         },
         {
             "name": "AMPLOS",
             "desc": "Associação de Mães e Pais pela Liberdade de Orientação Sexual e Identidade de Género",
             "logo": "/associations/logo_amplos.webp",
-            "page": "amplos.pt",
+            "page": "https://www.amplos.pt/",
             "insta": "amplos.bo",
             "email": "amplos.bo@gmail.com",
             "phone": "918 820 063",
-            "location": "",
-            "schedule": ""
+            "useful_links": [
+                {
+                    "desc": "Guias AMPLOS para famílias e comunidades",
+                    "link": "https://www.amplos.pt/recursos/guias"
+                }
+            ]
+        },
+        {
+            "name": "Bússola",
+            "desc": "Serviço de atendimento a pessoas LGBTI+ e famílias",
+            "logo": "/associations/logo_bussola.webp",
+            "page": "https://www.somoscpf.pt/projeto-bussola",
+            "insta": "bussola.cpf",
+            "email": "bussola@somoscpf.pt",
+            "phone": "253 559 130",
+            "location": "Largo Casa do Povo, 4800-096 Fermentões, Guimarães",
+            "schedule": "Aberto quartas, 14h-19h"
+        },
+        {
+            "name": "Centro Gis",
+            "desc": "Estrutura de atendimento e apoio a pessoas LGBTI",
+            "logo": "/associations/logo_gis.webp",
+            "page": "https://www.associacaoplanoi.org/centrogis",
+            "insta": "centro_gis",
+            "email": "gis@associacaoplanoi.org",
+            "phone": "966 090 117",
+            "location": "Rua Brito Capelo, 223 4450-041 Matosinhos",
+            "schedule": "Aberto segunda à sexta, 10h-13h e 14h-18h"
         }
     ]
 }

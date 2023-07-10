@@ -6,62 +6,90 @@ import associations_json from '../jsons/associations.json';
     <div class="flex flex-col gap-4">
         
         <p class="text-4xl font-shrikhand font-normal text-outline-white whitespace-nowrap">
-            Associações
+            Recursos Úteis
         </p>
 
         <div class="flex flex-col gap-6 mx-auto">
             <div v-for="(ass, i) in associations_json.associations" :key="i" 
-                class="flex gap-6 p-8 border-2 rounded-xl drop-shadow-lg bg-cr-beige">
+                class="flex flex-wrap md:flex-nowrap gap-6 p-8 border-2 rounded-xl drop-shadow-lg bg-cr-beige">
                 
-                <a class="h-fit" :href="ass.page" target="_blank">
+                <a class="h-fit mx-auto md:mx-0" :href="ass.page" target="_blank">
                     <img :src="ass.logo" :alt="ass.name" class="max-h-40 border-2 rounded-xl" />
                 </a>
                 
-                <div class="flex flex-col gap-2">
-                    <p class="text-2xl font-shrikhand font-normal text-outline-white">
-                        {{ ass.name }}
-                    </p>
+                <div class="flex flex-col gap-2 w-full">
+
+                    <a class="flex gap-2 items-center" :href="ass.page" target="_blank">
+                        <p class="text-2xl font-shrikhand font-normal text-outline-white">
+                            {{ ass.name }}
+                        </p>
+                        <img src="../assets/icon_email.svg" alt="link" class="h-6 w-6" />
+                    </a>
 
                     <p>
                         {{ ass.desc }}
                     </p>
 
-                    <div class="flex flex-col gap-1">
-                        <button v-if="ass.insta" class="contact" :href="'https://www.instagram.com/' + ass.insta" target="_blank">
-                            <img src="../assets/icon_insta.svg" alt="instagram" class="h-5 w-5" />
-                            <span>@{{ ass.insta }}</span>
-                        </button>
+                    <hr class="border w-full my-2">
+
+                    <div class="flex flex-wrap gap-y-2 gap-x-8">
                         
-                        <div v-if="ass.email" class="contact">
-                            <img src="../assets/icon_email.svg" alt="email" class="h-5 w-5" />
-                            <span>{{ ass.email }}</span>
+                        <div class="flex flex-col gap-1">
+                            <p class="text-xl font-shrikhand font-normal mb-1">
+                                Contactos:
+                            </p>
+
+                            <a v-if="ass.insta" class="item" :href="'https://www.instagram.com/' + ass.insta" target="_blank">
+                                <img src="../assets/icon_insta.svg" alt="instagram" class="h-5 w-5" />
+                                <span>@{{ ass.insta }}</span>
+                            </a>
+
+                            <template v-if="ass.email" >
+                                <div v-for="(email, i) in ass.email.split('/')" :key="i" class="item">
+                                    <img src="../assets/icon_email.svg" alt="email" class="h-5 w-5" />
+                                    <span>{{ email }}</span>
+                                </div>
+                            </template>
+
+                            <div v-if="ass.phone" class="item">
+                                <img src="../assets/icon_email.svg" alt="phone" class="h-5 w-5" />
+                                <span>{{ ass.phone }}</span>
+                            </div>
                         </div>
-                        
-                        <div v-if="ass.phone" class="contact">
-                            <img src="../assets/icon_email.svg" alt="email" class="h-5 w-5" />
-                            <span>{{ ass.phone }}</span>
+
+                        <div v-if="ass.location && ass.schedule" class="flex flex-col gap-1">
+                            <p class="text-xl font-shrikhand font-normal mb-1">
+                                Local & Horário:
+                            </p>
+                            <p>{{ ass.location }}</p>
+                            <p>{{ ass.schedule }}</p>
                         </div>
+
+                        <div v-if="ass.useful_links" class="flex flex-col gap-1">
+                            <p class="text-xl font-shrikhand font-normal mb-1">
+                                Links Úteis:
+                            </p>
+                            <a v-for="(link, i) in ass.useful_links" :key="i" class="item" :href="link.link" target="_blank">
+                                <img src="../assets/icon_email.svg" alt="link" class="h-5 w-5" />
+                                <span>{{ link.desc }}</span>
+                            </a>
+                        </div>
+
                     </div>
 
-                    <div class="flex flex-col">
-                        <p v-if="ass.location"><b>Local:</b> {{ ass.location }}</p>
-                        <p v-if="ass.schedule"><b>Horário:</b> {{ ass.schedule }}</p>
-                    </div>
                 </div>
-                
             </div>
         </div>
-
 
     </div>
 </template>
 
 <style scoped>
-    .contact {
+    .item {
         @apply flex items-center gap-1 
     }
 
-    button, a {
+    a {
         @apply hover:brightness-110 hover:underline focus:brightness-110 focus:underline
     }
 </style>
