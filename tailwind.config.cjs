@@ -19,8 +19,11 @@ module.exports = {
       "cr-red-beige": "#e9c9b7",
       "cr-off-white": "#f8f5f2",
       "cr-purple": "#9b59b6",
+      "cr-light-purple": "#dfcae7",
       "cr-orange": "#e67e22",
+      "cr-light-orange": "#f6d1b1",
       "cr-teal": "#1abc9c",
+      "cr-light-teal": "#c6f6ee"
       },
       screens: {
         "xl-topbar": "1300px",

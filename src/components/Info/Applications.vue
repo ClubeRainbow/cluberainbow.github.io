@@ -61,13 +61,16 @@
 
 
             <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-1 gap-4">
-                <a v-if="cand.depts.includes('recr')" class="dept_btn text-outline-white text-cr-purple" :href="cand.recr_link" target="_blank">
+                <a v-if="cand.depts.includes('recr')" :href="cand.recr_link" target="_blank"
+                    class="dept_btn text-cr-purple bg-cr-light-purple">
                     Dept. Recreativo
                 </a>
-                <a v-if="cand.depts.includes('ped')" class="dept_btn text-outline-white text-cr-orange" :href="cand.ped_link" target="_blank">
+                <a v-if="cand.depts.includes('ped')" :href="cand.ped_link" target="_blank"
+                    class="dept_btn text-cr-orange bg-cr-light-orange">
                     Dept. Pedagógico
                 </a>
-                <a v-if="cand.depts.includes('comms')" class="dept_btn text-outline-white text-cr-teal" :href="cand.comms_link" target="_blank">
+                <a v-if="cand.depts.includes('comms')" :href="cand.comms_link" target="_blank"
+                    class="dept_btn text-cr-teal bg-cr-light-teal">
                     Dept. Comunicação
                 </a>
             </div>
@@ -81,6 +84,6 @@
         @apply border-2 rounded-md py-2 px-4
         flex items-center justify-center
         font-shrikhand font-normal text-xl lg:text-2xl text-center align-middle
-        hover:brightness-125 focus:brightness-125
+        hover:brightness-110 focus:brightness-110
     }
 </style>
