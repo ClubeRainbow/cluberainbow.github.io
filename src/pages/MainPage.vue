@@ -11,29 +11,27 @@ import ContactIcons from '../components/ContactIcons.vue';
                 Clube Rainbow
             </p>
 
-            <div class="flex flex-col gap-2">
-                <p class="text-xl font-shrikhand font-normal">
-                    Bem vinde ao Clube Rainbow! 🌈
-                </p>
+            <p class="text-xl font-shrikhand font-normal">
+                Bem vinde ao Clube Rainbow! 🌈
+            </p>
 
-                <p>
-                    Somos uma iniciativa formada por estudantes da Universidade do Minho com o objetivo de <b>promover
-                    a educação sobre temas LGBT+ e o convívio entre a comunidade</b>. Garantimos assim que existe um
-                    espaço para nós disponível todo o ano.
-                </p>
+            <p>
+                Somos uma iniciativa formada por estudantes da Universidade do Minho com o objetivo de <b>promover
+                a educação sobre temas LGBT+ e o convívio entre a comunidade</b>. Garantimos assim que existe um
+                espaço para nós disponível todo o ano.
+            </p>
 
-                <p>
-                    Organizamos vários <b>encontros, palestras, e outros eventos</b> sobre os quais te podes manter a par
-                    através da nossa página de Instagram e/ou Discord. 
-                </p>
+            <p>
+                Organizamos vários <b>encontros, palestras, e outros eventos</b> sobre os quais te podes manter a par
+                através da nossa página de Instagram e/ou Discord. 
+            </p>
 
-                <p>
-                    Qualquer dúvida,
-                    <button class="click" @click="$router.push({ name: 'contacts' })">
-                        não hesites em nos contactar!
-                    </button>
-                </p>
-            </div>
+            <p>
+                Qualquer dúvida,
+                <button class="click" @click="$router.push({ name: 'contacts' })">
+                    não hesites em nos contactar!
+                </button>
+            </p>
 
             <hr class="border my-2">
 
