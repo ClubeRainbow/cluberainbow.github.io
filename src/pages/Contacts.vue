@@ -4,8 +4,13 @@
 </script>
 
 <template>
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        <ContactInfo />
-        <ContactForm />
+    <div class="flex flex-col gap-4">
+        <p class="title">
+            Contactos
+        </p>
+        <div class="flex flex-col lg:flex-row gap-y-8 gap-x-12">
+            <ContactInfo />
+            <ContactForm /> 
+        </div>
     </div>
 </template>

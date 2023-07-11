@@ -3,19 +3,8 @@
 </script>
 
 <template>
-    <div class="flex flex-col flex-1">
-        <p class="title">
-            Contactos
-        </p>
-
-        <div class="my-auto">
-            <img src="../../assets/kaku2.png" alt="panda" class="mx-auto w-[300px] lg:max-w-[75%] lg:w-full"/>
-
-            <div class="w-full border-y-2 p-6">
-                <div class="flex items-center justify-center">
-                    <ContactIcons class="flex flex-col gap-3" size="h-8 w-8 md:h-10 md:w-10" :text="true" />
-                </div>
-            </div>
-        </div>
+    <div class="flex flex-wrap lg:flex-col gap-x-8 gap-y-4 justify-center items-center h-fit">
+        <img src="../../assets/kaku2.png" alt="panda" class="h-52 w-52 md:h-60 md:w-60 lg:h-72 lg:w-72 border-2 rounded-full"/>
+        <ContactIcons class="flex flex-col gap-3" size="h-8 w-8 md:h-10 md:w-10" :text="true" />
     </div>
 </template>
