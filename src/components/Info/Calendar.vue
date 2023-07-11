@@ -21,10 +21,10 @@
                 <p class="subtitle">
                     Próximo Evento:
                 </p>
-                <div class="mx-auto h-64 w-64 sm:h-72 sm:w-72 lg:h-96 lg:w-96 border-2 rounded-xl bg-cr-beige drop-shadow-lg flex items-center justify-center">
-                    <button v-if="next_event.link && next_event.img" :href="next_event.link" target="_blank">
+                <div class="mx-auto h-64 w-64 sm:h-72 sm:w-72 lg:h-96 lg:w-96 flex items-center justify-center border-2 rounded-xl bg-cr-beige drop-shadow-lg">
+                    <a v-if="next_event.link && next_event.img" :href="next_event.link" target="_blank" class="alt_highlight">
                         <img :src="next_event.img" alt="próximo evento" class="rounded-xl" />
-                    </button>
+                    </a>
                     <p v-else class="text-xl md:text-2xl font-shrikhand font-normal">
                         Em breve...
                     </p>
@@ -43,3 +43,9 @@
 
     </div>
 </template>
+
+<style scoped>
+    .alt_highlight {
+        @apply hover:brightness-100 focus:brightness-100
+    }
+</style>

@@ -25,15 +25,15 @@
 
 <template>
     <div class="relative">
-        <button href="https://discord.gg/5Z9YshrZah" target="_blank">
+        <a href="https://discord.gg/5Z9YshrZah" target="_blank">
             <img src="../assets/icon_discord.svg" alt="discord" :class="size" />
             <span v-if="text" class="text-outline-white">discord.gg/5Z9YshrZah</span>
-        </button>
+        </a>
 
-        <button href="https://www.instagram.com/clube.rainbow/" target="_blank">
+        <a href="https://www.instagram.com/clube.rainbow/" target="_blank">
             <img src="../assets/icon_insta.svg" alt="instagram" :class="size" />
             <span v-if="text" class="text-outline-white">@clube.rainbow</span>
-        </button>
+        </a>
         
         <button @click="clickEmail(text)" 
             @mouseover="hover_email=true" @mouseleave="hover_email=false" 
@@ -43,15 +43,15 @@
             <span v-if="text" class="text-outline-white">{{ email }}</span>
         </button>
 
-        <div v-if="text" class="absolute -bottom-3 left-0 right-0 mx-auto w-[100px] text-sm brightness-125 whitespace-nowrap">
-            <span v-if="copy_confirm">Email copiado!</span>
-            <span v-else-if="hover_email">Clica para copiar</span>
+        <div v-if="text" class="absolute -bottom-3 left-0 right-0 mx-auto w-[100px] brightness-125 whitespace-nowrap">
+            <span v-if="copy_confirm" class="text-xs md:text-sm">Email copiado!</span>
+            <span v-else-if="hover_email" class="text-xs md:text-sm">Clica para copiar</span>
         </div>
     </div>
 </template>
 
 <style scoped>
     a, button {
-        @apply flex items-center gap-2 hover:brightness-110 focus:brightness-110
+        @apply flex items-center gap-2 hover:brightness-110 focus:brightness-110 hover:no-underline focus:no-underline
     }
 </style>
