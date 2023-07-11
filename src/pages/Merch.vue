@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Slides from '../components/Merch/Slides.vue';
+import Stickers from '../components/Merch/Stickers.vue';
 </script>
 
 <template>
@@ -20,45 +20,17 @@ import Slides from '../components/Merch/Slides.vue';
             </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mx-auto mt-2">
+        <div class="flex flex-wrap gap-8 mx-auto mt-2">
 
-            <div class="flex flex-col gap-2 box py-4">
-                <Slides path="/stickers/flags/" :max="10" :shrink="true"/>
-                <div class="flex flex-col">
-                    <p class="subtitle">
-                        Bandeiras
-                    </p>
-                    <p>
-                        <span class="font-shrikhand font-normal">Preço: </span>
-                        0,50€
-                    </p>
-                    <p class="mt-1.5"> Bandeiras de várias identidades LGBTQIA+ </p>
-                    <p class="italic"> Disponível nos nossos eventos! </p>
-                </div>
-            </div>
+            <Stickers path="/stickers/flags/" :max="10" :shrink="true" 
+                title="Bandeiras" price="0,50€" 
+                desc="Bandeiras de várias identidades LGBTQIA+"
+                availability="Disponível nos nossos eventos!" />
 
-            <div class="flex flex-col gap-2 box py-4">
-                <Slides path="/stickers/kittens/" :max="11"/>
-                <div class="flex flex-col">
-                    <p class="subtitle">
-                        Gatinhos
-                    </p>
-                    <p>
-                        <span class="font-shrikhand font-normal">Design: </span>
-                        Lee -
-                        <a href="https://www.instagram.com/mr_apple.pie" target="_blank">
-                            @mr_apple.pie
-                        </a>
-                    </p>
-                    <p>
-                        <span class="font-shrikhand font-normal">Preço: </span>
-                        1€
-                    </p>
-                    <p class="mt-1.5"> Gatinhos com as cores de várias bandeiras LGBTQIA+ </p>
-                    <p class="italic"> Disponível nos nossos eventos! </p>
-                </div>
-            </div>
-
+            <Stickers path="/stickers/kittens/" :max="11"
+                title="Gatinhos" design="Lee@mr_apple.pie" price="1€" 
+                desc="Gatinhos com as cores de várias bandeiras LGBTQIA+"
+                availability="Disponível nos nossos eventos!" />
         </div>
         
     </div>
