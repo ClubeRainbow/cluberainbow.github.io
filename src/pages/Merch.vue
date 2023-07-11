@@ -28,6 +28,10 @@ import Slides from '../components/Merch/Slides.vue';
                     <p class="text-2xl font-shrikhand font-normal text-outline-white">
                         Bandeiras
                     </p>
+                    <p>
+                        <span class="font-shrikhand font-normal">Preço: </span>
+                        0,50€
+                    </p>
                     <p class="mt-1.5"> Bandeiras de várias identidades LGBTQIA+ </p>
                     <p class="italic"> Disponível nos nossos eventos! </p>
                 </div>
@@ -45,6 +49,10 @@ import Slides from '../components/Merch/Slides.vue';
                         <a href="https://www.instagram.com/mr_apple.pie" target="_blank">
                             @mr_apple.pie
                         </a>
+                    </p>
+                    <p>
+                        <span class="font-shrikhand font-normal">Preço: </span>
+                        1€
                     </p>
                     <p class="mt-1.5"> Gatinhos com as cores de várias bandeiras LGBTQIA+ </p>
                     <p class="italic"> Disponível nos nossos eventos! </p>

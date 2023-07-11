@@ -15,19 +15,24 @@
             Calendário
         </p>
 
-        <div class="flex flex-wrap gap-y-4 gap-x-12">  
-            
-            <div class="flex flex-col gap-2 w-full md:w-auto">
-                <p class="text-2xl font-shrikhand font-normal text-outline-white">
-                    Próximo Evento:
-                </p>
-                <button class="mx-auto md:mx-0" :href="next_event.link" target="_blank">
-                    <img :src="next_event.img" alt="próximo evento" class="max-w-96 max-h-96 border-2 rounded-xl" />
-                </button>
-            </div>
+        <div class="flex flex-col md:flex-row gap-y-4 gap-x-12">  
             
             <div class="flex flex-col gap-2">
                 <p class="text-2xl font-shrikhand font-normal text-outline-white">
+                    Próximo Evento:
+                </p>
+                <div class="mx-auto h-72 w-72 lg:h-96 lg:w-96 border-2 rounded-xl bg-cr-beige drop-shadow-lg flex items-center justify-center">
+                    <button v-if="next_event.link && next_event.img" :href="next_event.link" target="_blank">
+                        <img :src="next_event.img" alt="próximo evento" class="rounded-xl" />
+                    </button>
+                    <p v-else class="text-2xl font-shrikhand font-normal">
+                        Em breve...
+                    </p>
+                </div>
+            </div>
+            
+            <div class="flex flex-col gap-2">
+                <p class="text-2xl font-shrikhand font-normal text-outline-white md:whitespace-nowrap">
                     Publicações & Atividades:
                 </p>
                 <p>
