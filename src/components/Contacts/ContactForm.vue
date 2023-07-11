@@ -38,7 +38,7 @@
                 <input name="From:" v-model="email" type="email" placeholder="O teu email..." required>
             </div>
 
-            <textarea name="Message:" v-model="message" type="text" placeholder="A tua mensagem..." class="h-[250px] md:h-[200px] lg:h-full" required></textarea>
+            <textarea name="Message:" v-model="message" type="text" placeholder="A tua mensagem..." class="h-[250px] md:h-[200px] lg:h-min-[150px]" required></textarea>
 
             <button class="custom_btn mt-2" type="submit">
                 Enviar

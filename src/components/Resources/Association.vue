@@ -1,4 +1,9 @@
 <script setup lang="ts">
+    interface UsefulLink {
+        desc: string,
+        link: string
+    }
+    
     interface Props {
         ass: {
             name: string,
@@ -10,10 +15,7 @@
             phone?: string,
             location?: string,
             schedule?: string,
-            useful_links?: {
-                desc: string,
-                link: string
-            }
+            useful_links?: UsefulLink[]
         }
     }
     defineProps<Props>();

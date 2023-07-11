@@ -13,12 +13,12 @@ import info from '../jsons/info.json';
             </p>
 
             <p class="subsubtitle">
-                Bem vinde ao Clube Rainbow! 🌈
+                Bem vinde ao Clube <span class="subsubtitle whitespace-nowrap">Rainbow! 🌈</span>
             </p>
 
             <p>
                 Somos uma iniciativa formada por estudantes da Universidade do Minho com o objetivo de <b>promover
-                a educação sobre temas LGBT+ e o convívio entre a comunidade</b>. Garantimos assim que existe um
+                a educação sobre temas LGBTQIA+ e o convívio entre a comunidade</b>. Garantimos assim que existe um
                 espaço para nós disponível todo o ano.
             </p>
 
@@ -34,7 +34,11 @@ import info from '../jsons/info.json';
                 </button>
             </p>
 
-            <hr class="border my-2">
+            <div class="flex items-center gap-2">
+                <hr class="border w-full">
+                ✦
+                <hr class="border w-full">
+            </div>
 
             <p class="subsubtitle">
                 Que eventos organizam?
@@ -51,15 +55,16 @@ import info from '../jsons/info.json';
             </p>
 
             <p class="subsubtitle">
-                Como posso ajudar?
+                Como posso fazer parte?
             </p>
 
             <p>
-                Caso queiras ajudar na organização das atividades do Clube, podes candidatar-te a 
+                Todes são bem vindes a participar nos eventos do Clube Rainbow,
+                mas caso queiras fazer parte da sua organização, deves candidatar-te a 
                 um dos nossos 
                 <button class="click" @click="$router.push({name: 'about', hash: '#depts'})">
-                    departamentos
-                </button>, dependendo daquilo que gostarias de ajudar com.
+                    departamentos.
+                </button>
                 Atualmente, as <b>candidaturas estão 
                 <button class="click" @click="$router.push({name: 'info', hash: '#apps'})">
                     {{ info.candidaturas.open ? 'abertas' : 'fechadas' }}
