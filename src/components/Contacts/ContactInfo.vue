@@ -4,7 +4,7 @@
 
 <template>
     <div class="flex flex-col flex-1">
-        <p class="text-4xl font-shrikhand font-normal text-outline-white">
+        <p class="title">
             Contactos
         </p>
 
@@ -13,7 +13,7 @@
 
             <div class="w-full border-y-2 p-6">
                 <div class="flex items-center justify-center">
-                    <ContactIcons class="flex flex-col gap-3" size="h-10 w-10" :text="true" />
+                    <ContactIcons class="flex flex-col gap-3" size="h-8 w-8 md:h-10 md:w-10" :text="true" />
                 </div>
             </div>
         </div>

@@ -27,7 +27,7 @@
 
     <div class="border-y-2 pt-16 pb-8" 
       :class="{ 'md:px-12 mx-8' : router.currentRoute.value.name === 'home' && !show_options,
-                'px-8 md:px-16 bg-cr-beige' : router.currentRoute.value.name !== 'home' || show_options }">
+                'px-8 md:px-24 bg-cr-beige' : router.currentRoute.value.name !== 'home' || show_options }">
       <MobileOptions v-if="show_options" @close="s => scrollTo(s)"/>
       <router-view v-else></router-view>
     </div>

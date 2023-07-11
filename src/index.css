@@ -15,9 +15,28 @@
     a {
         @apply hover:brightness-110 focus:brightness-110 hover:underline focus:underline
     }
+    p, span {
+        @apply text-sm md:text-base
+    }
 }
 
 @layer components {
+    .title {
+        @apply text-3xl md:text-4xl font-shrikhand font-normal text-outline-white
+    }
+
+    .subtitle {
+        @apply text-xl md:text-2xl font-shrikhand font-normal text-outline-white
+    }
+
+    .subsubtitle {
+        @apply text-lg md:text-xl font-shrikhand font-normal
+    }
+
+    .box {
+        @apply border-2 rounded-xl bg-cr-beige drop-shadow-lg py-4 md:py-6 px-6 md:px-8
+    }
+
     .topbar_option {
         @apply whitespace-nowrap font-shrikhand font-normal text-lg xl-topbar:text-xl text-outline-white 
         w-full rounded-t-lg

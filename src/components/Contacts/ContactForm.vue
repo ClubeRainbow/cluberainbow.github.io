@@ -12,8 +12,8 @@
 </script>
 
 <template>
-    <div class="border-2 rounded-xl bg-cr-beige drop-shadow-lg p-8 flex flex-col gap-3 flex-1">
-        <p class="text-3xl font-shrikhand font-normal">Fala connosco!</p>
+    <div class="flex flex-col gap-3 flex-1 box">
+        <p class="text-2xl md:text-3xl font-shrikhand font-normal">Fala connosco!</p>
         <div>
             <p> Se tiveres alguma questão ou recomendação está à vontade para entrar em contacto connosco! </p>
             <p> Podes fazê-lo via este formulário ou pelos contactos listados nesta página. </p>
@@ -42,7 +42,7 @@
 
 <style scoped>
     input, textarea, select {
-        @apply bg-cr-off-white w-full border-2 rounded-md py-1 px-2 resize-none
+        @apply bg-cr-off-white w-full border-2 rounded-md py-1 px-2 resize-none text-sm md:text-base
     }
 
     option {
@@ -54,8 +54,8 @@
     }
 
     .custom_btn {
-        @apply w-full xs:w-10/12 bg-cr-red-beige border-2 rounded-lg p-2 
-        text-2xl font-shrikhand font-normal
+        @apply w-full md:w-10/12 bg-cr-red-beige border-2 rounded-lg p-2 
+        text-xl md:text-2xl font-shrikhand font-normal
         hover:brightness-110 focus:brightness-110
     }
 </style>

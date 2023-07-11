@@ -4,7 +4,7 @@
 
 <template>
     <div class="flex flex-col gap-4">
-        <p class="text-4xl font-shrikhand font-normal text-outline-white">
+        <p class="title">
             Parcerias
         </p>
         <div class="flex flex-wrap justify-center md:justify-start items-center gap-4">

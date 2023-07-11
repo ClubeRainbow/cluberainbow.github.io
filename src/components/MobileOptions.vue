@@ -17,7 +17,7 @@
 </script>
 
 <template>
-    <div class="flex flex-col gap-1 w-full">
+    <div class="flex flex-col gap-2 w-full">
         <button class="mobile_menu_option" @click="redirect('home')">
             Página Inicial
         </button>

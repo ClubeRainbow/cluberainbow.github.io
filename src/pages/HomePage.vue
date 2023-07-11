@@ -4,15 +4,15 @@ import info from '../jsons/info.json';
 </script>
 
 <template>
-    <div class="flex flex-col-reverse items-center md:flex-row md:items-start md:justify-between gap-y-8 gap-x-12">
+    <div class="flex flex-col-reverse items-center md:flex-row md:items-start md:justify-between gap-y-6 gap-x-12">
 
-        <div class="my-auto border-2 rounded-xl drop-shadow-lg bg-cr-beige w-full md:w-[600px] p-8 flex flex-col gap-y-4">
+        <div class="my-auto w-full md:w-[600px] flex flex-col gap-y-4 box py-6">
 
-            <p class="text-4xl font-shrikhand font-normal text-outline-white">
+            <p class="title">
                 Clube Rainbow
             </p>
 
-            <p class="text-xl font-shrikhand font-normal">
+            <p class="subsubtitle">
                 Bem vinde ao Clube Rainbow! 🌈
             </p>
 
@@ -36,7 +36,7 @@ import info from '../jsons/info.json';
 
             <hr class="border my-2">
 
-            <p class="text-xl font-shrikhand font-normal">
+            <p class="subsubtitle">
                 Que eventos organizam?
             </p>
 
@@ -50,7 +50,7 @@ import info from '../jsons/info.json';
                 </button>
             </p>
 
-            <p class="text-xl font-shrikhand font-normal">
+            <p class="subsubtitle">
                 Como posso ajudar?
             </p>
 
@@ -68,7 +68,7 @@ import info from '../jsons/info.json';
 
         </div>
 
-        <ContactIcons class="shrink-0 flex -my-2 md:my-0 md:flex-col gap-4" size="h-10 w-10" />
+        <ContactIcons class="shrink-0 flex md:my-0 md:flex-col gap-4" size="h-10 w-10" />
 
     </div>
 </template>

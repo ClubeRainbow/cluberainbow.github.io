@@ -5,13 +5,13 @@ import associations_json from '../jsons/associations.json';
 <template>
     <div class="flex flex-col gap-4">
         
-        <p class="text-4xl font-shrikhand font-normal text-outline-white whitespace-nowrap">
+        <p class="title whitespace-nowrap">
             Recursos Úteis
         </p>
 
         <div class="flex flex-col gap-6 mx-auto">
             <div v-for="(ass, i) in associations_json.associations" :key="i" 
-                class="flex flex-wrap md:flex-nowrap gap-6 p-8 border-2 rounded-xl drop-shadow-lg bg-cr-beige">
+                class="flex flex-wrap md:flex-nowrap gap-6 box">
                 
                 <a class="h-fit mx-auto md:mx-0" :href="ass.page" target="_blank">
                     <img :src="ass.logo" :alt="ass.name" class="max-h-40 border-2 rounded-xl" />
@@ -20,7 +20,7 @@ import associations_json from '../jsons/associations.json';
                 <div class="flex flex-col gap-2 w-full">
 
                     <a class="flex gap-2 items-center" :href="ass.page" target="_blank">
-                        <p class="text-2xl font-shrikhand font-normal text-outline-white">
+                        <p class="subtitle">
                             {{ ass.name }}
                         </p>
                         <img src="../assets/icon_email.svg" alt="link" class="h-6 w-6" />
@@ -35,7 +35,7 @@ import associations_json from '../jsons/associations.json';
                     <div class="flex flex-wrap gap-y-2 gap-x-8">
                         
                         <div class="flex flex-col gap-1">
-                            <p class="text-xl font-shrikhand font-normal mb-1">
+                            <p class="subsubtitle mb-1">
                                 Contactos:
                             </p>
 
@@ -58,7 +58,7 @@ import associations_json from '../jsons/associations.json';
                         </div>
 
                         <div v-if="ass.location && ass.schedule" class="flex flex-col gap-1">
-                            <p class="text-xl font-shrikhand font-normal mb-1">
+                            <p class="subsubtitle mb-1">
                                 Local & Horário:
                             </p>
                             <p>{{ ass.location }}</p>
@@ -66,7 +66,7 @@ import associations_json from '../jsons/associations.json';
                         </div>
 
                         <div v-if="ass.useful_links" class="flex flex-col gap-1">
-                            <p class="text-xl font-shrikhand font-normal mb-1">
+                            <p class="subsubtitle mb-1">
                                 Links Úteis:
                             </p>
                             <a v-for="(link, i) in ass.useful_links" :key="i" class="item" :href="link.link" target="_blank">

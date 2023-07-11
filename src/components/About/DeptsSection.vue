@@ -5,7 +5,7 @@
 
 <template>
     <div class="flex flex-col gap-4">
-        <p class="text-4xl font-shrikhand font-normal text-outline-white">
+        <p class="title">
             Departamentos
         </p>
 
@@ -13,7 +13,7 @@
 
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
                 <div class="flex flex-col gap-2 h-min box">
-                    <p class="text-2xl font-shrikhand font-normal text-outline-white">
+                    <p class="subtitle">
                         Direção
                     </p>
                     <p>
@@ -21,7 +21,7 @@
                     </p>
                 </div>
                 <div class="flex flex-col gap-2 h-min box">
-                    <p class="text-2xl font-shrikhand font-normal text-outline-white">
+                    <p class="subtitle">
                         Mesa
                     </p>
                     <p>
@@ -29,7 +29,7 @@
                     </p>
                 </div>
                 <div class="flex flex-col gap-2 h-min box">
-                    <p class="text-2xl font-shrikhand font-normal text-outline-white">
+                    <p class="subtitle">
                         Conselho Fiscal
                     </p>
                     <p>
@@ -101,9 +101,3 @@
         </div>
     </div>
 </template>
-
-<style scoped>
-    .box {
-        @apply border-2 rounded-xl bg-cr-beige drop-shadow-lg py-6 px-12
-    }
-</style>

@@ -24,7 +24,7 @@
 </script>
 
 <template>
-    <div class="relative sm:text-lg">
+    <div class="relative">
         <button href="https://discord.gg/5Z9YshrZah" target="_blank">
             <img src="../assets/icon_discord.svg" alt="discord" :class="size" />
             <span v-if="text" class="text-outline-white">discord.gg/5Z9YshrZah</span>

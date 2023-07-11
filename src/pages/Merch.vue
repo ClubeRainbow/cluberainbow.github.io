@@ -5,7 +5,7 @@ import Slides from '../components/Merch/Slides.vue';
 <template>
     <div class="flex flex-col gap-4">
         
-        <p class="text-4xl font-shrikhand font-normal text-outline-white">
+        <p class="title">
             Autocolantes
         </p>
 
@@ -22,10 +22,10 @@ import Slides from '../components/Merch/Slides.vue';
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mx-auto mt-2">
 
-            <div class="flex flex-col gap-2 py-4 px-8 border-2 rounded-xl drop-shadow-lg bg-cr-beige">
+            <div class="flex flex-col gap-2 box py-4">
                 <Slides path="/stickers/flags/" :max="10" :shrink="true"/>
                 <div class="flex flex-col">
-                    <p class="text-2xl font-shrikhand font-normal text-outline-white">
+                    <p class="subtitle">
                         Bandeiras
                     </p>
                     <p>
@@ -37,10 +37,10 @@ import Slides from '../components/Merch/Slides.vue';
                 </div>
             </div>
 
-            <div class="flex flex-col gap-2 py-4 px-8 border-2 rounded-xl drop-shadow-lg bg-cr-beige">
+            <div class="flex flex-col gap-2 box py-4">
                 <Slides path="/stickers/kittens/" :max="11"/>
                 <div class="flex flex-col">
-                    <p class="text-2xl font-shrikhand font-normal text-outline-white">
+                    <p class="subtitle">
                         Gatinhos
                     </p>
                     <p>
