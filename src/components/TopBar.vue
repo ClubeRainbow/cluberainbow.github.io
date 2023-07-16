@@ -43,6 +43,9 @@
                 <button class="sub_option" @click="redirect('about', '#depts')">
                     Departamentos
                 </button>
+                <button class="sub_option" @click="redirect('about', '#dir')">
+                    Direção
+                </button>
                 <button class="sub_option rounded-b-lg" @click="redirect('about', '#partners')" @focusout="about_options=false">
                     Parcerias
                 </button>
@@ -62,11 +65,11 @@
                 <button class="sub_option" @click="redirect('info')">
                     Calendário
                 </button>
-                <button class="sub_option" @click="redirect('info', '#apps')">
-                    Candidaturas
-                </button>
-                <button class="sub_option rounded-b-lg" @click="redirect('info', '#faq')" @focusout="info_options=false">
+                <button class="sub_option" @click="redirect('info', '#faq')">
                     FAQ
+                </button>
+                <button class="sub_option rounded-b-lg" @click="redirect('info', '#apps')" @focusout="info_options=false">
+                    Candidaturas
                 </button>
             </div>
         </div>

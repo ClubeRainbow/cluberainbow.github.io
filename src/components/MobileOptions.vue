@@ -7,6 +7,7 @@
 
   const about_options = ref(false)
   const info_options = ref(false)
+  const list_size = ref('')
   
   const redirect = (dest: string, scroll?: string) => {
     if (router.currentRoute.value.name === dest)
@@ -23,7 +24,7 @@
         </button>
 
         <div>
-            <button class="mobile_menu_option sub_button" @click="about_options = !about_options">
+            <button class="mobile_menu_option sub_button" @click="about_options = !about_options; list_size='248px'">
                 Sobre Nós
                 <img src="../assets/arrow_down.svg" alt="toggle list" class="h-4 w-4" :class="{ 'rotate-180' : about_options }"/>
             </button>
@@ -36,6 +37,9 @@
                     <button class="sub_option" @click="redirect('about', '#depts')">
                         Departamentos
                     </button>
+                    <button class="sub_option" @click="redirect('about', '#dir')">
+                        Direção
+                    </button>
                     <button class="sub_option mb-4" @click="redirect('about', '#partners')">
                         Parcerias
                     </button>
@@ -44,7 +48,7 @@
         </div>
 
         <div>
-            <button class="mobile_menu_option sub_button" @click="info_options = !info_options">
+            <button class="mobile_menu_option sub_button" @click="info_options = !info_options; list_size='192px'">
                 Informações
                 <img src="../assets/arrow_down.svg" alt="toggle list" class="h-4 w-4" :class="{ 'rotate-180' : info_options }"/>
             </button>
@@ -54,11 +58,11 @@
                     <button class="sub_option mt-4" @click="redirect('info')">
                         Calendário
                     </button>
-                    <button class="sub_option" @click="redirect('info', '#apps')">
-                        Candidaturas
-                    </button>
-                    <button class="sub_option mb-4" @click="redirect('info', '#faq')">
+                    <button class="sub_option" @click="redirect('info', '#faq')">
                         FAQ
+                    </button>
+                    <button class="sub_option mb-4" @click="redirect('info', '#apps')">
+                        Candidaturas
                     </button>
                 </div>
             </Transition>
@@ -80,7 +84,7 @@
 
 <style scoped>
     .v-enter-active, .v-leave-active {
-        max-height: 192px;
+        max-height: v-bind(list_size);
         transition: max-height 0.5s ease;
         overflow: hidden;
     }

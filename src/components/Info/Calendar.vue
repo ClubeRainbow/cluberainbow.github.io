@@ -15,7 +15,7 @@
             Calendário
         </p>
 
-        <div class="flex flex-col md:flex-row gap-y-4 gap-x-12">  
+        <div class="flex flex-col md:flex-row gap-y-4 gap-x-16">  
             
             <div class="flex flex-col gap-2">
                 <p class="subtitle">

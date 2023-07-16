@@ -1,5 +1,6 @@
 <script setup lang="ts">
     import DeptsSection from '../components/About/DeptsSection.vue';
+    import DirSection from '../components/About/DirSection.vue';
     import PartnersSection from '../components/About/PartnersSection.vue';
 </script>
 
@@ -16,6 +17,7 @@
         </div>
         
         <DeptsSection id="depts" />
+        <DirSection id="dir" />
         <PartnersSection id="partners" />
     </div>
 </template>

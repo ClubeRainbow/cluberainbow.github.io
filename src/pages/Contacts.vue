@@ -11,7 +11,6 @@
         <div class="flex flex-col-reverse lg:flex-row gap-y-8 gap-x-16">
             <ContactForm /> 
             <ContactInfo />
-            
         </div>
     </div>
 </template>

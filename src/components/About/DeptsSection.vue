@@ -10,37 +10,10 @@
         </p>
 
         <div class="flex flex-col gap-8">
-
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                <div class="flex flex-col gap-2 h-min box">
-                    <p class="subtitle">
-                        Direção
-                    </p>
-                    <p>
-                        under construction
-                    </p>
-                </div>
-                <div class="flex flex-col gap-2 h-min box">
-                    <p class="subtitle">
-                        Mesa
-                    </p>
-                    <p>
-                        under construction
-                    </p>
-                </div>
-                <div class="flex flex-col gap-2 h-min box">
-                    <p class="subtitle">
-                        Conselho Fiscal
-                    </p>
-                    <p>
-                        under construction
-                    </p>
-                </div>
-            </div>
             
             <div class="flex flex-col md:flex-row gap-x-8 box">
                 <div class="flex flex-col gap-2">
-                    <p class="text-2xl lg:text-3xl font-shrikhand font-normal text-cr-purple text-outline-white">
+                    <p class="subtitle2 text-cr-purple">
                         Departamento Recreativo
                     </p>
                     <p>
@@ -60,7 +33,7 @@
 
             <div class="flex flex-col md:flex-row-reverse gap-x-8 box">
                 <div class="flex flex-col gap-2">
-                    <p class="text-2xl lg:text-3xl font-shrikhand font-normal text-cr-orange text-outline-white">
+                    <p class="subtitle2 text-cr-orange">
                         Departamento Pedagógico
                     </p>
                     <p>
@@ -76,7 +49,7 @@
 
             <div class="flex flex-col md:flex-row gap-x-8 box">
                 <div class="flex flex-col gap-2">
-                    <p class="text-2xl lg:text-3xl font-shrikhand font-normal text-cr-teal text-outline-white">
+                    <p class="subtitle2 text-cr-teal">
                         Departamento de Comunicação
                     </p>
                     <p>
