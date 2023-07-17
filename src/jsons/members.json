@@ -1,13 +1,49 @@
 {
-    "direçao": {
-
-    },
-    "mesa": {
-
-    },
-    "fiscal": {
-
-    },
+    "direçao": [
+      {
+        "name": "Vee",
+        "pronouns": "she/he",
+        "role": "Presidente"
+      },
+      {
+        "name": "Ezra",
+        "pronouns": "he/they",
+        "role": "Vice-presidente"
+      },
+      {
+        "name": "Bea",
+        "pronouns": "she/her",
+        "role": "Secretária"
+      }
+    ],
+    "mesa": [
+      {
+        "name": "Name",
+        "role": "Role"
+      },
+      {
+        "name": "Name",
+        "role": "Role"
+      },
+      {
+        "name": "Name",
+        "role": "Role"
+      }
+    ],
+    "fiscal": [
+      {
+        "name": "Name",
+        "role": "Role"
+      },
+      {
+        "name": "Name",
+        "role": "Role"
+      },
+      {
+        "name": "Name",
+        "role": "Role"
+      }
+    ],
     "recr": [
         {
           "name": "Bruno Gião", 
@@ -21,7 +57,6 @@
           "name": "Emanuel", 
           "pronouns": "he/she",
           "contacts": {
-            "insta": "emanuelgomesloureiro",
             "discord": "Bacalhau#1085"
           }
         },
@@ -122,7 +157,6 @@
           "name": "Tomé Azevedo", 
           "pronouns": "qualquer pronome",
           "contacts": {
-            "insta": "tomevazevedo",
             "discord": "Tomé#4735"
           }
         },

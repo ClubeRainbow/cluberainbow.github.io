@@ -24,7 +24,7 @@
     }
 
     interface Props {
-        members: Member[],
+        members: Member[]
     }
     defineProps<Props>();
 </script>
@@ -32,29 +32,38 @@
 <template>
     <div>
         <button class="flex flex-row items-center gap-1.5" @click="toggleMemberList(members)">
-            <p class="font-shrikhand font-normal text-lg">
+            <p class="font-shrikhand font-normal text-base md:text-lg">
                 Membros
             </p>
             <img src="../../assets/arrow_down.svg" alt="toggle list" class="h-3 w-3" :class="{ 'rotate-180' : show_members }"/>
         </button>
 
-        <Transition>
-            <div v-if="show_members" class="grid grid-cols-2 gap-4 mt-2 text-sm">
+        <Transition>     
+            <div v-if="show_members" class="grid grid-cols-2 gap-4 mt-2">
+
                 <div v-for="(member, i) in members" :key="i">
+
+                    <p v-if="member.role" class="font-shrikhand font-normal">
+                        {{ member.role }}
+                    </p>
+
                     <p>
-                        <span class="font-shrikhand font-normal text-base">
+                        <span :class="{ 'font-shrikhand font-normal' : !member.role }">
                             {{ member.name }}
                         </span>
-                        {{ member.pronouns ? '('+member.pronouns+')' : '' }}
+                        <span class="small">{{ member.pronouns ? ' ('+member.pronouns+')' : '' }}</span>
                     </p>
-                    <p>
-                        <a v-if="member.contacts?.insta" :href="'https://www.instagram.com/' + member.contacts.insta" target="_blank">
+                    
+                    <p v-if="!member.role">
+                        <a v-if="member.contacts?.insta" :href="'https://www.instagram.com/' + member.contacts.insta" target="_blank" class="small">
                             @{{ member.contacts?.insta }}
                         </a>
-                        <span v-if="member.contacts?.insta && member.contacts?.discord"> / </span>
-                        <span> {{ member.contacts?.discord }} </span>
+                        <span v-if="member.contacts?.insta && member.contacts?.discord" class="small"> / </span>
+                        <span class="small"> {{ member.contacts?.discord }} </span>
                     </p>
+
                 </div>
+
             </div>
         </Transition>
     </div>
@@ -64,12 +73,14 @@
     button {
         @apply hover:brightness-125 focus:brightness-125 hover:underline focus:underline
     }
+    .small {
+        @apply text-xs md:text-sm
+    }
     .v-enter-active, .v-leave-active {
         max-height: v-bind(list_size);
         transition: max-height 0.5s ease;
         overflow: hidden;
     }
-
     .v-enter-from, .v-leave-to {    
         max-height: 0px;
         transition: max-height 0.5s ease;

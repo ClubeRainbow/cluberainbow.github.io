@@ -1,5 +1,6 @@
 <script setup lang="ts">
     import members from '../../jsons/members.json';
+    import MemberList from './MemberList.vue';
 </script>
 
 <template>
@@ -15,11 +16,10 @@
                     Direção
                 </p>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
-                <p class="font-shrikhand font-normal text-lg">
-                    Test
-                </p>
+                
+                <MemberList :members="members.direçao" />
             </div>
 
             <div class="flex flex-col gap-2 box">
@@ -27,11 +27,10 @@
                     Mesa da Assembleia Geral
                 </p>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
-                <p class="font-shrikhand font-normal text-lg">
-                    Test
-                </p>
+
+                <MemberList :members="members.mesa" />
             </div>
 
             <div class="flex flex-col gap-2 box">
@@ -39,11 +38,10 @@
                     Conselho Fiscal e Jurisdicional
                 </p>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
-                <p class="font-shrikhand font-normal text-lg">
-                    Test
-                </p>
+
+                <MemberList :members="members.fiscal" />
             </div>
 
         </div>

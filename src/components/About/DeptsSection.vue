@@ -104,7 +104,7 @@
 
 <style scoped>
     .cand_btn {
-        @apply font-shrikhand font-normal text-lg 
+        @apply font-shrikhand font-normal text-base md:text-lg 
         mt-auto w-full border-2 px-6 md:px-10 py-1 rounded-lg bg-cr-red-beige
         hover:brightness-110 focus:brightness-110
     }
