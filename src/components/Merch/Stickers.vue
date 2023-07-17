@@ -4,29 +4,29 @@
     interface Props {
         path: string;
         max: number;
-        shrink?: boolean;
+        img_size: string;
         title: string;
         design?: string;
         price: string;
         desc: string;
+        collab?: string;
         availability: string;
     }
     defineProps<Props>();
 </script>
 
 <template>
-    <div class="flex flex-col gap-2 flex-1 box py-4">
+    <div class="flex flex-col gap-2 box py-4">
         
-        <Slides :path="path" :max="max" :shrink="shrink"/>
+        <Slides :path="path" :max="max" :size="img_size"/>
         
-        <div class="flex flex-col">
+        <div class="flex flex-col h-full">
             <p class="subtitle">{{ title }}</p>
             
             <p v-if="design">
                 <span class="font-shrikhand font-normal">Design: </span>
-                {{ design.split('@')[0] }} -
-                <a :href="'https://www.instagram.com/' + design.split('@')[1]" target="_blank">
-                    @{{ design.split('@')[1] }}
+                <a :href="'https://www.instagram.com/' + design" target="_blank">
+                    @{{ design }}
                 </a>
             </p>
 
@@ -35,8 +35,12 @@
                 {{ price }}
             </p>
 
-            <p class="mt-1.5"> {{ desc }} </p>
-            <p class="italic"> {{ availability }} </p>
+            <div class="my-1.5">
+                <p> {{ desc }} </p>
+                <p v-if="collab" class="text-xs md:text-sm"> {{ collab }} </p>
+            </div>
+            
+            <p class="mt-auto"> <b>{{ availability }}</b> </p>
         </div>
 
     </div>

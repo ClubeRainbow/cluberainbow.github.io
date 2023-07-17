@@ -20,16 +20,28 @@ import Stickers from '../components/Merch/Stickers.vue';
             </p>
         </div>
 
-        <div class="flex flex-wrap gap-8 mx-auto mt-2">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mx-auto mt-2">
 
-            <Stickers path="/stickers/flags/" :max="10" :shrink="true" 
+            <Stickers path="/stickers/flags/" :max="10" img_size="h-32 top-3" 
                 title="Bandeiras" price="0,50€" 
                 desc="Bandeiras de várias identidades LGBTQIA+"
                 availability="Disponível nos nossos eventos!" />
 
-            <Stickers path="/stickers/kittens/" :max="11"
-                title="Gatinhos" design="Lee@mr_apple.pie" price="1€" 
+            <Stickers path="/stickers/kittens/" :max="11" img_size="h-40" 
+                title="Gatinhos" design="mr_apple.pie" price="1€" 
                 desc="Gatinhos com as cores de várias bandeiras LGBTQIA+"
+                availability="Disponível nos nossos eventos!" />
+
+            <Stickers path="/stickers/pride" :max="1" img_size="h-52 top-[-24px]" 
+                title="Celebração do Pride" design="santomago_art" price="1€" 
+                desc="Amigues a celebrar o Pride."
+                collab="Colaboração com vencedor do concurso Pride Sticker 2022."
+                availability="Disponível nos nossos eventos!" />
+
+            <Stickers path="/stickers/brick" :max="1" img_size="h-[11.5rem] top-[-13px]" 
+                title="Tijolo de Stonewall" design="halluprism" price="1€" 
+                desc="O primeiro tijolo atirado nas revoltas de Stonewall."
+                collab="Colaboração com participante do concurso Pride Sticker 2022."
                 availability="Disponível nos nossos eventos!" />
         </div>
         
