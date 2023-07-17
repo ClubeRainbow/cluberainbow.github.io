@@ -49,8 +49,7 @@ import Stickers from '../components/Merch/Stickers.vue';
 
 <style scoped>
     .custom_grid {
-        @apply 
-        grid w-full grid-cols-1
+        @apply grid grid-cols-1 w-full 
         [@media(min-width:860px)]:grid-cols-2 [@media(min-width:860px)]:w-auto 
         gap-8 mx-auto mt-2 
     }

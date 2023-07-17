@@ -1,4 +1,5 @@
 <script setup lang="ts">
+    import info from '../../jsons/info.json';
     import members from '../../jsons/members.json';
     import MemberList from './MemberList.vue';
 </script>
@@ -11,7 +12,8 @@
 
         <div class="flex flex-col gap-8">
             
-            <div class="flex flex-col md:flex-row gap-x-8 box">
+            <div class="flex flex-col lg:flex-row gap-x-8 box">
+                
                 <div class="flex flex-col gap-2">
                     <p class="subtitle2 text-cr-purple">
                         Departamento Recreativo
@@ -26,12 +28,21 @@
                         Para além disto, este é também responsável por gerir o nosso <b>servidor do Discord</b>
                         e outros eventos online.
                     </p>
-                    <MemberList :members="members.recr" />
+
+                    <MemberList :members="members.recr" :class="{'mb-2' : info.candidaturas.depts.includes('recr')}"/>
+                    
+                    <button v-if="info.candidaturas.depts.includes('recr')" class="cand_btn"
+                        @click="$router.push({name: 'info', hash: '#apps'})">
+                        Candidaturas Abertas!
+                    </button>
                 </div>
-                <img src="../../assets/kaku2.png" alt="panda" class="m-auto h-72 w-72"/>
+
+                <img src="../../assets/kaku2.png" alt="panda" class="m-auto w-72 h-72"/>                
             </div>
 
-            <div class="flex flex-col md:flex-row-reverse gap-x-8 box">
+
+            <div class="flex flex-col lg:flex-row-reverse gap-x-8 box">
+                
                 <div class="flex flex-col gap-2">
                     <p class="subtitle2 text-cr-orange">
                         Departamento Pedagógico
@@ -42,12 +53,21 @@
                         <b>palestras</b> e outros eventos educativos para discutir temas de grande importância
                         com pessoas conhecedoras dos mesmos.
                     </p>
-                    <MemberList :members="members.ped" />
+                    
+                    <MemberList :members="members.ped" :class="{'mb-2' : info.candidaturas.depts.includes('ped')}"/>
+                    
+                    <button v-if="info.candidaturas.depts.includes('ped')" class="cand_btn"
+                        @click="$router.push({name: 'info', hash: '#apps'})">
+                        Candidaturas Abertas!
+                    </button>
                 </div>
-                <img src="../../assets/kaku2.png" alt="panda" class="m-auto h-72 w-72"/>
+
+                <img src="../../assets/kaku2.png" alt="panda" class="m-auto w-72 h-72"/>   
             </div>
 
-            <div class="flex flex-col md:flex-row gap-x-8 box">
+
+            <div class="flex flex-col lg:flex-row gap-x-8 box">
+                
                 <div class="flex flex-col gap-2">
                     <p class="subtitle2 text-cr-teal">
                         Departamento de Comunicação
@@ -66,11 +86,26 @@
                         </b>
                         cuja venda ajuda a financiar o Clube e as suas atividades.
                     </p>
-                    <MemberList :members="members.comms" />
-                </div>
-                <img src="../../assets/kaku2.png" alt="panda" class="m-auto h-72 w-72"/>
-            </div>
+                    
+                    <MemberList :members="members.comms" :class="{'mb-2' : info.candidaturas.depts.includes('comms')}"/>
 
+                    <button v-if="info.candidaturas.depts.includes('comms')" class="cand_btn"
+                        @click="$router.push({name: 'info', hash: '#apps'})">
+                        Candidaturas Abertas!
+                    </button>
+                </div>
+
+                <img src="../../assets/kaku2.png" alt="panda" class="m-auto w-72 h-72"/>
+            </div>
+            
         </div>
     </div>
 </template>
+
+<style scoped>
+    .cand_btn {
+        @apply font-shrikhand font-normal text-lg 
+        mt-auto w-full border-2 px-6 md:px-10 py-1 rounded-lg bg-cr-red-beige
+        hover:brightness-110 focus:brightness-110
+    }
+</style>
