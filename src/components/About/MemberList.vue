@@ -6,11 +6,7 @@
 
     const toggleMemberList = (members: Member[]) => {
         show_members.value = !show_members.value
-        list_size.value = (60*(Math.ceil(members.length/2))) + 20 + 'px' 
-        /*
-            list_size is bigger than necessary on purpose, so that the sliding animation 
-            doesn't stop short regardless of number of members
-        */
+        list_size.value = (75*(Math.ceil(members.length/2))) + 'px'
     }
 
     interface Member {
@@ -39,7 +35,7 @@
         </button>
 
         <Transition>     
-            <div v-if="show_members" class="grid grid-cols-2 gap-4 mt-2">
+            <div v-if="show_members" class="grid grid-cols-2 gap-4 mt-2 max-w-[600px]">
 
                 <div v-for="(member, i) in members" :key="i">
 
@@ -47,20 +43,23 @@
                         {{ member.role }}
                     </p>
 
-                    <p>
+                    <p class="mb-1">
                         <span :class="{ 'font-shrikhand font-normal' : !member.role }">
                             {{ member.name }}
                         </span>
                         <span class="small">{{ member.pronouns ? ' ('+member.pronouns+')' : '' }}</span>
                     </p>
                     
-                    <p v-if="!member.role">
-                        <a v-if="member.contacts?.insta" :href="'https://www.instagram.com/' + member.contacts.insta" target="_blank" class="small">
-                            @{{ member.contacts?.insta }}
+                    <div v-if="member.contacts" class="flex flex-col gap-1.5">
+                        <div v-if="member.contacts.discord" class="item">
+                            <img src="../../assets/icon_discord.svg" alt="discord" class="h-4 w-4" />
+                            <span class="small"> {{ member.contacts.discord }} </span>
+                        </div>
+                        <a v-if="member.contacts.insta" :href="'https://www.instagram.com/' + member.contacts.insta" target="_blank" class="item">
+                            <img src="../../assets/icon_insta.svg" alt="instagram" class="h-4 w-4" />
+                            <span class="small">@{{ member.contacts.insta }}</span>
                         </a>
-                        <span v-if="member.contacts?.insta && member.contacts?.discord" class="small"> / </span>
-                        <span class="small"> {{ member.contacts?.discord }} </span>
-                    </p>
+                    </div>
 
                 </div>
 
@@ -74,7 +73,10 @@
         @apply hover:brightness-125 focus:brightness-125 hover:underline focus:underline
     }
     .small {
-        @apply text-xs md:text-sm
+        @apply whitespace-nowrap text-xs md:text-sm
+    }
+    .item {
+        @apply flex items-center gap-1
     }
     .v-enter-active, .v-leave-active {
         max-height: v-bind(list_size);

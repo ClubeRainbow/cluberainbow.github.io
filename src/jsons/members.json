@@ -54,18 +54,18 @@
           }
         },
         {
-          "name": "Emanuel", 
-          "pronouns": "he/she",
-          "contacts": {
-            "discord": "Bacalhau#1085"
-          }
-        },
-        {
           "name": "Leo", 
           "pronouns": "she/her",
           "contacts": {
             "insta": "leo_oliveira.76",
             "discord": "willowhisp#9990"
+          }
+        },
+        {
+          "name": "Emanuel", 
+          "pronouns": "she/her",
+          "contacts": {
+            "discord": "Bacalhau#1085"
           }
         },
         {
@@ -86,13 +86,6 @@
           }
         },
         {
-          "name": "André Rodrigues", 
-          "pronouns": "he/him",
-          "contacts": {
-            "insta": "andrerodrigues47"
-          }
-        },
-        {
           "name": "Andreia Marques", 
           "pronouns": "she/her",
           "contacts": {
@@ -101,18 +94,18 @@
           }
         },
         {
-          "name": "Bea", 
-          "pronouns": "she/her",
-          "contacts": {
-            "discord": "rae(ven)#4892"
-          }
-        },
-        {
           "name": "Sandra", 
           "pronouns": "she/her",
           "contacts": {
             "insta": "sandraibf",
             "discord": "snadra#3665"
+          }
+        },
+        {
+          "name": "André Rodrigues", 
+          "pronouns": "he/him",
+          "contacts": {
+            "insta": "andrerodrigues47"
           }
         },
         {
@@ -130,10 +123,10 @@
           }
         },
         {
-          "name": "André", 
-          "pronouns": "he/him",
+          "name": "Bea", 
+          "pronouns": "she/her",
           "contacts": {
-            "insta": "the.goofy.blue"
+            "discord": "rae(ven)#4892"
           }
         }
     ],
@@ -146,18 +139,18 @@
           }
         },
         {
+          "name": "Tomé Azevedo", 
+          "pronouns": "qualquer pronome",
+          "contacts": {
+            "discord": "Tomé#4735"
+          }
+        },
+        {
           "name": "Lee", 
           "pronouns": "he/she/they",
           "contacts": {
             "insta": "mr_apple.pie",
             "discord": "ඞ Leeඔ#7974"
-          }
-        },
-        {
-          "name": "Tomé Azevedo", 
-          "pronouns": "qualquer pronome",
-          "contacts": {
-            "discord": "Tomé#4735"
           }
         },
         {
