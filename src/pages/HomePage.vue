@@ -64,8 +64,7 @@ import info from '../jsons/info.json';
                 um dos nossos 
                 <button class="click" @click="$router.push({name: 'about', hash: '#depts'})">
                     departamentos.
-                </button>
-                Atualmente, as <b>candidaturas estão 
+                </button> <b>Atualmente, as candidaturas estão 
                 <button class="click" @click="$router.push({name: 'info', hash: '#apps'})">
                     {{ info.candidaturas.open ? 'abertas' : 'fechadas' }}
                 </button>.</b>

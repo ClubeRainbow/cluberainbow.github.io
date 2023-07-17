@@ -29,7 +29,7 @@
                         e outros eventos online.
                     </p>
 
-                    <MemberList :members="members.recr" :class="{'mb-2' : info.candidaturas.depts.includes('recr')}"/>
+                    <MemberList :members="members.recr" type="dept" :class="{'mb-2' : info.candidaturas.depts.includes('recr')}"/>
                     
                     <button v-if="info.candidaturas.depts.includes('recr')" class="cand_btn"
                         @click="$router.push({name: 'info', hash: '#apps'})">
@@ -54,7 +54,7 @@
                         com pessoas conhecedoras dos mesmos.
                     </p>
                     
-                    <MemberList :members="members.ped" :class="{'mb-2' : info.candidaturas.depts.includes('ped')}"/>
+                    <MemberList :members="members.ped" type="dept" :class="{'mb-2' : info.candidaturas.depts.includes('ped')}"/>
                     
                     <button v-if="info.candidaturas.depts.includes('ped')" class="cand_btn"
                         @click="$router.push({name: 'info', hash: '#apps'})">
@@ -87,7 +87,7 @@
                         cuja venda ajuda a financiar o Clube e as suas atividades.
                     </p>
                     
-                    <MemberList :members="members.comms" :class="{'mb-2' : info.candidaturas.depts.includes('comms')}"/>
+                    <MemberList :members="members.comms" type="dept" :class="{'mb-2' : info.candidaturas.depts.includes('comms')}"/>
 
                     <button v-if="info.candidaturas.depts.includes('comms')" class="cand_btn"
                         @click="$router.push({name: 'info', hash: '#apps'})">

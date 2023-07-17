@@ -19,7 +19,7 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
                 
-                <MemberList :members="members.direçao" />
+                <MemberList :members="members.direçao" type="dir" />
             </div>
 
             <div class="flex flex-col gap-2 box">
@@ -30,7 +30,7 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
 
-                <MemberList :members="members.mesa" />
+                <MemberList :members="members.mesa" type="dir" />
             </div>
 
             <div class="flex flex-col gap-2 box">
@@ -41,7 +41,7 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
 
-                <MemberList :members="members.fiscal" />
+                <MemberList :members="members.fiscal" type="dir" />
             </div>
 
         </div>

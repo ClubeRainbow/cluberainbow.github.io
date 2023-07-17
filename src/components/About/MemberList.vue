@@ -3,10 +3,16 @@
 
     const show_members = ref(false)
     const list_size = ref('')
+    const windowWidth = ref(window.innerWidth);
 
-    const toggleMemberList = (members: Member[]) => {
+    addEventListener("resize", () => { windowWidth.value = window.innerWidth});
+
+    const toggleMemberList = (members: Member[], type: string) => {
         show_members.value = !show_members.value
-        list_size.value = (75*(Math.ceil(members.length/2))) + 'px'
+        if (type==='dept' && windowWidth.value > 500)
+            list_size.value = (75*(Math.ceil(members.length/2))) + 'px'
+        else
+            list_size.value = (75*members.length) + 'px'
     }
 
     interface Member {
@@ -20,14 +26,15 @@
     }
 
     interface Props {
-        members: Member[]
+        members: Member[],
+        type: string
     }
     defineProps<Props>();
 </script>
 
 <template>
     <div>
-        <button class="flex flex-row items-center gap-1.5" @click="toggleMemberList(members)">
+        <button class="flex flex-row items-center gap-1.5" @click="toggleMemberList(members, type)">
             <p class="font-shrikhand font-normal text-base md:text-lg">
                 Membros
             </p>
@@ -35,19 +42,18 @@
         </button>
 
         <Transition>     
-            <div v-if="show_members" class="grid grid-cols-2 gap-4 mt-2 max-w-[600px]">
+            <div v-if="show_members" class="grid grid-cols-1 gap-y-4 gap-x-12 mt-2" :class="{ '[@media(min-width:500px)]:grid-cols-2' : type==='dept' }">
 
                 <div v-for="(member, i) in members" :key="i">
 
-                    <p v-if="member.role" class="font-shrikhand font-normal">
-                        {{ member.role }}
-                    </p>
-
-                    <p class="mb-1">
-                        <span :class="{ 'font-shrikhand font-normal' : !member.role }">
+                    <p class="flex flex-wrap items-center gap-x-1 mb-1 w-full border-b">
+                        <span class="font-shrikhand font-normal">
                             {{ member.name }}
                         </span>
                         <span class="small">{{ member.pronouns ? ' ('+member.pronouns+')' : '' }}</span>
+                        <span v-if="member.role" class="font-shrikhand font-normal ml-auto">
+                            {{ member.role }}
+                        </span>
                     </p>
                     
                     <div v-if="member.contacts" class="flex flex-col gap-1.5">

@@ -1,19 +1,29 @@
 {
     "direçao": [
       {
+        "role": "Presidente",
         "name": "Vee",
         "pronouns": "she/he",
-        "role": "Presidente"
+        "contacts": {
+          "insta": "vikill06",
+          "discord": "hashida's artits#9801"
+        }
       },
       {
+        "role": "Vice-presidente",
         "name": "Ezra",
         "pronouns": "he/they",
-        "role": "Vice-presidente"
+        "contacts": {
+          "discord": "haz#0535"
+        }
       },
       {
+        "role": "Secretária",
         "name": "Bea",
         "pronouns": "she/her",
-        "role": "Secretária"
+        "contacts": {
+          "discord": "rae(ven)#4892"
+        }
       }
     ],
     "mesa": [
