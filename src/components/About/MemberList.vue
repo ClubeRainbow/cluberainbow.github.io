@@ -56,7 +56,7 @@
                         </span>
                     </p>
                     
-                    <div v-if="member.contacts" class="flex flex-col gap-1.5">
+                    <div v-if="member.contacts" class="flex flex-col gap-0.5">
                         <div v-if="member.contacts.discord" class="item">
                             <img src="../../assets/icon_discord.svg" alt="discord" class="h-4 w-4" />
                             <span class="small"> {{ member.contacts.discord }} </span>

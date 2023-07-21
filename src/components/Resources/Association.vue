@@ -30,16 +30,12 @@
         
         <div class="flex flex-col gap-2 w-full">
             
-            <a class="flex gap-2 items-center" :href="ass.page" target="_blank">
-                <p class="subtitle">
-                    {{ ass.name }}
-                </p>
+            <a class="flex items-center gap-2" :href="ass.page" target="_blank">
+                <span class="subtitle">{{ ass.name }}</span>
                 <img src="../../assets/icon_email.svg" alt="link" class="h-6 w-6" />
             </a>
 
-            <p>
-                {{ ass.desc }}
-            </p>
+            <p>{{ ass.desc }}</p>
 
             <hr class="border w-full my-2">
 
@@ -56,16 +52,18 @@
                     </a>
 
                     <template v-if="ass.email" >
-                        <div v-for="(email, i) in ass.email.split('/')" :key="i" class="item">
+                        <div v-for="(email, i) in ass.email.split('/')" class="item">
                             <img src="../../assets/icon_email.svg" alt="email" class="h-5 w-5" />
                             <span>{{ email }}</span>
                         </div>
                     </template>
 
-                    <div v-if="ass.phone" class="item">
-                        <img src="../../assets/icon_email.svg" alt="phone" class="h-5 w-5" />
-                        <span>{{ ass.phone }}</span>
-                    </div>
+                    <template v-if="ass.phone">
+                        <div v-for="(phone, i) in ass.phone.split('/')" class="item">
+                            <img src="../../assets/icon_email.svg" alt="phone" class="h-5 w-5" />
+                            <span>{{ phone }}</span>
+                        </div>
+                    </template>
                 </div>
 
                 <div v-if="ass.location && ass.schedule" class="flex flex-col gap-1">
