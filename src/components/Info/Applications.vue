@@ -60,13 +60,13 @@
 
 
             <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-1 gap-4">
-                <button v-if="cand.depts.includes('recr')" :href="cand.recr_link" target="_blank"
-                    class="dept_btn text-cr-purple bg-cr-light-purple">
-                    Dept. Recreativo
-                </button>
                 <button v-if="cand.depts.includes('ped')" :href="cand.ped_link" target="_blank"
                     class="dept_btn text-cr-orange bg-cr-light-orange">
                     Dept. Pedagógico
+                </button>
+                <button v-if="cand.depts.includes('recr')" :href="cand.recr_link" target="_blank"
+                    class="dept_btn text-cr-purple bg-cr-light-purple">
+                    Dept. Recreativo
                 </button>
                 <button v-if="cand.depts.includes('comms')" :href="cand.comms_link" target="_blank"
                     class="dept_btn text-cr-teal bg-cr-light-teal">

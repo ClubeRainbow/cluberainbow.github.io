@@ -15,6 +15,30 @@
             <div class="flex flex-col lg:flex-row gap-x-8 box">
                 
                 <div class="flex flex-col gap-2">
+                    <p class="subtitle2 text-cr-orange">
+                        Departamento Pedagógico
+                    </p>
+                    <p>
+                        O Departamento Pedagógico é responsável pela <b>componente educativa</b> do Clube, e pela
+                        <b>organização de parcerias</b> com outras organizações. Graças a ele podemos organizar
+                        <b>palestras</b> e outros eventos educativos para discutir temas de grande importância
+                        com pessoas conhecedoras dos mesmos.
+                    </p>
+                    
+                    <MemberList :members="members.ped" type="dept" :class="{'mb-2' : info.candidaturas.depts.includes('ped')}"/>
+                    
+                    <button v-if="info.candidaturas.depts.includes('ped')" class="cand_btn"
+                        @click="$router.push({name: 'info', hash: '#apps'})">
+                        Candidaturas Abertas!
+                    </button>
+                </div>
+
+                <img src="../../assets/kaku2.png" alt="panda" class="m-auto w-72 h-72"/>   
+            </div>
+            
+            <div class="flex flex-col lg:flex-row-reverse gap-x-8 box">
+                
+                <div class="flex flex-col gap-2">
                     <p class="subtitle2 text-cr-purple">
                         Departamento Recreativo
                     </p>
@@ -39,32 +63,6 @@
 
                 <img src="../../assets/kaku2.png" alt="panda" class="m-auto w-72 h-72"/>                
             </div>
-
-
-            <div class="flex flex-col lg:flex-row-reverse gap-x-8 box">
-                
-                <div class="flex flex-col gap-2">
-                    <p class="subtitle2 text-cr-orange">
-                        Departamento Pedagógico
-                    </p>
-                    <p>
-                        O Departamento Pedagógico é responsável pela <b>componente educativa</b> do Clube, e pela
-                        <b>organização de parcerias</b> com outras organizações. Graças a ele podemos organizar
-                        <b>palestras</b> e outros eventos educativos para discutir temas de grande importância
-                        com pessoas conhecedoras dos mesmos.
-                    </p>
-                    
-                    <MemberList :members="members.ped" type="dept" :class="{'mb-2' : info.candidaturas.depts.includes('ped')}"/>
-                    
-                    <button v-if="info.candidaturas.depts.includes('ped')" class="cand_btn"
-                        @click="$router.push({name: 'info', hash: '#apps'})">
-                        Candidaturas Abertas!
-                    </button>
-                </div>
-
-                <img src="../../assets/kaku2.png" alt="panda" class="m-auto w-72 h-72"/>   
-            </div>
-
 
             <div class="flex flex-col lg:flex-row gap-x-8 box">
                 
