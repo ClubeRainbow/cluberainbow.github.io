@@ -25,10 +25,9 @@
                         com pessoas conhecedoras dos mesmos.
                     </p>
                     
-                    <MemberList :members="members.ped" type="dept" :class="{'mb-2' : info.candidaturas.depts.includes('ped')}"/>
+                    <MemberList :members="members.ped" type="dept" :class="{'mb-2' : info.candidaturas.ped}"/>
                     
-                    <button v-if="info.candidaturas.depts.includes('ped')" class="cand_btn"
-                        @click="$router.push({name: 'info', hash: '#apps'})">
+                    <button v-if="info.candidaturas.ped" class="cand_btn" @click="$emit('show_modal', 'ped')">
                         Candidaturas Abertas!
                     </button>
                 </div>
@@ -53,10 +52,9 @@
                         e outros eventos online.
                     </p>
 
-                    <MemberList :members="members.recr" type="dept" :class="{'mb-2' : info.candidaturas.depts.includes('recr')}"/>
+                    <MemberList :members="members.recr" type="dept" :class="{'mb-2' : info.candidaturas.recr}"/>
                     
-                    <button v-if="info.candidaturas.depts.includes('recr')" class="cand_btn"
-                        @click="$router.push({name: 'info', hash: '#apps'})">
+                    <button v-if="info.candidaturas.recr" class="cand_btn" @click="$emit('show_modal', 'recr')">
                         Candidaturas Abertas!
                     </button>
                 </div>
@@ -85,10 +83,9 @@
                         cuja venda ajuda a financiar o Clube e as suas atividades.
                     </p>
                     
-                    <MemberList :members="members.comms" type="dept" :class="{'mb-2' : info.candidaturas.depts.includes('comms')}"/>
+                    <MemberList :members="members.comms" type="dept" :class="{'mb-2' : info.candidaturas.comms}"/>
 
-                    <button v-if="info.candidaturas.depts.includes('comms')" class="cand_btn"
-                        @click="$router.push({name: 'info', hash: '#apps'})">
+                    <button v-if="info.candidaturas.comms" class="cand_btn" @click="$emit('show_modal', 'comms')">
                         Candidaturas Abertas!
                     </button>
                 </div>
@@ -102,7 +99,7 @@
 
 <style scoped>
     .cand_btn {
-        @apply font-shrikhand font-normal text-base md:text-lg 
+        @apply font-shrikhand text-base md:text-lg 
         mt-auto w-full border-2 px-6 md:px-10 py-1 rounded-lg bg-cr-red-beige
         hover:brightness-110 focus:brightness-110
     }

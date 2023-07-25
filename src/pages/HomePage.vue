@@ -61,13 +61,10 @@ import info from '../jsons/info.json';
             <p>
                 Todes são bem vindes a participar nos eventos do Clube Rainbow,
                 mas caso queiras fazer parte da sua organização, deves candidatar-te a 
-                um dos nossos 
+                um dos nossos departamentos -
                 <button class="click" @click="$router.push({name: 'about', hash: '#depts'})">
-                    departamentos.
-                </button> <b>Atualmente, as candidaturas estão 
-                <button class="click" @click="$router.push({name: 'info', hash: '#apps'})">
-                    {{ info.candidaturas.open ? 'abertas' : 'fechadas' }}
-                </button>.</b>
+                    sabe mais sobre eles aqui!
+                </button>
             </p>
 
         </div>

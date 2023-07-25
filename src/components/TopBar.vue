@@ -65,17 +65,14 @@
                 <button class="sub_option" @click="redirect('info')">
                     Calendário
                 </button>
-                <button class="sub_option" @click="redirect('info', '#faq')">
+                <button class="sub_option rounded-b-lg" @click="redirect('info', '#faq')" @focusout="info_options=false">
                     FAQ
-                </button>
-                <button class="sub_option rounded-b-lg" @click="redirect('info', '#apps')" @focusout="info_options=false">
-                    Candidaturas
                 </button>
             </div>
         </div>
 
         <button class="w-20 shrink-0" @click="redirect('home')">
-            <img src="../assets/logo.webp" alt="logo clube rainbow" class="z-20 -mb-11" />
+            <img src="../assets/logo.webp" alt="logo clube rainbow" class="-mb-11" />
         </button>
 
         <button class="topbar_option hover:bg-[rgba(0,200,0,0.25)] focus:bg-[rgba(0,200,0,0.25)]"

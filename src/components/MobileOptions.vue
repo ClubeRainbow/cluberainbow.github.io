@@ -40,7 +40,7 @@
                     <button class="sub_option" @click="redirect('about', '#dir')">
                         Direção
                     </button>
-                    <button class="sub_option mb-4" @click="redirect('about', '#partners')">
+                    <button class="sub_option mb-2" @click="redirect('about', '#partners')">
                         Parcerias
                     </button>
                 </div>
@@ -58,11 +58,8 @@
                     <button class="sub_option mt-4" @click="redirect('info')">
                         Calendário
                     </button>
-                    <button class="sub_option" @click="redirect('info', '#faq')">
+                    <button class="sub_option mb-2" @click="redirect('info', '#faq')">
                         FAQ
-                    </button>
-                    <button class="sub_option mb-4" @click="redirect('info', '#apps')">
-                        Candidaturas
                     </button>
                 </div>
             </Transition>

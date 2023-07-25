@@ -15,7 +15,7 @@
     <div class="flex flex-col gap-4 flex-1 box">
         
         <div class="flex flex-col gap-2">
-            <p class="text-2xl md:text-3xl font-shrikhand font-normal">Fala connosco!</p>
+            <p class="text-2xl md:text-3xl font-shrikhand">Fala connosco!</p>
             <div>
                 <p>Se tiveres alguma questão ou recomendação está à vontade para entrar em contacto connosco!</p>
                 <p>Podes fazê-lo via este formulário ou pelos contactos listados nesta página.</p>
@@ -63,7 +63,7 @@
 
     .custom_btn {
         @apply w-full md:w-9/12 bg-cr-red-beige border-2 rounded-lg p-2 
-        text-xl md:text-2xl font-shrikhand font-normal
+        text-xl md:text-2xl font-shrikhand
         hover:brightness-110 focus:brightness-110
     }
 </style>

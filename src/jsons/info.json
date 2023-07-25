@@ -4,11 +4,12 @@
         "img": "/event.jpg"
     },
     "candidaturas": {
-        "open" : true,
         "timelimit" : "xx/xx/xxxx",
-        "depts" : ["recr", "ped", "comms"],
-        "recr_link" : "https://google.com",
+        "ped" : true,
+        "recr" : true,
+        "comms" : true,
         "ped_link" : "https://google.com",
+        "recr_link" : "https://google.com",
         "comms_link" : "https://google.com"
     }
 }
