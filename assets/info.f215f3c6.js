@@ -1,1 +1,0 @@
-const t={link:"https://www.instagram.com/p/Cs3w1JfN5G-/",img:"/event.jpg"},e={open:!0,timelimit:"xx/xx/xxxx",depts:["recr","ped","comms"],recr_link:"https://google.com",ped_link:"https://google.com",comms_link:"https://google.com"},o={next_event:t,candidaturas:e};export{o as i};
