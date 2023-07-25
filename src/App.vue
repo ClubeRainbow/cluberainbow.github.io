@@ -36,7 +36,7 @@
 
     <template v-if="router.currentRoute.value.name === 'home'">
       <img src="./assets/bg_top.png" alt="imagem de fundo 1" class="-z-10 w-full absolute top-0 right-0"/>
-      <img src="./assets/bg_bottom.png" alt="imagem de fundo 2" class="-z-10 w-full absolute bottom-0 right-0"/>
+      <img src="./assets/bg_bottom.png" alt="imagem de fundo 2" class="-z-10 w-full absolute bottom-0 right-0 lg:bottom-[-50px]"/>
     </template>
 
   </div>

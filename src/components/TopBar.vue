@@ -8,6 +8,7 @@
 
   const about_options = ref(false)
   const info_options = ref(false)
+  const merch_options = ref(false)
 
   addEventListener("resize", () => { windowWidth.value = window.innerWidth});
   
@@ -30,14 +31,13 @@
         <div class="w-full relative" @mouseover="about_options=true" @mouseleave="about_options=false" @focusin="about_options=true">
             
             <button class="topbar_option sub_button hover:bg-[rgba(255,110,0,0.25)] focus:bg-[rgba(255,110,0,0.25)]" 
-                :class="{ 'bg-[rgba(255,110,0,0.25)]' : router.currentRoute.value.name === 'about' || about_options }"
-                @click="redirect('about')">
+                :class="{ 'bg-[rgba(255,110,0,0.25)]' : router.currentRoute.value.name === 'about' || about_options }">
                 Sobre Nós
                 <img src="../assets/arrow_down.svg" alt="toggle list" class="h-3 w-3 xl-topbar:h-4 xl-topbar:w-4" :class="{ 'rotate-180' : about_options }"/>
             </button>
 
             <div v-if="about_options" class="sub_section">
-                <button class="sub_option" @click="redirect('about', '#clube')">
+                <button class="sub_option" @click="redirect('about')">
                     Sobre o Clube Rainbow
                 </button>
                 <button class="sub_option" @click="redirect('about', '#depts')">
@@ -55,14 +55,13 @@
         <div class="w-full relative" @mouseover="info_options=true" @mouseleave="info_options=false" @focusin="info_options=true">
             
             <button class="topbar_option sub_button hover:bg-[rgba(255,140,0,0.25)] focus:bg-[rgba(255,140,0,0.25)]" 
-                :class="{ 'bg-[rgba(255,140,0,0.25)]' : router.currentRoute.value.name === 'info' || info_options }"
-                @click="redirect('info')" >
+                :class="{ 'bg-[rgba(255,140,0,0.25)]' : router.currentRoute.value.name === 'info' || info_options }">
                 Informações
                 <img src="../assets/arrow_down.svg" alt="toggle list" class="h-3 w-3 xl-topbar:h-4 xl-topbar:w-4" :class="{ 'rotate-180' : info_options }"/>
             </button>
 
             <div v-if="info_options" class="sub_section">
-                <button class="sub_option" @click="redirect('info', '#events')">
+                <button class="sub_option" @click="redirect('info')">
                     Eventos
                 </button>
                 <button class="sub_option rounded-b-lg" @click="redirect('info', '#faq')" @focusout="info_options=false">
@@ -75,11 +74,19 @@
             <img src="../assets/logo.webp" alt="logo clube rainbow" class="-mb-11" />
         </button>
 
-        <button class="topbar_option hover:bg-[rgba(0,200,0,0.25)] focus:bg-[rgba(0,200,0,0.25)]"
-            :class="{ 'bg-[rgba(0,200,0,0.25)]' : router.currentRoute.value.name === 'merch'}"
-            @click="redirect('merch')">
-            Merch
-        </button>
+        <div class="w-full relative" @mouseover="merch_options=true" @mouseleave="merch_options=false" @focusin="merch_options=true">
+            <button class="topbar_option sub_button hover:bg-[rgba(0,200,0,0.25)] focus:bg-[rgba(0,200,0,0.25)]"
+                :class="{ 'bg-[rgba(0,200,0,0.25)]' : router.currentRoute.value.name === 'merch' || merch_options }">
+                Merch
+                <img src="../assets/arrow_down.svg" alt="toggle list" class="h-3 w-3 xl-topbar:h-4 xl-topbar:w-4" :class="{ 'rotate-180' : merch_options }"/>
+            </button>
+
+            <div v-if="merch_options" class="sub_section">
+                <button class="sub_option rounded-b-lg" @click="redirect('merch')" @focusout="merch_options=false">
+                    Autocolantes
+                </button>
+            </div>
+        </div>
 
         <button class="topbar_option hover:bg-[rgba(0,180,110,0.25)] focus:bg-[rgba(0,180,110,0.25)]"
             :class="{ 'bg-[rgba(0,180,110,0.25)]' : router.currentRoute.value.name === 'resources'}" 

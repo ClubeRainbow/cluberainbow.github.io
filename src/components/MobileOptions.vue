@@ -7,6 +7,7 @@
 
   const about_options = ref(false)
   const info_options = ref(false)
+  const merch_options = ref(false)
   const list_size = ref('')
   
   const redirect = (dest: string, scroll?: string) => {
@@ -31,7 +32,7 @@
 
             <Transition>
                 <div v-if="about_options" class="sub_section">
-                    <button class="sub_option mt-4" @click="redirect('about', '#clube')">
+                    <button class="sub_option mt-4" @click="redirect('about')">
                         Sobre o Clube Rainbow
                     </button>
                     <button class="sub_option" @click="redirect('about', '#depts')">
@@ -48,14 +49,14 @@
         </div>
 
         <div>
-            <button class="mobile_menu_option sub_button" @click="info_options = !info_options; list_size='192px'">
+            <button class="mobile_menu_option sub_button" @click="info_options = !info_options; list_size='136px'">
                 Informações
                 <img src="../assets/arrow_down.svg" alt="toggle list" class="h-4 w-4" :class="{ 'rotate-180' : info_options }"/>
             </button>
 
             <Transition>
                 <div v-if="info_options" class="sub_section">
-                    <button class="sub_option mt-4" @click="redirect('info', '#events')">
+                    <button class="sub_option mt-4" @click="redirect('info')">
                         Eventos
                     </button>
                     <button class="sub_option mb-2" @click="redirect('info', '#faq')">
@@ -65,9 +66,20 @@
             </Transition>
         </div>
 
-        <button class="mobile_menu_option" @click="redirect('merch')">
-            Merch
-        </button>
+        <div>
+            <button class="mobile_menu_option sub_button" @click="merch_options = !merch_options; list_size='80px'">
+                Merch
+                <img src="../assets/arrow_down.svg" alt="toggle list" class="h-4 w-4" :class="{ 'rotate-180' : merch_options }"/>
+            </button>
+            
+            <Transition>
+                <div v-if="merch_options" class="sub_section">
+                    <button class="sub_option mt-4 mb-2" @click="redirect('merch')">
+                        Autocolantes
+                    </button>
+                </div>
+            </Transition>
+        </div>
 
         <button class="mobile_menu_option" @click="redirect('resources')">
             Recursos Úteis

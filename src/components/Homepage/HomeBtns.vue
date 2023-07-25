@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-wrap gap-4">
+    <div class="flex flex-col sm:flex-row gap-x-4 gap-y-2">
         <button @click="$router.push({name: 'info', hash: '#events'})">
             Eventos
         </button>
@@ -15,7 +15,7 @@
 <style scoped>
     button {
         @apply flex-1 flex items-center justify-center py-1 px-4
-        border-2 rounded-lg bg-cr-red-beige
+        border-2 rounded-lg bg-cr-red-beige drop-shadow-lg
         font-shrikhand text-base md:text-lg whitespace-nowrap
         hover:brightness-110 focus:brightness-110
     }
