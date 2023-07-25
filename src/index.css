@@ -41,7 +41,7 @@
     }
 
     .box {
-        @apply border-2 rounded-xl bg-cr-beige drop-shadow-lg py-4 md:py-6 px-6 md:px-8
+        @apply border-2 rounded-xl bg-cr-beige drop-shadow-md py-4 md:py-6 px-6 md:px-8
     }
 
     .topbar_option {

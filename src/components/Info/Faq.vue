@@ -13,7 +13,8 @@
         <FaqItem question="Como posso fazer parte?">
             <div class="flex flex-col gap-2">
                 <p>
-                    Para fazeres parte da organização do Clube Rainbow, <b>deves candidatar-te a 
+                    Qualquer pessoa pode participar nos nossos eventos, mas se quiseres fazer
+                    parte da organização do Clube Rainbow, <b>deves candidatar-te a 
                     um dos nossos departamentos -
                     <button class="click" @click="$router.push({name: 'about', hash: '#depts'})">
                         podes saber mais sobre eles aqui!

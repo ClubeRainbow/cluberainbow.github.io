@@ -15,7 +15,7 @@
                 <p class="subtitle">
                     Próximo Evento:
                 </p>
-                <div class="mx-auto h-64 w-64 sm:h-72 sm:w-72 lg:h-96 lg:w-96 flex items-center justify-center border-2 rounded-xl bg-cr-beige drop-shadow-lg">
+                <div class="mx-auto h-64 w-64 sm:h-72 sm:w-72 lg:h-96 lg:w-96 flex items-center justify-center border-2 rounded-xl bg-cr-beige drop-shadow-md">
                     <a v-if="info.next_event.img && info.next_event.link" :href="info.next_event.link" target="_blank" class="alt_highlight">
                         <img :src="info.next_event.img" alt="próximo evento" class="rounded-xl" />
                     </a>

@@ -14,7 +14,6 @@
         <button class="subsubtitle question_btn" @click="show_answer = !show_answer">
             {{ question }}
             <img src="../../assets/arrow_down.svg" alt="toggle list" class="h-4 w-4" :class="{ 'rotate-180' : show_answer }"/>
-            
         </button>
 
         <Transition> 
