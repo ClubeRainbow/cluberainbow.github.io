@@ -35,7 +35,7 @@
 <template>
     <div>
         <button class="flex flex-row items-center gap-1.5" @click="toggleMemberList(members, type)">
-            <p class="font-shrikhand font-normal text-base md:text-lg">
+            <p class="font-shrikhand md:text-lg">
                 Membros
             </p>
             <img src="../../assets/arrow_down.svg" alt="toggle list" class="h-3 w-3" :class="{ 'rotate-180' : show_members }"/>
@@ -46,14 +46,21 @@
 
                 <div v-for="(member, i) in members" :key="i">
 
-                    <p class="flex flex-wrap items-center gap-x-1 mb-1 w-full border-b">
-                        <span class="font-shrikhand font-normal">
-                            {{ member.name }}
-                        </span>
-                        <span class="small">{{ member.pronouns ? ' ('+member.pronouns+')' : '' }}</span>
-                        <span v-if="member.role" class="font-shrikhand font-normal ml-auto">
+                    <p class="flex flex-wrap-reverse items-center gap-x-1 mb-1 w-full border-b">
+                        
+                        <div class="flex flex-wrap items-center gap-x-1 mr-auto">
+                            <span class="font-shrikhand">
+                                {{ member.name }}
+                            </span>
+                            <span v-if="member.pronouns" class="small">
+                                ({{ member.pronouns }})
+                            </span>
+                        </div>
+
+                        <span v-if="member.role" class="font-shrikhand">
                             {{ member.role }}
                         </span>
+                        
                     </p>
                     
                     <div v-if="member.contacts" class="flex flex-col gap-0.5">

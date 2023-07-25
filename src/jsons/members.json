@@ -54,8 +54,64 @@
         "role": "Role"
       }
     ],
+    "ped": [
+      {
+        "role": "Coordenadora",
+        "name": "Andreia Marques", 
+        "pronouns": "she/her",
+        "contacts": {
+          "insta": "andreiamarquescello",
+          "discord": "Josefa Ayala#4973"
+        }
+      },
+      {
+        "name": "Vee", 
+        "pronouns": "she/he",
+        "contacts": {
+          "insta": "vikill06",
+          "discord": "hashida's artits#9801"
+        }
+      },
+      {
+        "name": "Sandra", 
+        "pronouns": "she/her",
+        "contacts": {
+          "insta": "sandraibf",
+          "discord": "snadra#3665"
+        }
+      },
+      {
+        "name": "André Rodrigues", 
+        "pronouns": "he/him",
+        "contacts": {
+          "insta": "andrerodrigues47"
+        }
+      },
+      {
+        "name": "Inês", 
+        "pronouns": "she/they",
+        "contacts": {
+          "discord": "broke_sugardaddy#4386"
+        }
+      },
+      {
+        "name": "Maria", 
+        "pronouns": "she/her",
+        "contacts": {
+          "discord": "maru#3065"
+        }
+      },
+      {
+        "name": "Bea", 
+        "pronouns": "she/her",
+        "contacts": {
+          "discord": "rae(ven)#4892"
+        }
+      }
+    ],
     "recr": [
         {
+          "role": "Coordenador",
           "name": "Bruno Gião", 
           "pronouns": "they/them",
           "contacts": {
@@ -86,62 +142,9 @@
           }
         }
     ],
-    "ped": [
-        {
-          "name": "Vee", 
-          "pronouns": "she/he",
-          "contacts": {
-            "insta": "vikill06",
-            "discord": "hashida's artits#9801"
-          }
-        },
-        {
-          "name": "Andreia Marques", 
-          "pronouns": "she/her",
-          "contacts": {
-            "insta": "andreiamarquescello",
-            "discord": "Josefa Ayala#4973"
-          }
-        },
-        {
-          "name": "Sandra", 
-          "pronouns": "she/her",
-          "contacts": {
-            "insta": "sandraibf",
-            "discord": "snadra#3665"
-          }
-        },
-        {
-          "name": "André Rodrigues", 
-          "pronouns": "he/him",
-          "contacts": {
-            "insta": "andrerodrigues47"
-          }
-        },
-        {
-          "name": "Inês", 
-          "pronouns": "she/they",
-          "contacts": {
-            "discord": "broke_sugardaddy#4386"
-          }
-        },
-        {
-          "name": "Maria", 
-          "pronouns": "she/her",
-          "contacts": {
-            "discord": "maru#3065"
-          }
-        },
-        {
-          "name": "Bea", 
-          "pronouns": "she/her",
-          "contacts": {
-            "discord": "rae(ven)#4892"
-          }
-        }
-    ],
     "comms": [
         { 
+          "role": "Coordenador",
           "name": "Ezra", 
           "pronouns": "he/they",
           "contacts": {
