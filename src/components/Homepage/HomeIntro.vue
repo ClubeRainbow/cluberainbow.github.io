@@ -17,7 +17,7 @@
 
         <p>
             Organizamos vários <b>encontros, palestras, e outros eventos</b> sobre os quais te podes manter a par
-            através da nossa página de Instagram e/ou Discord. 
+            através das nossas redes sociais!
         </p>
         
     </div>

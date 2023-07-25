@@ -31,7 +31,8 @@
         <div class="w-full relative" @mouseover="about_options=true" @mouseleave="about_options=false" @focusin="about_options=true">
             
             <button class="topbar_option sub_button hover:bg-[rgba(255,110,0,0.25)] focus:bg-[rgba(255,110,0,0.25)]" 
-                :class="{ 'bg-[rgba(255,110,0,0.25)]' : router.currentRoute.value.name === 'about' || about_options }">
+                :class="{ 'bg-[rgba(255,110,0,0.25)]' : router.currentRoute.value.name === 'about' || about_options }"
+                @click="redirect('about')">
                 Sobre Nós
                 <img src="../assets/arrow_down.svg" alt="toggle list" class="h-3 w-3 xl-topbar:h-4 xl-topbar:w-4" :class="{ 'rotate-180' : about_options }"/>
             </button>
@@ -55,7 +56,8 @@
         <div class="w-full relative" @mouseover="info_options=true" @mouseleave="info_options=false" @focusin="info_options=true">
             
             <button class="topbar_option sub_button hover:bg-[rgba(255,140,0,0.25)] focus:bg-[rgba(255,140,0,0.25)]" 
-                :class="{ 'bg-[rgba(255,140,0,0.25)]' : router.currentRoute.value.name === 'info' || info_options }">
+                :class="{ 'bg-[rgba(255,140,0,0.25)]' : router.currentRoute.value.name === 'info' || info_options }"
+                @click="redirect('info')">
                 Informações
                 <img src="../assets/arrow_down.svg" alt="toggle list" class="h-3 w-3 xl-topbar:h-4 xl-topbar:w-4" :class="{ 'rotate-180' : info_options }"/>
             </button>
@@ -76,7 +78,8 @@
 
         <div class="w-full relative" @mouseover="merch_options=true" @mouseleave="merch_options=false" @focusin="merch_options=true">
             <button class="topbar_option sub_button hover:bg-[rgba(0,200,0,0.25)] focus:bg-[rgba(0,200,0,0.25)]"
-                :class="{ 'bg-[rgba(0,200,0,0.25)]' : router.currentRoute.value.name === 'merch' || merch_options }">
+                :class="{ 'bg-[rgba(0,200,0,0.25)]' : router.currentRoute.value.name === 'merch' || merch_options }"
+                @click="redirect('merch')">
                 Merch
                 <img src="../assets/arrow_down.svg" alt="toggle list" class="h-3 w-3 xl-topbar:h-4 xl-topbar:w-4" :class="{ 'rotate-180' : merch_options }"/>
             </button>
