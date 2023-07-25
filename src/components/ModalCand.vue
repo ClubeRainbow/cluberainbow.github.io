@@ -46,7 +46,7 @@
                 <div class="flex flex-wrap gap-y-2 gap-x-12">
                     <div>
                         <p><b>Para este departamento, estamos à procura de:</b></p>
-                        <ul class="list-disc ml-12">
+                        <ul class="ml-12">
                             <li>função 1</li>
                             <li>função 2</li>
                             <li>função 3</li>
@@ -55,7 +55,7 @@
 
                     <div>
                         <p><b>Para fazeres parte, precisas de:</b></p>
-                        <ul class="list-disc ml-12">
+                        <ul class="ml-12">
                             <li>Ser estudante ou alumni da Universidade do Minho</li>
                             <li>Ter Discord (é a nossa principal plataforma de organização)</li>
                             <li>...</li>

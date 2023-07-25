@@ -37,7 +37,7 @@
             </button>
 
             <div v-if="about_options" class="sub_section">
-                <button class="sub_option" @click="redirect('about')">
+                <button class="sub_option" @click="redirect('about', '#clube')">
                     Sobre o Clube Rainbow
                 </button>
                 <button class="sub_option" @click="redirect('about', '#depts')">
@@ -62,8 +62,8 @@
             </button>
 
             <div v-if="info_options" class="sub_section">
-                <button class="sub_option" @click="redirect('info')">
-                    Calendário
+                <button class="sub_option" @click="redirect('info', '#events')">
+                    Eventos
                 </button>
                 <button class="sub_option rounded-b-lg" @click="redirect('info', '#faq')" @focusout="info_options=false">
                     FAQ

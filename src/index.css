@@ -18,6 +18,9 @@
     p, span, li {
         @apply text-sm md:text-base
     }
+    li::marker {
+        content: '✦ '
+    }
 }
 
 @layer components {

@@ -31,7 +31,7 @@
 
             <Transition>
                 <div v-if="about_options" class="sub_section">
-                    <button class="sub_option mt-4" @click="redirect('about')">
+                    <button class="sub_option mt-4" @click="redirect('about', '#clube')">
                         Sobre o Clube Rainbow
                     </button>
                     <button class="sub_option" @click="redirect('about', '#depts')">
@@ -55,8 +55,8 @@
 
             <Transition>
                 <div v-if="info_options" class="sub_section">
-                    <button class="sub_option mt-4" @click="redirect('info')">
-                        Calendário
+                    <button class="sub_option mt-4" @click="redirect('info', '#events')">
+                        Eventos
                     </button>
                     <button class="sub_option mb-2" @click="redirect('info', '#faq')">
                         FAQ
@@ -100,7 +100,7 @@
     }
 
     .sub_option {
-        @apply font-shrikhand font-normal text-xl 
+        @apply font-shrikhand text-xl 
         w-full border-2 rounded-md p-2 text-center 
         bg-cr-red-beige
         hover:brightness-110 
