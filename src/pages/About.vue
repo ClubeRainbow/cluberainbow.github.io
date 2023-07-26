@@ -3,14 +3,14 @@
     import DeptsSection from '../components/About/DeptsSection.vue';
     import DirSection from '../components/About/DirSection.vue';
     import PartnersSection from '../components/About/PartnersSection.vue';
-    import ModalCand from '../components/ModalCand.vue';
+    import ModalDeptCand from '../components/Modals/ModalDeptCand.vue';
 
     const show_modal = ref(false)
     const dept_cand = ref('')
 </script>
 
 <template>
-    <ModalCand v-if="show_modal" :dept="dept_cand" @close="show_modal = false" />
+    <ModalDeptCand v-if="show_modal" :dept="dept_cand" @close="show_modal = false" />
     
     <div class="flex flex-col gap-10">
         

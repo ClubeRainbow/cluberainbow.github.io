@@ -1,11 +1,11 @@
 <template>
     <div class="flex flex-col gap-4 box py-6">
         
-        <p class="title">
+        <p class="title text-center md:text-left">
             Clube Rainbow
         </p>
 
-        <p class="subsubtitle">
+        <p class="subsubtitle text-center md:text-left">
             ✦ Bem vinde ao Clube <span class="subsubtitle whitespace-nowrap">Rainbow! ✦</span>
         </p>
 

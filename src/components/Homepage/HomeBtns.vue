@@ -6,7 +6,7 @@
         <button @click="$router.push({name: 'info', hash: '#faq'})">
             FAQ
         </button>
-        <button @click="">
+        <button @click="$emit('show_modal')">
             Candidaturas
         </button>
     </div>
