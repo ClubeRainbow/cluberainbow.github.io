@@ -5,7 +5,7 @@ import ContactIcons from '../components/ContactIcons.vue';
 </script>
 
 <template>
-    <div class="flex flex-col-reverse items-center md:flex-row md:items-start gap-6">
+    <div class="flex flex-col-reverse items-center md:flex-row md:items-start gap-x-6 gap-y-4">
 
         <div class="flex flex-col gap-6 w-full md:w-[600px] my-auto">
             <HomeIntro />

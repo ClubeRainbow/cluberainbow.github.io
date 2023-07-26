@@ -99,7 +99,7 @@
 
 <style scoped>
     .cand_btn {
-        @apply font-shrikhand text-base md:text-lg [@media(min-width:500px)]:whitespace-nowrap
+        @apply font-shrikhand text-base md:text-lg sm:whitespace-nowrap
         mt-auto w-full border-2 px-6 md:px-10 py-1 rounded-lg bg-cr-red-beige
         hover:brightness-110 focus:brightness-110
     }

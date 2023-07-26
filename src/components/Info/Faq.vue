@@ -21,13 +21,11 @@
                     </button></b>
                 </p>
                 <p>
-                    As candidaturas abrem sempre pelo menos uma vez por ano, por isso se não te puderes
-                    candidatar agora, terás sempre outras oportunidades.
-                    Por favor tem em atenção que <b>apenas aceitamos estudantes e alumni da Universidade do Minho.</b>
-                </p>
-                <p>
                     Atualmente, <b>as candidaturas estão 
                     {{ (info.candidaturas.ped || info.candidaturas.recr || info.candidaturas.comms) ? 'abertas.' : 'fechadas.'}}</b>
+                    No entanto, elas abrem sempre pelo menos uma vez por ano, por isso se não te puderes
+                    candidatar agora, terás sempre outras oportunidades.
+                    Por favor tem em atenção que <b>apenas aceitamos estudantes e alumni da Universidade do Minho.</b>
                 </p>
             </div>
             
@@ -92,7 +90,7 @@
             <div class="flex flex-col gap-2">
                 <p>
                     <b>Atualmente, não.</b> Apenas vendemos merch nos nossos eventos ou quando vamos a marchas do pride, pois,
-                    de momento, não teríamos facilidade em realizar vendas de outro modo para todes os interessades.
+                    de momento, não teríamos facilidade em realizar vendas de outro modo para todes es interessades.
                 </p>
             </div>
         </FaqItem>

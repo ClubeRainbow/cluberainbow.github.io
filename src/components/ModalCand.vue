@@ -84,7 +84,7 @@
             </a>
 
             <button @click="$emit('close')" class="absolute top-3 right-3 hover:brightness-110 focus:brightness-110">
-                <img src="../assets/x.svg" alt="scroll up" class="h-8 w-8"/>
+                <img src="../assets/x.svg" alt="close" class="h-8 w-8"/>
             </button>
 
         </div>

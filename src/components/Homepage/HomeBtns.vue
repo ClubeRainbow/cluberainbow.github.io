@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col sm:flex-row gap-x-4 gap-y-2">
-        <button @click="$router.push({name: 'info', hash: '#events'})">
+        <button @click="$router.push({name: 'info'})">
             Eventos
         </button>
         <button @click="$router.push({name: 'info', hash: '#faq'})">
