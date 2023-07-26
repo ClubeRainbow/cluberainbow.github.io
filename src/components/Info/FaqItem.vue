@@ -9,7 +9,7 @@
 </script>
 
 <template>
-    <div class="flex flex-col gap-2 box px-4 md:px-6 py-3 md:py-4">
+    <div class="flex flex-col gap-2 box py-3 md:py-4">
         
         <button class="subsubtitle question_btn" @click="show_answer = !show_answer">
             {{ question }}

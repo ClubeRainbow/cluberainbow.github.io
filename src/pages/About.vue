@@ -12,7 +12,7 @@
 <template>
     <ModalCand v-if="show_modal" :dept="dept_cand" @close="show_modal = false" />
     
-    <div class="flex flex-col gap-8">
+    <div class="flex flex-col gap-10">
         
         <div id="clube" class="flex flex-col gap-4">
             <p class="title">

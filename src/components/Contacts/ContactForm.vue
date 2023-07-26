@@ -12,7 +12,7 @@
 </script>
 
 <template>
-    <div class="flex flex-col gap-4 flex-1 box">
+    <div class="flex flex-col gap-4 w-full box">
         
         <div class="flex flex-col gap-2">
             <p class="text-2xl md:text-3xl font-shrikhand">Fala connosco!</p>
@@ -38,9 +38,9 @@
                 <input name="From:" v-model="email" type="email" placeholder="O teu email..." required>
             </div>
 
-            <textarea name="Message:" v-model="message" type="text" placeholder="A tua mensagem..." class="h-[250px] md:h-[200px] lg:h-min-[150px]" required></textarea>
+            <textarea name="Message:" v-model="message" type="text" placeholder="A tua mensagem..." class="h-[250px]" required></textarea>
 
-            <button class="custom_btn mt-2" type="submit">
+            <button class="custom_btn mt-3" type="submit">
                 Enviar
             </button>
         </form>
@@ -53,16 +53,12 @@
         @apply bg-cr-off-white w-full border-2 rounded-md py-1 px-2 resize-none text-sm md:text-base
     }
 
-    option {
-        @apply font-semibold
-    }
-
     ::placeholder {
         @apply text-cr-brown opacity-70
     }
 
     .custom_btn {
-        @apply w-full md:w-9/12 bg-cr-red-beige border-2 rounded-lg p-2 
+        @apply w-full sm:w-2/3 bg-cr-red-beige border-2 rounded-lg p-2 
         text-xl md:text-2xl font-shrikhand
         hover:brightness-110 focus:brightness-110
     }

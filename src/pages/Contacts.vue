@@ -8,9 +8,9 @@
         <p class="title">
             Contactos
         </p>
-        <div class="flex flex-col-reverse lg:flex-row gap-y-8 gap-x-12">
-            <ContactForm /> 
+        <div class="flex flex-col gap-10">
             <ContactInfo />
+            <ContactForm />
         </div>
     </div>
 </template>

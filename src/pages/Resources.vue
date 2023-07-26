@@ -10,7 +10,7 @@ import Association from '../components/Resources/Association.vue'
             Recursos Úteis
         </p>
 
-        <div class="flex flex-col gap-6 mx-auto">
+        <div class="flex flex-col gap-6 w-full">
             <Association v-for="(ass, i) in associations_json.associations" :key="i" :ass="ass" />
         </div>
 

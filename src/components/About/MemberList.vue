@@ -57,7 +57,7 @@
                             </span>
                         </div>
 
-                        <span v-if="member.role" class="font-shrikhand">
+                        <span v-if="member.role" class="font-shrikhand small">
                             {{ member.role }}
                         </span>
                         

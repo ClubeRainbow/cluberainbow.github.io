@@ -49,8 +49,8 @@ import MerchItem from '../components/Merch/MerchItem.vue';
 
 <style scoped>
     .custom_grid {
-        @apply grid grid-cols-1 w-full 
-        [@media(min-width:860px)]:grid-cols-2 [@media(min-width:860px)]:w-auto 
-        gap-8 mx-auto mt-2 
+        @apply grid grid-cols-1 
+        [@media(min-width:850px)]:grid-cols-2
+        gap-8 w-full mt-2 
     }
 </style>

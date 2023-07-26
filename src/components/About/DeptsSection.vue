@@ -12,9 +12,9 @@
 
         <div class="flex flex-col gap-8">
             
-            <div class="flex flex-col lg:flex-row gap-x-8 box">
+            <div class="flex flex-wrap gap-x-8 box">
                 
-                <div class="flex flex-col gap-2">
+                <div class="flex flex-col gap-2 flex-1">
                     <p class="subtitle2 text-cr-orange">
                         Departamento Pedagógico
                     </p>
@@ -32,12 +32,12 @@
                     </button>
                 </div>
 
-                <img src="../../assets/kaku2.png" alt="panda" class="m-auto w-72 h-72"/>   
+                <img src="../../assets/kaku2.png" alt="panda"/>   
             </div>
             
-            <div class="flex flex-col lg:flex-row-reverse gap-x-8 box">
+            <div class="flex flex-wrap flex-row-reverse gap-x-8 box">
                 
-                <div class="flex flex-col gap-2">
+                <div class="flex flex-col gap-2 flex-1">
                     <p class="subtitle2 text-cr-purple">
                         Departamento Recreativo
                     </p>
@@ -59,12 +59,12 @@
                     </button>
                 </div>
 
-                <img src="../../assets/kaku2.png" alt="panda" class="m-auto w-72 h-72"/>                
+                <img src="../../assets/kaku2.png" alt="panda"/>                
             </div>
 
-            <div class="flex flex-col lg:flex-row gap-x-8 box">
+            <div class="flex flex-wrap gap-x-8 box">
                 
-                <div class="flex flex-col gap-2">
+                <div class="flex flex-col gap-2 flex-1">
                     <p class="subtitle2 text-cr-teal">
                         Departamento de Comunicação
                     </p>
@@ -90,7 +90,7 @@
                     </button>
                 </div>
 
-                <img src="../../assets/kaku2.png" alt="panda" class="m-auto w-72 h-72"/>
+                <img src="../../assets/kaku2.png" alt="panda"/>
             </div>
             
         </div>
@@ -99,8 +99,12 @@
 
 <style scoped>
     .cand_btn {
-        @apply font-shrikhand text-base md:text-lg 
+        @apply font-shrikhand text-base md:text-lg [@media(min-width:500px)]:whitespace-nowrap
         mt-auto w-full border-2 px-6 md:px-10 py-1 rounded-lg bg-cr-red-beige
         hover:brightness-110 focus:brightness-110
+    }
+
+    img {
+        @apply m-auto w-60 h-60 md:w-64 md:h-64 lg:w-72 lg:h-72
     }
 </style>

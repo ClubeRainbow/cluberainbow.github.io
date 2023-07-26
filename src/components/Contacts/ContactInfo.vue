@@ -3,10 +3,8 @@
 </script>
 
 <template>
-    <div class="flex flex-col justify-center items-center">
-        <img src="../../assets/kaku2.png" alt="panda" class="h-52 md:h-60 lg:h-64"/>
-        <div class="border-y-2 py-6 px-8 w-full flex justify-center items-center">
-            <ContactIcons class="flex flex-col gap-3" size="h-8 w-8 md:h-10 md:w-10" :text="true" />
-        </div>
+    <div class="flex flex-wrap justify-center items-center gap-x-8 gap-y-4">
+        <img src="../../assets/kaku2.png" alt="panda" class="bg-cr-beige drop-shadow-lg border-2 rounded-full h-60 w-60 lg:h-64 lg:w-64"/>
+        <ContactIcons class="flex flex-col gap-5" size="h-10 w-10" :text="true" />
     </div>
 </template>
