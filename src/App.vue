@@ -20,13 +20,14 @@
 </script>
 
 <template>
-  <div class="relative min-h-screen min-w-screen py-8 overflow-hidden" 
-      :class="{ 'bg-gradient' : router.currentRoute.value.name !== 'home' || show_options }">
+  <div class="relative py-8" 
+      :class="{ 'bg-gradient' : router.currentRoute.value.name !== 'home' || show_options,
+                'min-h-screen h-full lg:overflow-hidden flex flex-col' : router.currentRoute.value.name === 'home' && !show_options }">
 
-    <TopBar id="topbar" @show_options="show_options = !show_options" @close="s => scrollTo(s)"/>
+    <TopBar id="topbar" @show_options="show_options = !show_options" @close="s => scrollTo(s)" />
 
     <div class="border-y-2 pt-16 pb-8" 
-      :class="{ 'md:px-12 mx-8' : router.currentRoute.value.name === 'home' && !show_options,
+      :class="{ 'md:px-12 mx-8 flex-1' : router.currentRoute.value.name === 'home' && !show_options,
                 'px-8 sm:px-12 md:px-28 lg:px-48 bg-cr-beige' : router.currentRoute.value.name !== 'home' || show_options }">
       <MobileOptions v-if="show_options" @close="s => scrollTo(s)"/>
       <router-view v-else></router-view>
@@ -35,8 +36,8 @@
     <FooterVue />
 
     <template v-if="router.currentRoute.value.name === 'home'">
-      <img src="./assets/bg_top.png" alt="imagem de fundo 1" class="-z-10 w-full absolute top-0 right-0"/>
-      <img src="./assets/bg_bottom.png" alt="imagem de fundo 2" class="-z-10 w-full absolute bottom-0 right-0 lg:bottom-[-50px]"/>
+      <img src="./assets/bg_top.png" alt="imagem de fundo 1" class="-z-10 w-full absolute top-0"/>
+      <img src="./assets/bg_bottom.png" alt="imagem de fundo 2" class="-z-10 w-full absolute bottom-0 lg:bottom-[-60px]"/>
     </template>
 
   </div>

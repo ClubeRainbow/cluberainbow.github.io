@@ -4,7 +4,7 @@
 </script>
 
 <template>
-    <div class="flex flex-col gap-10">
+    <div class="flex flex-col gap-10 max-w-6xl mx-auto">
         <Events id="events" />
         <Faq id="faq" />
     </div>

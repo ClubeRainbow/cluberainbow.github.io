@@ -4,7 +4,7 @@ import Association from '../components/Resources/Association.vue'
 </script>
 
 <template>
-    <div class="flex flex-col gap-4">
+    <div class="flex flex-col gap-4 max-w-6xl mx-auto">
         
         <p class="title whitespace-nowrap">
             Recursos Úteis

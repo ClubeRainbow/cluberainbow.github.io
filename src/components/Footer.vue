@@ -6,12 +6,12 @@
 </script>
 
 <template>
-    <div class="mx-8 py-2 relative grid grid-cols-1 sm:grid-cols-3 gap-2 flex">
+    <div class="relative grid grid-cols-1 md:grid-cols-3 gap-2 mx-8 py-2">
 
-        <ContactIcons class="order-last sm:order-first flex items-center justify-center sm:justify-start gap-2" size="h-8 w-8" />
+        <ContactIcons class="order-last md:order-first flex items-center justify-center md:justify-start gap-2" size="h-8 w-8" />
 
         <div class="col-span-1 flex flex-col items-center text-outline-white whitespace-nowrap">
-            <p class="font-shrikhand font-normal text-xl">Clube Rainbow</p>
+            <p class="subsubtitle">Clube Rainbow</p>
             <p class="text-sm">rainbow.clube.estudantes@gmail.com</p>
         </div>
 
