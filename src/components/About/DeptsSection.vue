@@ -6,18 +6,14 @@
 
 <template>
     <div class="flex flex-col gap-4">
-        <p class="title">
-            Departamentos
-        </p>
+        <h1> Departamentos </h1>
 
         <div class="flex flex-col gap-8">
             
             <div class="flex flex-wrap gap-x-8 box">
                 
                 <div class="flex flex-col gap-2 flex-1">
-                    <p class="subtitle2 text-cr-orange">
-                        Departamento Pedagógico
-                    </p>
+                    <h2 class="text-cr-orange">Departamento Pedagógico</h2>
                     <p>
                         O Departamento Pedagógico é responsável pela <b>componente educativa</b> do Clube, e pela
                         <b>organização de parcerias</b> com outras organizações. Graças a ele podemos organizar
@@ -38,9 +34,7 @@
             <div class="flex flex-wrap flex-row-reverse gap-x-8 box">
                 
                 <div class="flex flex-col gap-2 flex-1">
-                    <p class="subtitle2 text-cr-purple">
-                        Departamento Recreativo
-                    </p>
+                    <h2 class="text-cr-purple">Departamento Recreativo</h2>
                     <p>
                         O Departamento Recreativo é o responsável pela organização de <b>encontros e atividades</b>
                         mais informais, focando-se especialmente na <b>componente social e de convívio</b> do Clube.
@@ -65,9 +59,7 @@
             <div class="flex flex-wrap gap-x-8 box">
                 
                 <div class="flex flex-col gap-2 flex-1">
-                    <p class="subtitle2 text-cr-teal">
-                        Departamento de Comunicação
-                    </p>
+                    <h2 class="text-cr-teal">Departamento de Comunicação</h2>
                     <p>
                         O Departamento de Comunicação é o responsável por <b>gerir as nossas redes sociais</b>,
                         <b>criar posts</b> informativos, e <b>divulgar</b> atividades e eventos do Clube.

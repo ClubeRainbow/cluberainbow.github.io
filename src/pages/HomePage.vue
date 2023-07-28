@@ -11,9 +11,9 @@
 <template>
     <ModalCands v-if="show_modal" @close="show_modal = false" />
 
-    <div class="flex flex-col-reverse md:flex-row items-center md:items-start gap-x-6 gap-y-4 h-full">
+    <div class="flex flex-col-reverse md:flex-row items-center md:items-start gap-x-6 gap-y-4">
 
-        <div class="flex flex-col gap-6 w-full md:w-[600px]">
+        <div class="flex flex-col gap-6 w-full md:min-w-[600px] md:max-w-[50%]">
             <HomeIntro />
             <HomeBtns @show_modal="show_modal = true"/>
         </div>

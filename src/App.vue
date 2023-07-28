@@ -26,8 +26,8 @@
 
     <TopBar id="topbar" @show_options="show_options = !show_options" @close="s => scrollTo(s)" />
 
-    <div class="border-y-2 pt-16 pb-8" 
-      :class="{ 'md:px-12 mx-8 flex-1' : router.currentRoute.value.name === 'home' && !show_options,
+    <div class="border-y-2 pt-16 pb-10" 
+      :class="{ 'md:px-12 mx-8 flex-1 flex items-center' : router.currentRoute.value.name === 'home' && !show_options,
                 'px-8 sm:px-12 md:px-28 lg:px-48 bg-cr-beige' : router.currentRoute.value.name !== 'home' || show_options }">
       <MobileOptions v-if="show_options" @close="s => scrollTo(s)"/>
       <router-view v-else></router-view>
@@ -37,7 +37,7 @@
 
     <template v-if="router.currentRoute.value.name === 'home'">
       <img src="./assets/bg_top.png" alt="imagem de fundo 1" class="-z-10 w-full absolute top-0"/>
-      <img src="./assets/bg_bottom.png" alt="imagem de fundo 2" class="-z-10 w-full absolute bottom-0 lg:bottom-[-60px]"/>
+      <img src="./assets/bg_bottom.png" alt="imagem de fundo 2" class="-z-10 w-full absolute bottom-0 lg:bottom-[-50px]"/>
     </template>
 
   </div>

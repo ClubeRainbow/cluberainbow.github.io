@@ -11,8 +11,8 @@
 <template>
     <div class="flex flex-col gap-2 box py-3 md:py-4">
         
-        <button class="subsubtitle question_btn" @click="show_answer = !show_answer">
-            {{ question }}
+        <button class="question_btn" @click="show_answer = !show_answer">
+            <h4>{{ question }}</h4>
             <img src="../../assets/arrow_down.svg" alt="toggle list" class="h-4 w-4" :class="{ 'rotate-180' : show_answer }"/>
         </button>
 

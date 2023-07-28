@@ -15,9 +15,7 @@
     <div class="flex flex-col gap-10 max-w-6xl mx-auto">
         
         <div id="clube" class="flex flex-col gap-4">
-            <p class="title">
-                Sobre o Clube Rainbow
-            </p>
+            <h1> Sobre o Clube Rainbow </h1>
             <p>
                 under construction
             </p>

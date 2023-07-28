@@ -11,8 +11,8 @@
         <ContactIcons class="order-last md:order-first flex items-center justify-center md:justify-start gap-2" size="h-8 w-8" />
 
         <div class="col-span-1 flex flex-col items-center text-outline-white whitespace-nowrap">
-            <p class="subsubtitle">Clube Rainbow</p>
-            <p class="text-sm">rainbow.clube.estudantes@gmail.com</p>
+            <h4>Clube Rainbow</h4>
+            <p class="text-xs md:text-sm">rainbow.clube.estudantes@gmail.com</p>
         </div>
 
         <button class="absolute right-0 top-4 flex items-center justify-end hover:brightness-110 focus:brightness-110" @click="scrollToTop()">

@@ -15,7 +15,7 @@
     <div class="flex flex-col gap-4 w-full box">
         
         <div class="flex flex-col gap-2">
-            <p class="text-2xl md:text-3xl font-shrikhand">Fala connosco!</p>
+            <h2>Fala connosco!</h2>
             <div>
                 <p>Se tiveres alguma questão ou recomendação está à vontade para entrar em contacto connosco!</p>
                 <p>Podes fazê-lo via este formulário ou pelos contactos listados nesta página.</p>

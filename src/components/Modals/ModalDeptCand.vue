@@ -23,15 +23,15 @@
 <template>
     <Modal>
         
-        <p class="subtitle2">
+        <h2>
             Candidaturas para o 
-            <span class="subtitle2"
+            <h2 class="inline"
                 :class="{ 'text-cr-orange' : dept==='ped',
                         'text-cr-purple' : dept==='recr',
                         'text-cr-teal' : dept==='comms' }">
                 {{ getwords(dept) }}
-            </span>
-        </p>
+            </h2>
+        </h2>
 
         <div class="flex flex-col gap-2">
             

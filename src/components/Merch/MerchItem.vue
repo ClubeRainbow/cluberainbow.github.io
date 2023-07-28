@@ -21,7 +21,7 @@
         <Slides :path="path" :max="max" :size="img_size"/>
         
         <div class="flex flex-col h-full">
-            <p class="subtitle">{{ title }}</p>
+            <h3>{{ title }}</h3>
             
             <p v-if="design">
                 <span class="font-shrikhand font-normal">Design: </span>

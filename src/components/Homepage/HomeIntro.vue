@@ -1,13 +1,13 @@
 <template>
     <div class="flex flex-col gap-4 box py-6">
         
-        <p class="title text-center md:text-left">
+        <h1 class="text-center md:text-left">
             Clube Rainbow
-        </p>
+        </h1>
 
-        <p class="subsubtitle text-center md:text-left">
-            ✦ Bem vinde ao Clube <span class="subsubtitle whitespace-nowrap">Rainbow! ✦</span>
-        </p>
+        <h4 class="text-center md:text-left">
+            ✦ Bem vinde ao Clube <h4 class="inline whitespace-nowrap">Rainbow! ✦</h4>
+        </h4>
 
         <p>
             Somos uma iniciativa formada por estudantes da Universidade do Minho com o objetivo de <b>promover

@@ -5,9 +5,7 @@ import MerchItem from '../components/Merch/MerchItem.vue';
 <template>
     <div class="flex flex-col gap-4 max-w-6xl mx-auto">
         
-        <p class="title">
-            Autocolantes
-        </p>
+        <h1> Autocolantes </h1>
 
         <div>
             <p>

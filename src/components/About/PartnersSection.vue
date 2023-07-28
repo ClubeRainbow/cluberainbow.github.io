@@ -4,9 +4,7 @@
 
 <template>
     <div class="flex flex-col gap-4">
-        <p class="title">
-            Parcerias
-        </p>
+        <h1> Parcerias </h1>
         <div class="flex flex-wrap justify-center md:justify-start items-center gap-4">
             <a v-for="(partner, i) in partners_json.partners" :key="i" class="rounded-xl" :href="partner.link" target="_blank">
                 <img :src="partner.logo" :alt="partner.name" class="w-20 h-20 rounded-xl" />

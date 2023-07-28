@@ -35,7 +35,7 @@
 <template>
     <div>
         <button class="flex flex-row items-center gap-1.5" @click="toggleMemberList(members, type)">
-            <p class="font-shrikhand md:text-lg">
+            <p class="font-shrikhand text-base md:text-lg">
                 Membros
             </p>
             <img src="../../assets/arrow_down.svg" alt="toggle list" class="h-3 w-3" :class="{ 'rotate-180' : show_members }"/>

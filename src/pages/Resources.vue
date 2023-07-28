@@ -6,9 +6,9 @@ import Association from '../components/Resources/Association.vue'
 <template>
     <div class="flex flex-col gap-4 max-w-6xl mx-auto">
         
-        <p class="title whitespace-nowrap">
+        <h1 class="whitespace-nowrap">
             Recursos Úteis
-        </p>
+        </h1>
 
         <div class="flex flex-col gap-6 w-full">
             <Association v-for="(ass, i) in associations_json.associations" :key="i" :ass="ass" />

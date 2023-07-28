@@ -5,16 +5,12 @@
 
 <template>
     <div class="flex flex-col gap-4">
-        <p class="title">
-            Direção
-        </p>
+        <h1> Direção </h1>
 
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
             
             <div class="flex flex-col gap-2 box">
-                <p class="subtitle">
-                    Direção
-                </p>
+                <h3>Direção</h3>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
@@ -23,9 +19,7 @@
             </div>
 
             <div class="flex flex-col gap-2 box">
-                <p class="subtitle">
-                    Mesa da Assembleia Geral
-                </p>
+                <h3>Mesa da Assembleia Geral</h3>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
@@ -34,9 +28,7 @@
             </div>
 
             <div class="flex flex-col gap-2 box">
-                <p class="subtitle">
-                    Conselho Fiscal e Jurisdicional
-                </p>
+                <h3>Conselho Fiscal e Jurisdicional</h3>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>

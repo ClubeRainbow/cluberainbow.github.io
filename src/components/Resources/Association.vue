@@ -31,7 +31,7 @@
         <div class="flex flex-col gap-2 w-full">
             
             <a class="flex items-center gap-2" :href="ass.page" target="_blank">
-                <span class="subtitle">{{ ass.name }}</span>
+                <h3>{{ ass.name }}</h3>
                 <img src="../../assets/icon_email.svg" alt="link" class="h-6 w-6" />
             </a>
 
@@ -42,9 +42,9 @@
             <div class="flex flex-wrap gap-y-2 gap-x-8">
                 
                 <div class="flex flex-col gap-1">
-                    <p class="subsubtitle mb-1">
+                    <h3 class="mb-1">
                         Contactos:
-                    </p>
+                    </h3>
 
                     <a v-if="ass.insta" class="item" :href="'https://www.instagram.com/' + ass.insta" target="_blank">
                         <img src="../../assets/icon_insta.svg" alt="instagram" class="h-5 w-5" />
@@ -67,17 +67,17 @@
                 </div>
 
                 <div v-if="ass.location && ass.schedule" class="flex flex-col gap-1">
-                    <p class="subsubtitle mb-1">
+                    <h3 class="mb-1">
                         Local & Horário:
-                    </p>
+                    </h3>
                     <p>{{ ass.location }}</p>
                     <p>{{ ass.schedule }}</p>
                 </div>
 
                 <div v-if="ass.useful_links" class="flex flex-col gap-1">
-                    <p class="subsubtitle mb-1">
+                    <h3 class="mb-1">
                         Links Úteis:
-                    </p>
+                    </h3>
                     <a v-for="(use, i) in ass.useful_links" :key="i" class="item" :href="use.link" target="_blank">
                         <img src="../../assets/icon_email.svg" alt="link" class="h-5 w-5" />
                         <span>{{ use.desc }}</span>

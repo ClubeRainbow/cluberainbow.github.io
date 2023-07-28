@@ -6,9 +6,7 @@
 <template>
     <div class="flex flex-col gap-4">
 
-        <p class="title">
-            FAQ
-        </p>
+        <h1> FAQ </h1>
 
         <FaqItem question="Como posso fazer parte?">
             <div class="flex flex-col gap-2">

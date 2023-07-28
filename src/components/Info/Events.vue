@@ -5,16 +5,13 @@
 <template>
     <div class="flex flex-col gap-4">
 
-        <p class="title">
-            Eventos
-        </p>
+        <h1> Eventos </h1>
 
         <div class="flex flex-col md:flex-row gap-y-4 gap-x-12">  
             
             <div class="flex flex-col gap-2">
-                <p class="subtitle">
-                    Próximo Evento:
-                </p>
+                <h3>Próximo Evento:</h3>
+                
                 <div class="mx-auto h-64 w-64 sm:h-72 sm:w-72 lg:h-96 lg:w-96 flex items-center justify-center border-2 rounded-xl bg-cr-beige drop-shadow-md">
                     <a v-if="info.next_event.img && info.next_event.link" :href="info.next_event.link" target="_blank" class="alt_highlight">
                         <img :src="info.next_event.img" alt="próximo evento" class="rounded-xl" />
@@ -26,9 +23,7 @@
             </div>
             
             <div class="flex flex-col gap-2">
-                <p class="subtitle md:whitespace-nowrap">
-                    Calendário:
-                </p>
+                <h3>Calendário:</h3>
                 <p>
                     under construction
                 </p>
