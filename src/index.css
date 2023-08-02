@@ -22,8 +22,12 @@
         @apply text-sm md:text-base
     }
 
+    ul {
+        @apply list-inside
+    }
+
     li::marker {
-        content: '✦ '
+        content: '✦ ';
     }
 
     h1 {
