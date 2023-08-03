@@ -3,13 +3,20 @@
         "link": "https://www.instagram.com/p/Cs3w1JfN5G-/",
         "img": "/event.jpg"
     },
-    "candidaturas": {
+    "cands": {
+        "open" : true,
         "timelimit" : "xx/xx/xxxx",
-        "ped" : true,
-        "recr" : true,
-        "comms" : true,
-        "ped_link" : "https://google.com",
-        "recr_link" : "https://google.com",
-        "comms_link" : "https://google.com"
+        "ped" : {
+            "open" : false,
+            "link" : "https://google.com"
+        },
+        "recr" : {
+            "open" : true,
+            "link" : "https://google.com"
+        },
+        "comms" : {
+            "open" : true,
+            "link" : "https://google.com"
+        }
     }
 }

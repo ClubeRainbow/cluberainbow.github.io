@@ -5,7 +5,7 @@
 
 <template>
     <Modal>
-        <template v-if="info.candidaturas.comms || info.candidaturas.ped || info.candidaturas.recr">
+        <template v-if="info.cands.open">
             
             <h2>Candidaturas Abertas!</h2>
             
@@ -14,13 +14,13 @@
                     Gostarias de fazer parte do Clube Rainbow? 
                     Qualquer pessoa pode participar nos nossos eventos, mas caso queiras ajudar na organização por 
                     de trás dos mesmos, aproveita agora - <b>as candidaturas para os departamentos do
-                    Clube Rainbow estão abertas até {{info.candidaturas.timelimit}}!</b>
+                    Clube Rainbow estão abertas até {{info.cands.timelimit}}!</b>
                 </p>
                 <ul class="mx-auto flex flex-col gap-2">
                     <li>Cada departamento tem diferentes funções - 
                         <u>sabe mais sobre eles e consulta quais estão abertos através do botão abaixo!</u>
                     </li>
-                    <li>Podes candidatar-te a mais que um departamento, mas só serás colocade em um;</li>
+                    <li>Podes candidatar-te a mais que um departamento se vários estiverem abertos, mas só serás colocade em um;</li>
                     <li>O trabalho é voluntário e não remunerado;</li>
                     <li>Apenas aceitamos estudantes e alumni da Universidade do Minho.</li>
                 </ul>

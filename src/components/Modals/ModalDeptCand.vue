@@ -9,9 +9,9 @@
     }
 
     const getlink = (dept : string) => {
-        if (dept==='ped') return info.candidaturas.ped_link
-        else if (dept==='recr') return info.candidaturas.recr_link
-        else if (dept==='comms') return info.candidaturas.comms_link
+        if (dept==='ped') return info.cands.ped.link
+        else if (dept==='recr') return info.cands.recr.link
+        else if (dept==='comms') return info.cands.comms.link
     }
 
     interface Props {
@@ -39,7 +39,7 @@
                 Gostarias de fazer parte do Clube? 
                 <b>
                     As candidaturas estão abertas para o {{ getwords(dept) }}
-                    até {{ info.candidaturas.timelimit }}!
+                    até {{ info.cands.timelimit }}!
                 </b>
             </p>
 
@@ -64,7 +64,8 @@
             </div>
             
             <p>
-                Podes candidatar-te a mais que um departamento, mas só serás colocade em um.
+                Podes candidatar-te a mais que um departamento se vários estiverem abertos, 
+                mas só serás colocade em um.
                 O trabalho é voluntário e não remunerado.
             </p>
 

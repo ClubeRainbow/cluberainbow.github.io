@@ -21,11 +21,13 @@
                         com pessoas conhecedoras dos mesmos.
                     </p>
                     
-                    <MemberList :members="members.ped" type="dept" :class="{'mb-2' : info.candidaturas.ped}"/>
+                    <MemberList :members="members.ped" type="dept" />
                     
-                    <button v-if="info.candidaturas.ped" class="cand_btn" @click="$emit('show_modal', 'ped')">
-                        Candidaturas Abertas!
-                    </button>
+                    <div v-if="info.cands.open" class="mt-auto">
+                        <button class="cand_btn" :disabled="!info.cands.ped.open" @click="$emit('show_modal', 'ped')">
+                            {{ info.cands.ped.open ? 'Candidaturas Abertas!' : 'Candidaturas Indisponíveis' }}
+                        </button>
+                    </div>
                 </div>
 
                 <img src="../../assets/kaku2.png" alt="panda"/>   
@@ -46,11 +48,13 @@
                         e outros eventos online.
                     </p>
 
-                    <MemberList :members="members.recr" type="dept" :class="{'mb-2' : info.candidaturas.recr}"/>
+                    <MemberList :members="members.recr" type="dept" />
                     
-                    <button v-if="info.candidaturas.recr" class="cand_btn" @click="$emit('show_modal', 'recr')">
-                        Candidaturas Abertas!
-                    </button>
+                    <div v-if="info.cands.open" class="mt-auto">
+                        <button class="cand_btn" :disabled="!info.cands.recr.open" @click="$emit('show_modal', 'recr')">
+                            {{ info.cands.recr.open ? 'Candidaturas Abertas!' : 'Candidaturas Indisponíveis' }}
+                        </button>
+                    </div>
                 </div>
 
                 <img src="../../assets/kaku2.png" alt="panda"/>                
@@ -75,11 +79,13 @@
                         cuja venda ajuda a financiar o Clube e as suas atividades.
                     </p>
                     
-                    <MemberList :members="members.comms" type="dept" :class="{'mb-2' : info.candidaturas.comms}"/>
+                    <MemberList :members="members.comms" type="dept" />
 
-                    <button v-if="info.candidaturas.comms" class="cand_btn" @click="$emit('show_modal', 'comms')">
-                        Candidaturas Abertas!
-                    </button>
+                    <div v-if="info.cands.open" class="mt-auto">
+                        <button class="cand_btn" :disabled="!info.cands.comms.open" @click="$emit('show_modal', 'comms')">
+                            {{ info.cands.comms.open ? 'Candidaturas Abertas!' : 'Candidaturas Indisponíveis' }}
+                        </button>
+                    </div>
                 </div>
 
                 <img src="../../assets/kaku2.png" alt="panda"/>
@@ -92,8 +98,9 @@
 <style scoped>
     .cand_btn {
         @apply font-shrikhand text-base md:text-lg sm:whitespace-nowrap
-        mt-auto w-full border-2 px-6 md:px-10 py-1 rounded-lg bg-cr-red-beige
+        mt-2 w-full border-2 px-6 md:px-10 py-1 rounded-lg bg-cr-red-beige
         hover:brightness-110 focus:brightness-110
+        disabled:bg-stone-300 disabled:text-stone-500 disabled:hover:brightness-100
     }
 
     img {
