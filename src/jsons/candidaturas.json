@@ -1,0 +1,16 @@
+{
+    "open" : true,
+    "timelimit" : "xx/xx/xxxx",
+    "ped" : {
+        "open" : false,
+        "link" : "https://google.com"
+    },
+    "recr" : {
+        "open" : true,
+        "link" : "https://google.com"
+    },
+    "comms" : {
+        "open" : true,
+        "link" : "https://google.com"
+    }
+}

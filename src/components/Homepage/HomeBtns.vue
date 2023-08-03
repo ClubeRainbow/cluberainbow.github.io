@@ -1,5 +1,5 @@
 <script setup lang="ts">
-    import info from '../../jsons/info.json';
+    import cands from '../../jsons/candidaturas.json';
 </script>
 
 <template>
@@ -11,8 +11,8 @@
             FAQ
         </button>
         <button @click="$emit('show_modal')" 
-            :class="{'bg-stone-300 text-stone-500' : !info.cands.open,
-                     'bg-cr-red-beige' : info.cands.open }">
+            :class="{'bg-stone-300 text-stone-500' : !cands.open,
+                     'bg-cr-red-beige' : cands.open }">
             Candidaturas
         </button>
     </div>

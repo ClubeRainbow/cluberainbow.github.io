@@ -1,6 +1,6 @@
 <script setup lang="ts">
     import Modal from './Modal.vue';
-    import info from '../../jsons/info.json';
+    import cands from '../../jsons/candidaturas.json';
 
     const getwords = (dept : string) => {
         if (dept==='ped') return 'Departamento Pedagógico'
@@ -9,9 +9,9 @@
     }
 
     const getlink = (dept : string) => {
-        if (dept==='ped') return info.cands.ped.link
-        else if (dept==='recr') return info.cands.recr.link
-        else if (dept==='comms') return info.cands.comms.link
+        if (dept==='ped') return cands.ped.link
+        else if (dept==='recr') return cands.recr.link
+        else if (dept==='comms') return cands.comms.link
     }
 
     interface Props {
@@ -39,7 +39,7 @@
                 Gostarias de fazer parte do Clube? 
                 <b>
                     As candidaturas estão abertas para o {{ getwords(dept) }}
-                    até {{ info.cands.timelimit }}!
+                    até {{ cands.timelimit }}!
                 </b>
             </p>
 

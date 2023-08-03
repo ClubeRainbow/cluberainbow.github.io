@@ -1,6 +1,6 @@
 <script setup lang="ts">
     import FaqItem from "./FaqItem.vue";
-    import info from '../../jsons/info.json';
+    import cands from '../../jsons/candidaturas.json';
 </script>
 
 <template>
@@ -20,7 +20,7 @@
                 </p>
                 <p>
                     Atualmente, <b>as candidaturas estão 
-                    {{ info.cands.open ? 'abertas.' : 'fechadas.'}}</b>
+                    {{ cands.open ? 'abertas.' : 'fechadas.'}}</b>
                     No entanto, elas abrem sempre pelo menos uma vez por ano, por isso se não te puderes
                     candidatar agora, terás sempre outras oportunidades.
                     Por favor tem em atenção que <b>apenas aceitamos estudantes e alumni da Universidade do Minho.</b>

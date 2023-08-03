@@ -1,5 +1,5 @@
 <script setup lang="ts">
-    import info from '../../jsons/info.json';
+    import cands from '../../jsons/candidaturas.json';
     import members from '../../jsons/members.json';
     import MemberList from './MemberList.vue';
 </script>
@@ -23,9 +23,9 @@
                     
                     <MemberList :members="members.ped" type="dept" />
                     
-                    <div v-if="info.cands.open" class="mt-auto">
-                        <button class="cand_btn" :disabled="!info.cands.ped.open" @click="$emit('show_modal', 'ped')">
-                            {{ info.cands.ped.open ? 'Candidaturas Abertas!' : 'Candidaturas Indisponíveis' }}
+                    <div v-if="cands.open" class="mt-auto">
+                        <button class="cand_btn" :disabled="!cands.ped.open" @click="$emit('show_modal', 'ped')">
+                            {{ cands.ped.open ? 'Candidaturas Abertas!' : 'Candidaturas Indisponíveis' }}
                         </button>
                     </div>
                 </div>
@@ -50,9 +50,9 @@
 
                     <MemberList :members="members.recr" type="dept" />
                     
-                    <div v-if="info.cands.open" class="mt-auto">
-                        <button class="cand_btn" :disabled="!info.cands.recr.open" @click="$emit('show_modal', 'recr')">
-                            {{ info.cands.recr.open ? 'Candidaturas Abertas!' : 'Candidaturas Indisponíveis' }}
+                    <div v-if="cands.open" class="mt-auto">
+                        <button class="cand_btn" :disabled="!cands.recr.open" @click="$emit('show_modal', 'recr')">
+                            {{ cands.recr.open ? 'Candidaturas Abertas!' : 'Candidaturas Indisponíveis' }}
                         </button>
                     </div>
                 </div>
@@ -81,9 +81,9 @@
                     
                     <MemberList :members="members.comms" type="dept" />
 
-                    <div v-if="info.cands.open" class="mt-auto">
-                        <button class="cand_btn" :disabled="!info.cands.comms.open" @click="$emit('show_modal', 'comms')">
-                            {{ info.cands.comms.open ? 'Candidaturas Abertas!' : 'Candidaturas Indisponíveis' }}
+                    <div v-if="cands.open" class="mt-auto">
+                        <button class="cand_btn" :disabled="!cands.comms.open" @click="$emit('show_modal', 'comms')">
+                            {{ cands.comms.open ? 'Candidaturas Abertas!' : 'Candidaturas Indisponíveis' }}
                         </button>
                     </div>
                 </div>

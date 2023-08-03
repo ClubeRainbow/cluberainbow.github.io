@@ -1,11 +1,11 @@
 <script setup lang="ts">
     import Modal from './Modal.vue';
-    import info from '../../jsons/info.json';
+    import cands from '../../jsons/candidaturas.json';
 </script>
 
 <template>
     <Modal>
-        <template v-if="info.cands.open">
+        <template v-if="cands.open">
             
             <h2>Candidaturas Abertas!</h2>
             
@@ -14,7 +14,7 @@
                     Gostarias de fazer parte do Clube Rainbow? 
                     Qualquer pessoa pode participar nos nossos eventos, mas caso queiras ajudar na organização por 
                     de trás dos mesmos, aproveita agora - <b>as candidaturas para os departamentos do
-                    Clube Rainbow estão abertas até {{info.cands.timelimit}}!</b>
+                    Clube Rainbow estão abertas até {{ cands.timelimit }}!</b>
                 </p>
                 <ul class="mx-auto flex flex-col gap-2">
                     <li>Cada departamento tem diferentes funções - 
