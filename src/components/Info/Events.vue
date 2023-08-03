@@ -8,9 +8,9 @@
 
         <h1> Eventos </h1>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-4 md:gap-y-6 gap-x-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-4 gap-x-8">
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-y-4 md:gap-y-6 gap-x-8 md:col-span-2">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-8 md:col-span-2">
                 <div class="flex flex-col gap-1">
                     <h3>Palestras</h3>
                     <p>
@@ -23,9 +23,7 @@
                             target="_blank">
                             {{ events.next.name }}, {{ events.next.date }}
                         </a>
-                        <span v-else>
-                            Por anunciar...
-                        </span>
+                        <span v-else>Por anunciar...</span>
                     </p>
                 </div>
 
@@ -41,9 +39,7 @@
                             target="_blank">
                             {{ events.next.name }}, {{ events.next.date }}
                         </a>
-                        <span v-else>
-                            Por anunciar...
-                        </span>
+                        <span v-else>Por anunciar...</span>
                     </p>
                 </div>
 
@@ -58,9 +54,7 @@
                             target="_blank">
                             {{ events.next.name }}, {{ events.next.date }}
                         </a>
-                        <span v-else>
-                            Por anunciar...
-                        </span>
+                        <span v-else>Por anunciar...</span>
                     </p>
                 </div>
 

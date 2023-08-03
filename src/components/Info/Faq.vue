@@ -26,7 +26,6 @@
                     Por favor tem em atenção que <b>apenas aceitamos estudantes e alumni da Universidade do Minho.</b>
                 </p>
             </div>
-            
         </FaqItem>
 
         <FaqItem question="O Clube Rainbow é apenas para estudantes da UM?">
