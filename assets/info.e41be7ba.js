@@ -1,0 +1,1 @@
+const e={link:"https://www.instagram.com/p/Cs3w1JfN5G-/",img:"/event.jpg"},t={open:!0,timelimit:"xx/xx/xxxx",ped:{open:!1,link:"https://google.com"},recr:{open:!0,link:"https://google.com"},comms:{open:!0,link:"https://google.com"}},n={next_event:e,cands:t};export{n as i};
