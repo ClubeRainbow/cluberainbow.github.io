@@ -1,0 +1,14 @@
+{
+    "next": {
+        "link": "https://www.instagram.com/p/Cs3w1JfN5G-/",
+        "img": "/event.jpg",
+        "name": "Nome do Evento",
+        "date": "xx/xx/xxxx",
+        "type": "palestra"
+    },
+
+    "online": {
+        "game_night": "",
+        "film_night": ""
+    }
+}

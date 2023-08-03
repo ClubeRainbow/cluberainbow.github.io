@@ -24,14 +24,14 @@
             <h3>{{ title }}</h3>
             
             <p v-if="design">
-                <span class="font-shrikhand font-normal">Design: </span>
+                <span class="font-shrikhand">Design: </span>
                 <a :href="'https://www.instagram.com/' + design" target="_blank">
                     @{{ design }}
                 </a>
             </p>
 
             <p v-if="price">
-                <span class="font-shrikhand font-normal">Preço: </span>
+                <span class="font-shrikhand">Preço: </span>
                 {{ price }}
             </p>
 
