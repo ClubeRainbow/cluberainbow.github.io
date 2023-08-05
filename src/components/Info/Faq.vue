@@ -9,8 +9,8 @@
 
         <h1> FAQ </h1>
 
-        <FaqCategory title="Perguntas Gerais">
-            <FaqItem question="O Clube Rainbow é apenas para estudantes da UM?">
+        <FaqCategory title="Perguntas Gerais" :items="3">
+            <FaqItem question="O Clube Rainbow é apenas para estudantes da UM?" class="mt-4">
                 <p>
                     O Clube Rainbow foi criado com es estudantes da Universidade do Minho em mente,
                     mas <b>todes são bem-vindes a participar nos nossos eventos e atividades!</b>
@@ -51,8 +51,8 @@
             </FaqItem>
         </FaqCategory>
 
-        <FaqCategory title="Eventos">
-            <FaqItem question="Onde/quando são os eventos?">
+        <FaqCategory title="Eventos" :items="2">
+            <FaqItem question="Onde/quando são os eventos?" class="mt-4">
                 <p>
                     Os nossos eventos decorrem <b>sobretudo no campus de Gualtar da Universidade do Minho</b>, mas
                     ocasionalmente
@@ -82,8 +82,8 @@
             </FaqItem>
         </FaqCategory>
 
-        <FaqCategory title="Merch">
-            <FaqItem question="Posso comprar merch fora dos eventos?">
+        <FaqCategory title="Merch" :items="1">
+            <FaqItem question="Posso comprar merch fora dos eventos?" class="mt-4">
                 <p>
                     <b>Atualmente, não.</b> Apenas vendemos merch nos nossos eventos ou quando vamos a marchas do pride,
                     pois,
@@ -92,8 +92,8 @@
             </FaqItem>
         </FaqCategory>
 
-        <FaqCategory title="Discord">
-            <FaqItem question="O que é o Discord?">
+        <FaqCategory title="Discord" :items="2">
+            <FaqItem question="O que é o Discord?" class="mt-4">
                 <p>
                     O Discord é uma aplicação de chat, que permite criar e participar em vários servidores.
                     Cada servidor opera como um chat de grupo com vários canais ou fóruns,
