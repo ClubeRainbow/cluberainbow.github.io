@@ -4,7 +4,7 @@
 
 <template>
     <div class="flex flex-col gap-2 items-center justify-center text-center w-full box px-6 md:px-8 pb-6 pt-4 bg-cr-red-beige">
-        <h3>Próximo Evento</h3>
+        <h3 style="text-shadow:none">Próximo Evento</h3>
         
         <div class="img_space">
             <a v-if="events.next.img && events.next.link" :href="events.next.link" target="_blank">

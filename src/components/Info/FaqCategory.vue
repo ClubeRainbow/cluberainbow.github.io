@@ -3,35 +3,34 @@
     const show_answer = ref(false)
 
     interface Props {
-        question: string;
+        title: string;
     }
     defineProps<Props>();
 </script>
 
 <template>
-    <button class="flex flex-col gap-2 box py-3 md:py-4" @click="show_answer = !show_answer">
+    <div class="flex flex-col gap-4">
         
-        <div class="question_text">
-            <h4>{{ question }}</h4>
+        <button class="title_btn box py-3 md:py-4" @click="show_answer = !show_answer">
+            <h3 style="text-shadow:none">{{ title }}</h3>
             <img src="../../assets/arrow_down.svg" alt="toggle list" class="h-4 w-4" :class="{ 'rotate-180' : show_answer }"/>
-        </div>
+        </button>
 
-        <Transition>
-            <div v-if="show_answer" class="flex flex-col text-left gap-2">
+        <Transition> 
+            <div v-if="show_answer" class="flex flex-col gap-2 w-11/12 mx-auto">
                 <slot></slot>
             </div>
         </Transition>
-    </button>
+    </div>
 </template>
 
 <style scoped>
-    .question_text {
-        @apply flex items-center justify-between md:justify-start text-left gap-3
+    .title_btn {
+        @apply flex items-center justify-between md:justify-start text-left gap-2 
+        bg-cr-red-beige
+        hover:brightness-110 focus:brightness-110
     }
-    button:hover > .question_text,
-    button:focus > .question_text {
-        @apply brightness-125
-    }
+
     .v-enter-active, .v-leave-active {
         max-height: 250px;
         transition: max-height 0.5s ease;
