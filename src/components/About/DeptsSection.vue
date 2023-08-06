@@ -24,7 +24,7 @@
                     <MemberList :members="members.ped" type="dept" />
                     
                     <div v-if="cands.open" class="mt-auto">
-                        <button class="cand_btn" :disabled="!cands.ped.open" @click="$emit('show_modal', 'ped')">
+                        <button class="cand_btn" :disabled="!cands.ped.open" @click="$emit('show_modal', cands.ped)">
                             {{ cands.ped.open ? 'Candidaturas Abertas!' : 'Candidaturas Indisponíveis' }}
                         </button>
                     </div>
@@ -51,7 +51,7 @@
                     <MemberList :members="members.recr" type="dept" />
                     
                     <div v-if="cands.open" class="mt-auto">
-                        <button class="cand_btn" :disabled="!cands.recr.open" @click="$emit('show_modal', 'recr')">
+                        <button class="cand_btn" :disabled="!cands.recr.open" @click="$emit('show_modal', cands.recr)">
                             {{ cands.recr.open ? 'Candidaturas Abertas!' : 'Candidaturas Indisponíveis' }}
                         </button>
                     </div>
@@ -82,7 +82,7 @@
                     <MemberList :members="members.comms" type="dept" />
 
                     <div v-if="cands.open" class="mt-auto">
-                        <button class="cand_btn" :disabled="!cands.comms.open" @click="$emit('show_modal', 'comms')">
+                        <button class="cand_btn" :disabled="!cands.comms.open" @click="$emit('show_modal', cands.comms)">
                             {{ cands.comms.open ? 'Candidaturas Abertas!' : 'Candidaturas Indisponíveis' }}
                         </button>
                     </div>

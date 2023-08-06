@@ -5,8 +5,10 @@
             Clube Rainbow
         </h1>
 
-        <h4 class="text-center md:text-left">
-            ✦ Bem vinde ao Clube <h4 class="inline whitespace-nowrap">Rainbow! ✦</h4>
+        <h4 class="flex items-center justify-center md:justify-start gap-1.5 text-center">
+            <h4>✦</h4>
+            <h4>Bem vinde ao Clube Rainbow!</h4> 
+            <h4>✦</h4>
         </h4>
 
         <p>

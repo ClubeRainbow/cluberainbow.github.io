@@ -18,6 +18,6 @@
             <HomeBtns @show_modal="show_modal = true"/>
         </div>
 
-        <ContactIcons class="shrink-0 flex md:my-0 md:flex-col gap-4" size="h-10 w-10" />
+        <ContactIcons class="shrink-0 flex -mt-1 md:my-0 md:flex-col gap-4" size="h-10 w-10" />
     </div>
 </template>

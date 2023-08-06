@@ -3,14 +3,50 @@
     "timelimit" : "xx/xx/xxxx",
     "ped" : {
         "open" : false,
-        "link" : "https://google.com"
+        "timelimit" : "xx/xx/xxxx",
+        "name" : "Departamento Pedagógico",
+        "color" : "text-cr-orange",
+        "link" : "https://google.com",
+        "functions" : [
+            "função 1", 
+            "função 2", 
+            "função 3"
+        ],
+        "reqs" : [
+            "requisito específico 1",
+            "requisito específico 2"
+        ]
     },
     "recr" : {
         "open" : true,
-        "link" : "https://google.com"
+        "timelimit" : "xx/xx/xxxx",
+        "name" : "Departamento Recreativo",
+        "color" : "text-cr-purple",
+        "link" : "https://google.com",
+        "functions" : [
+            "função 1", 
+            "função 2", 
+            "função 3"
+        ],
+        "reqs" : [
+            "requisito específico 1",
+            "requisito específico 2"
+        ]
     },
     "comms" : {
         "open" : true,
-        "link" : "https://google.com"
+        "timelimit" : "xx/xx/xxxx",
+        "name" : "Departamento de Comunicação",
+        "color" : "text-cr-teal",
+        "link" : "https://google.com",
+        "functions" : [
+            "função 1", 
+            "função 2", 
+            "função 3"
+        ],
+        "reqs" : [
+            "requisito específico 1",
+            "requisito específico 2"
+        ]
     }
 }

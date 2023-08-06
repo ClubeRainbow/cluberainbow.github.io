@@ -28,7 +28,7 @@
         <div>
             <button class="red_option" @click="about_options = !about_options; list_size='248px'">
                 <h3>Sobre Nós</h3>
-                <img src="../assets/arrow_down.svg" alt="toggle list" class="h-4 w-4" :class="{ 'rotate-180' : about_options }"/>
+                <img src="../assets/icon_arrow.svg" alt="toggle list" class="h-4 w-4" :class="{ 'rotate-180' : about_options }"/>
             </button>
 
             <Transition>
@@ -52,7 +52,7 @@
         <div>
             <button class="red_option" @click="info_options = !info_options; list_size='136px'">
                 <h3>Informações</h3>
-                <img src="../assets/arrow_down.svg" alt="toggle list" class="h-4 w-4" :class="{ 'rotate-180' : info_options }"/>
+                <img src="../assets/icon_arrow.svg" alt="toggle list" class="h-4 w-4" :class="{ 'rotate-180' : info_options }"/>
             </button>
 
             <Transition>
@@ -70,7 +70,7 @@
         <div>
             <button class="red_option" @click="merch_options = !merch_options; list_size='80px'">
                 <h3>Merch</h3>
-                <img src="../assets/arrow_down.svg" alt="toggle list" class="h-4 w-4" :class="{ 'rotate-180' : merch_options }"/>
+                <img src="../assets/icon_arrow.svg" alt="toggle list" class="h-4 w-4" :class="{ 'rotate-180' : merch_options }"/>
             </button>
             
             <Transition>
@@ -108,7 +108,7 @@
     }
     .beige_option {
         @apply 
-        border-2 rounded-xl bg-cr-beige shadow-md p-2
+        border-2 rounded-xl bg-cr-beige shadow-md py-2 px-4
         w-full text-center
     }
     .beige_option:hover > h3,
@@ -118,7 +118,7 @@
     .red_option {
         @apply 
         flex justify-center items-center gap-2
-        border-2 rounded-xl bg-cr-red-beige shadow-md p-2
+        border-2 rounded-xl bg-cr-red-beige shadow-md py-2 px-4
         w-full text-center
         hover:brightness-110 
         focus:brightness-110

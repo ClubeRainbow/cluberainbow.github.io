@@ -13,7 +13,7 @@
         
         <div class="question_text">
             <h4>{{ question }}</h4>
-            <img src="../../assets/arrow_down.svg" alt="toggle list" class="h-4 w-4" :class="{ 'rotate-180' : show_answer }"/>
+            <img src="../../assets/icon_arrow.svg" alt="toggle list" class="h-4 w-4" :class="{ 'rotate-180' : show_answer }"/>
         </div>
 
         <Transition>

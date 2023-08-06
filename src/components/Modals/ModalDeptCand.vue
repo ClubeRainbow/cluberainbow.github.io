@@ -1,21 +1,16 @@
 <script setup lang="ts">
     import Modal from './Modal.vue';
-    import cands from '../../jsons/candidaturas.json';
-
-    const getwords = (dept : string) => {
-        if (dept==='ped') return 'Departamento Pedagógico'
-        else if (dept==='recr') return 'Departamento Recreativo'
-        else if (dept==='comms') return 'Departamento de Comunicação'
-    }
-
-    const getlink = (dept : string) => {
-        if (dept==='ped') return cands.ped.link
-        else if (dept==='recr') return cands.recr.link
-        else if (dept==='comms') return cands.comms.link
-    }
 
     interface Props {
-        dept: string;
+        dept: {
+            open: boolean,
+            timelimit: string,
+            name: string,
+            color: string,
+            link: string,
+            functions: string[],
+            reqs: string[]
+        }
     }
     defineProps<Props>();
 </script>
@@ -25,21 +20,18 @@
         
         <h2>
             Candidaturas para o 
-            <h2 class="inline"
-                :class="{ 'text-cr-orange' : dept==='ped',
-                        'text-cr-purple' : dept==='recr',
-                        'text-cr-teal' : dept==='comms' }">
-                {{ getwords(dept) }}
+            <h2 :class="dept.color + ' inline'">
+                {{ dept.name }}
             </h2>
         </h2>
 
-        <div class="flex flex-col gap-2">
+        <div class="flex flex-col gap-2 md:mx-4">
             
             <p>
                 Gostarias de fazer parte do Clube? 
                 <b>
-                    As candidaturas estão abertas para o {{ getwords(dept) }}
-                    até {{ cands.timelimit }}!
+                    As candidaturas estão abertas para o {{ dept.name }}
+                    até {{ dept.timelimit }}!
                 </b>
             </p>
 
@@ -47,9 +39,7 @@
                 <div>
                     <p><u>Para este departamento, estamos à procura de:</u></p>
                     <ul class="ml-6">
-                        <li>função 1</li>
-                        <li>função 2</li>
-                        <li>função 3</li>
+                        <li v-for="(func, i) in dept.functions"> {{ func }} </li>
                     </ul>
                 </div>
 
@@ -58,29 +48,25 @@
                     <ul class="ml-6">
                         <li>Ser estudante ou alumni da Universidade do Minho</li>
                         <li>Ter Discord (é a nossa principal plataforma de organização)</li>
-                        <li>...</li>
+                        <li v-for="(req, i) in dept.reqs"> {{ req }} </li>
                     </ul>
                 </div>
             </div>
-            
-            <p>
-                Podes candidatar-te a mais que um departamento se vários estiverem abertos, 
-                mas só serás colocade em um.
-                O trabalho é voluntário e não remunerado.
-            </p>
 
             <p>
-                Mais informações estarão disponíveis no formulário abaixo, mas  
+                Parece algo do teu interesse?
+                Candidata-te via o formulário abaixo! 
+                Mais informações estarão lá disponíveis, mas  
                 <b>
                     qualquer dúvida não hesites em nos 
                     <button class="click" @click="$router.push({ name: 'contacts' })">
                         contactar
-                    </button>!
+                    </button>.
                 </b>
             </p>
         </div>
 
-        <a class="custom_btn" :href="getlink(dept)" target="_blank">
+        <a class="custom_btn" :href="dept.link" target="_blank">
             Formulário
         </a>
         

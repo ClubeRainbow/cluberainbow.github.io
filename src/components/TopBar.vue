@@ -34,7 +34,7 @@
                 :class="{ 'bg-[rgba(255,110,0,0.25)]' : router.currentRoute.value.name === 'about' || about_options }"
                 @click="redirect('about')">
                 Sobre Nós
-                <img src="../assets/arrow_down.svg" alt="toggle list" class="h-3 w-3 xl-topbar:h-4 xl-topbar:w-4" :class="{ 'rotate-180' : about_options }"/>
+                <img src="../assets/icon_arrow.svg" alt="toggle list" class="h-3 w-3 xl-topbar:h-4 xl-topbar:w-4" :class="{ 'rotate-180' : about_options }"/>
             </button>
 
             <div v-if="about_options" class="sub_section">
@@ -59,7 +59,7 @@
                 :class="{ 'bg-[rgba(255,140,0,0.25)]' : router.currentRoute.value.name === 'info' || info_options }"
                 @click="redirect('info')">
                 Informações
-                <img src="../assets/arrow_down.svg" alt="toggle list" class="h-3 w-3 xl-topbar:h-4 xl-topbar:w-4" :class="{ 'rotate-180' : info_options }"/>
+                <img src="../assets/icon_arrow.svg" alt="toggle list" class="h-3 w-3 xl-topbar:h-4 xl-topbar:w-4" :class="{ 'rotate-180' : info_options }"/>
             </button>
 
             <div v-if="info_options" class="sub_section">
@@ -81,7 +81,7 @@
                 :class="{ 'bg-[rgba(0,200,0,0.25)]' : router.currentRoute.value.name === 'merch' || merch_options }"
                 @click="redirect('merch')">
                 Merch
-                <img src="../assets/arrow_down.svg" alt="toggle list" class="h-3 w-3 xl-topbar:h-4 xl-topbar:w-4" :class="{ 'rotate-180' : merch_options }"/>
+                <img src="../assets/icon_arrow.svg" alt="toggle list" class="h-3 w-3 xl-topbar:h-4 xl-topbar:w-4" :class="{ 'rotate-180' : merch_options }"/>
             </button>
 
             <div v-if="merch_options" class="sub_section">

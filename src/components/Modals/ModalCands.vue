@@ -7,9 +7,9 @@
     <Modal>
         <template v-if="cands.open">
             
-            <h2>Candidaturas Abertas!</h2>
+            <h2 class="text-center sm:text-start">Candidaturas Abertas!</h2>
             
-            <div class="flex flex-col gap-4">
+            <div class="flex flex-col gap-4 md:mx-4">
                 <p>
                     Gostarias de fazer parte do Clube Rainbow? 
                     Qualquer pessoa pode participar nos nossos eventos, mas caso queiras ajudar na organização por 
@@ -18,11 +18,11 @@
                 </p>
                 <ul class="mx-auto flex flex-col gap-2">
                     <li>Cada departamento tem diferentes funções - 
-                        <u>sabe mais sobre eles e consulta quais estão abertos através do botão abaixo!</u>
+                        sabe mais sobre eles e consulta quais estão abertos <b>através do botão abaixo!</b>
                     </li>
                     <li>Podes candidatar-te a mais que um departamento se vários estiverem abertos, mas só serás colocade em um;</li>
-                    <li>O trabalho é voluntário e não remunerado;</li>
-                    <li>Apenas aceitamos estudantes e alumni da Universidade do Minho.</li>
+                    <li>O trabalho é <b>voluntário e não remunerado;</b></li>
+                    <li>Apenas podem fazer parte <b>estudantes e alumni</b> da Universidade do Minho.</li>
                 </ul>
                 
                 <button class="w-full" @click="$router.push({name: 'about', hash: '#depts'})">
@@ -34,9 +34,9 @@
 
         <template v-else>
 
-            <h2>Candidaturas Fechadas</h2>
+            <h2 class="text-center sm:text-start">Candidaturas Fechadas</h2>
 
-            <div class="flex flex-col gap-4">
+            <div class="flex flex-col gap-4 md:mx-4">
                 <p>
                     Gostarias de fazer parte do Clube Rainbow? 
                     Qualquer pessoa pode participar nos nossos eventos, mas caso queiras ajudar na organização por 

@@ -6,11 +6,11 @@
     import ModalDeptCand from '../components/Modals/ModalDeptCand.vue';
 
     const show_modal = ref(false)
-    const dept_cand = ref('')
+    const dept_data = ref(null)
 </script>
 
 <template>
-    <ModalDeptCand v-if="show_modal" :dept="dept_cand" @close="show_modal = false" />
+    <ModalDeptCand v-if="show_modal && dept_data" :dept="dept_data" @close="show_modal = false" />
     
     <div class="flex flex-col gap-10 max-w-6xl mx-auto">
         
@@ -25,7 +25,7 @@
             </p>
         </div>
         
-        <DeptsSection id="depts" @show_modal="dept => { dept_cand = dept; show_modal = true; }"/>
+        <DeptsSection id="depts" @show_modal="dept => { dept_data = dept; show_modal = true; }"/>
         <DirSection id="dir" />
         <PartnersSection id="partners" />
     </div>

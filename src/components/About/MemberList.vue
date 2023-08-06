@@ -38,7 +38,7 @@
             <p class="font-shrikhand text-base md:text-lg">
                 Membros
             </p>
-            <img src="../../assets/arrow_down.svg" alt="toggle list" class="h-3 w-3" :class="{ 'rotate-180' : show_members }"/>
+            <img src="../../assets/icon_arrow.svg" alt="toggle list" class="h-3 w-3" :class="{ 'rotate-180' : show_members }"/>
         </button>
 
         <Transition>     

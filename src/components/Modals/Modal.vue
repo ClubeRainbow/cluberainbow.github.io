@@ -5,8 +5,8 @@
     
             <slot></slot>
 
-            <button @click="$emit('close')" class="absolute top-3 right-3 hover:brightness-110 focus:brightness-110">
-                <img src="../../assets/x.svg" alt="close" class="h-8 w-8"/>
+            <button @click="$emit('close')" class="absolute top-2.5 right-2.5 hover:brightness-110 focus:brightness-110">
+                <img src="../../assets/icon_x.svg" alt="close" class="h-7 w-7 md:h-8 md:w-8"/>
             </button>
 
         </div>
