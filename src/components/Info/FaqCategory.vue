@@ -13,13 +13,13 @@
 <template>
     <div class="flex flex-col">
         
-        <button class="title_btn box py-3 md:py-4" @click="show_answer = !show_answer; list_size = (60*items).toString() + 'px'">
+        <button class="title_btn box py-3 md:py-4" @click="show_answer = !show_answer; list_size = (200*items).toString() + 'px'">
             <h3 style="text-shadow:none">{{ title }}</h3>
             <img src="../../assets/icon_arrow.svg" alt="toggle list" class="h-4 w-4" :class="{ 'rotate-180' : show_answer }"/>
         </button>
 
         <Transition> 
-            <div v-if="show_answer" class="flex flex-col gap-2 w-11/12 mx-auto">
+            <div v-if="show_answer" class="flex flex-col gap-3 w-11/12 mx-auto">
                 <slot></slot>
             </div>
         </Transition>

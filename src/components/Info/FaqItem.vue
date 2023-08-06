@@ -30,7 +30,7 @@
     }
     button:hover > .question_text,
     button:focus > .question_text {
-        @apply brightness-125
+        @apply brightness-125 underline
     }
     .v-enter-active, .v-leave-active {
         max-height: 250px;

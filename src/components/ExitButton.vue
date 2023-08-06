@@ -4,8 +4,8 @@
             exit()
     });
     const exit = async () => {
-        window.open('https://www.google.com/search?q=receitas+de+massa','_blank');
-        window.location.replace('https://www.google.com/');
+        window.open('https://www.google.com/search?q=receitas+de+massa', '_blank', 'noopener noreferrer');
+        window.open('https://www.google.com/', '_self', 'noopener noreferrer');
     }
 </script>
 

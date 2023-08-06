@@ -39,7 +39,7 @@
 
             <div v-if="about_options" class="sub_section">
                 <button class="sub_option" @click="redirect('about')">
-                    Sobre o Clube Rainbow
+                    Sobre o Clube
                 </button>
                 <button class="sub_option" @click="redirect('about', '#depts')">
                     Departamentos
@@ -123,6 +123,7 @@
         @apply absolute top-full w-full flex flex-col gap-1 z-20
     }
     .sub_option {
-        @apply bg-cr-red-beige border py-1 hover:brightness-110 hover:underline focus:brightness-110 focus:underline
+        @apply bg-cr-red-beige border py-1 font-shrikhand
+        hover:brightness-110 focus:brightness-110
     }
 </style>

@@ -33,8 +33,8 @@
 
             <Transition>
                 <div v-if="about_options" class="sub_section">
-                    <button class="beige_option mt-4" @click="redirect('about')">
-                        <h3>Sobre o Clube Rainbow</h3>
+                    <button class="beige_option mt-3" @click="redirect('about')">
+                        <h3>Sobre o Clube</h3>
                     </button>
                     <button class="beige_option" @click="redirect('about', '#depts')">
                         <h3>Departamentos</h3>
@@ -42,7 +42,7 @@
                     <button class="beige_option" @click="redirect('about', '#dir')">
                         <h3>Direção</h3>
                     </button>
-                    <button class="beige_option mb-2" @click="redirect('about', '#partners')">
+                    <button class="beige_option mb-1" @click="redirect('about', '#partners')">
                         <h3>Parcerias</h3>
                     </button>
                 </div>
@@ -57,10 +57,10 @@
 
             <Transition>
                 <div v-if="info_options" class="sub_section">
-                    <button class="beige_option mt-4" @click="redirect('info')">
+                    <button class="beige_option mt-3" @click="redirect('info')">
                         <h3>Eventos</h3>
                     </button>
-                    <button class="beige_option mb-2" @click="redirect('info', '#faq')">
+                    <button class="beige_option mb-1" @click="redirect('info', '#faq')">
                         <h3>FAQ</h3>
                     </button>
                 </div>
@@ -75,7 +75,7 @@
             
             <Transition>
                 <div v-if="merch_options" class="sub_section">
-                    <button class="beige_option mt-4 mb-2" @click="redirect('merch')">
+                    <button class="beige_option mt-3 mb-1" @click="redirect('merch')">
                         <h3>Autocolantes</h3>
                     </button>
                 </div>

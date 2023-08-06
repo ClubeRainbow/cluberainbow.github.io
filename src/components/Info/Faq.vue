@@ -5,7 +5,7 @@
 </script>
 
 <template>
-    <div class="flex flex-col gap-4">
+    <div class="flex flex-col gap-3">
 
         <h1> FAQ </h1>
 
@@ -32,7 +32,7 @@
                 </p>
             </FaqItem>
 
-            <FaqItem question="Como posso fazer parte?">
+            <FaqItem question="Como posso fazer parte?" class="mb-1">
                 <p>
                     Qualquer pessoa pode participar nos nossos eventos, mas se quiseres fazer
                     parte da organização do Clube Rainbow, <b>deves candidatar-te a
@@ -68,7 +68,7 @@
                 </p>
             </FaqItem>
 
-            <FaqItem question="É preciso inscrição para os eventos?">
+            <FaqItem question="É preciso inscrição para os eventos?" class="mb-1">
                 <p>
                     <b>Não é necessária inscrição para a maior parte dos nossos eventos, mas quando tal for necessária,
                         iremos indicá-lo
@@ -83,7 +83,7 @@
         </FaqCategory>
 
         <FaqCategory title="Merch" :items="1">
-            <FaqItem question="Posso comprar merch fora dos eventos?" class="mt-4">
+            <FaqItem question="Posso comprar merch fora dos eventos?" class="mt-4 mb-1">
                 <p>
                     <b>Atualmente, não.</b> Apenas vendemos merch nos nossos eventos ou quando vamos a marchas do pride,
                     pois,
@@ -125,7 +125,7 @@
                 </p>
             </FaqItem>
 
-            <FaqItem question="Posso entrar no servidor do Discord se não for estudante da UM?">
+            <FaqItem question="Posso entrar no servidor do Discord se não for estudante da UM?" class="mb-1">
                 <p>
                     Sim! O servidor do Discord, tal como os nossos eventos, é <b>aberto a todes</b>.
                     Podes entrar mesmo que não estudes na UM ou não sejas LGBTQIA+.
