@@ -109,7 +109,6 @@
     .beige_option {
         @apply 
         border-2 rounded-xl bg-cr-beige shadow-md p-2
-        font-shrikhand text-xl 
         w-full text-center
     }
     .beige_option:hover > h3,
@@ -120,7 +119,6 @@
         @apply 
         flex justify-center items-center gap-2
         border-2 rounded-xl bg-cr-red-beige shadow-md p-2
-        whitespace-nowrap font-shrikhand text-xl
         w-full text-center
         hover:brightness-110 
         focus:brightness-110
