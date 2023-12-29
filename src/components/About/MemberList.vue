@@ -7,12 +7,17 @@
 
     addEventListener("resize", () => { windowWidth.value = window.innerWidth});
 
-    const toggleMemberList = (members: Member[], type: string) => {
+    const toggleMemberList = (members: number, type: string) => {
         show_members.value = !show_members.value
+        
         if (type==='dept' && windowWidth.value > 500)
-            list_size.value = (75*(Math.ceil(members.length/2))) + 'px'
+            list_size.value = (75*(Math.ceil(members/2))) + 'px'
+        
+        else if (type==='dir' && members>0)
+            list_size.value = (75*members) + 'px'
+        
         else
-            list_size.value = (75*members.length) + 'px'
+            list_size.value = '30px'
     }
 
     interface Member {
@@ -34,7 +39,7 @@
 
 <template>
     <div>
-        <button class="flex flex-row items-center gap-1.5" @click="toggleMemberList(members, type)">
+        <button class="flex flex-row items-center gap-1.5 mb-2" @click="toggleMemberList(members.length, type)">
             <p class="font-shrikhand text-base md:text-lg">
                 Membros
             </p>
@@ -42,9 +47,9 @@
         </button>
 
         <Transition>     
-            <div v-if="show_members" class="grid grid-cols-1 gap-y-4 gap-x-12 mt-2" :class="{ '[@media(min-width:500px)]:grid-cols-2' : type==='dept' }">
+            <div v-if="show_members" class="grid grid-cols-1 gap-y-4 gap-x-12" :class="{ '[@media(min-width:500px)]:grid-cols-2' : type==='dept' }">
 
-                <div v-for="(member, i) in members" :key="i">
+                <div v-if="members.length" v-for="(member, i) in members" :key="i">
 
                     <p class="flex flex-wrap-reverse items-center gap-x-1 mb-1 w-full border-b">
                         
@@ -74,6 +79,10 @@
                         </a>
                     </div>
 
+                </div>
+
+                <div v-else>
+                    <span class="small">A ser definido...</span>
                 </div>
 
             </div>

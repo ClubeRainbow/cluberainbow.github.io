@@ -8,7 +8,7 @@
     },
 
     "online": {
-        "game_night": "",
-        "film_night": ""
+        "name": "",
+        "date": "xx/xx/xxxx"
     }
 }

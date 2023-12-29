@@ -6,7 +6,7 @@
         "pronouns": "she/he",
         "contacts": {
           "insta": "vikill06",
-          "discord": "hashida's artits#9801"
+          "discord": "hashidasartits"
         }
       },
       {
@@ -14,46 +14,12 @@
         "name": "Ezra",
         "pronouns": "he/they",
         "contacts": {
-          "discord": "haz#0535"
-        }
-      },
-      {
-        "role": "Secretária",
-        "name": "Bea",
-        "pronouns": "she/her",
-        "contacts": {
-          "discord": "rae(ven)#4892"
+          "discord": "hazonyl"
         }
       }
     ],
-    "mesa": [
-      {
-        "name": "Name",
-        "role": "Role"
-      },
-      {
-        "name": "Name",
-        "role": "Role"
-      },
-      {
-        "name": "Name",
-        "role": "Role"
-      }
-    ],
-    "fiscal": [
-      {
-        "name": "Name",
-        "role": "Role"
-      },
-      {
-        "name": "Name",
-        "role": "Role"
-      },
-      {
-        "name": "Name",
-        "role": "Role"
-      }
-    ],
+    "mesa": [],
+    "fiscal": [],
     "ped": [
       {
         "role": "Coordenadora",
@@ -61,36 +27,14 @@
         "pronouns": "she/her",
         "contacts": {
           "insta": "andreiamarquescello",
-          "discord": "Josefa Ayala#4973"
-        }
-      },
-      {
-        "name": "Vee", 
-        "pronouns": "she/he",
-        "contacts": {
-          "insta": "vikill06",
-          "discord": "hashida's artits#9801"
-        }
-      },
-      {
-        "name": "Sandra", 
-        "pronouns": "she/her",
-        "contacts": {
-          "insta": "sandraibf",
-          "discord": "snadra#3665"
-        }
-      },
-      {
-        "name": "André Rodrigues", 
-        "pronouns": "he/him",
-        "contacts": {
-          "insta": "andrerodrigues47"
+          "discord": "josefaayala"
         }
       },
       {
         "name": "Inês", 
         "pronouns": "she/they",
         "contacts": {
+          "insta": "milf_wannabe",
           "discord": "broke_sugardaddy#4386"
         }
       },
@@ -98,15 +42,37 @@
         "name": "Maria", 
         "pronouns": "she/her",
         "contacts": {
-          "discord": "maru#3065"
+          "insta": "maru_azevedo",
+          "discord": "maru3065"
         }
       },
       {
-        "name": "Bea", 
+        "name": "Beatriz Medonça", 
         "pronouns": "she/her",
         "contacts": {
-          "discord": "rae(ven)#4892"
+          "insta":"_beatrizm11",
+          "discord": "iaflb"
         }
+      },
+      {
+        "name": "Ana Catarina Cardoso", 
+        "pronouns": "she/her",
+        "contacts": {
+          "insta": "anacardoso__03",
+          "discord": "_Rebekah_Space_"
+        }
+      },
+      {
+        "name": "Vanessa Brandão", 
+        "pronouns": "she/her",
+        "contacts": {
+          "insta": "vans_offthebooks"
+        }
+      },
+      {
+        "name": "Erico Aires", 
+        "pronouns": "he/him",
+        "contacts": {}
       }
     ],
     "recr": [
@@ -115,8 +81,8 @@
           "name": "Bruno Gião", 
           "pronouns": "they/them",
           "contacts": {
-            "insta": "gr3ybrun1x",
-            "discord": "greybrunix#3889"
+            "insta": "greybrunix",
+            "discord": "greybrunix"
           }
         },
         {
@@ -131,14 +97,51 @@
           "name": "Emanuel", 
           "pronouns": "she/her",
           "contacts": {
-            "discord": "Bacalhau#1085"
+            "discord": "bacalhau"
           }
         },
         {
           "name": "Mar", 
           "pronouns": "qualquer pronome",
           "contacts": {
-            "discord": "Mar#7558"
+            "discord": "mar_bat"
+          }
+        },
+        {
+          "name": "Sofia", 
+          "pronouns": "she/her",
+          "contacts": {
+            "discord": "risingfisan"
+          }
+        },
+        {
+          "name": "Dulce", 
+          "pronouns": "she/her",
+          "contacts": {
+            "discord": "nunkiii"
+          }
+        },
+        {
+          "name": "Rui", 
+          "pronouns": "he/him",
+          "contacts": {
+            "discord": ".tio",
+            "insta": "rui.mir"
+          }
+        },
+        {
+          "name": "João Ferreira", 
+          "pronouns": "he/him",
+          "contacts": {
+            "discord": "b_neil",
+            "insta": "jferreira6"
+          }
+        },
+        {
+          "name": "Maria Azevedo", 
+          "pronouns": "she/her",
+          "contacts": {
+            "discord": "donamariaterceira"
           }
         }
     ],
@@ -148,7 +151,7 @@
           "name": "Ezra", 
           "pronouns": "he/they",
           "contacts": {
-            "discord": "haz#0535"
+            "discord": "hazonyl"
           }
         },
         {
@@ -156,14 +159,6 @@
           "pronouns": "qualquer pronome",
           "contacts": {
             "discord": "Tomé#4735"
-          }
-        },
-        {
-          "name": "Lee", 
-          "pronouns": "he/she/they",
-          "contacts": {
-            "insta": "mr_apple.pie",
-            "discord": "ඞ Leeඔ#7974"
           }
         },
         {

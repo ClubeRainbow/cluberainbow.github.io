@@ -8,6 +8,7 @@ module.exports = {
     fontFamily: {
       "shrikhand": ["Shrikhand", "sans-serif"],
       "comic-neue": ["Comic Neue", "sans-serif"],
+      "source-sans-pro": ["Source Sans Pro", "sans-serif"]
     },
     borderColor: {
       DEFAULT: 'currentColor',

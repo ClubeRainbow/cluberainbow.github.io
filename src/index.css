@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Shrikhand');
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400');
 
 @tailwind base;
 @tailwind components;
@@ -7,11 +8,7 @@
 
 @layer base {
     html {
-        @apply bg-cr-beige font-comic-neue text-cr-brown;
-    }
-
-    b { 
-        @apply bg-cr-red-beige
+        @apply bg-cr-beige font-source-sans-pro text-cr-brown;
     }
 
     a {

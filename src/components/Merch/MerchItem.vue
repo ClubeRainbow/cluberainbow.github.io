@@ -40,7 +40,7 @@
                 <p v-if="collab" class="text-xs md:text-sm"> {{ collab }} </p>
             </div>
             
-            <p class="mt-auto"> <b>{{ availability }}</b> </p>
+            <p class="mt-auto w-fit font-semibold bg-cr-red-beige"> {{ availability }} </p>
         </div>
 
     </div>

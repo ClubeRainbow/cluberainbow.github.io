@@ -29,7 +29,7 @@
             <img src="../assets/icon_discord.svg" alt="discord" :class="size" />
             
             <div v-if="text" class="flex flex-col text-left">
-                <p class="sizing font-shrikhand">Discord</p>
+                <h4>Discord</h4>
                 <p class="sizing text-outline-white">discord.gg/5Z9YshrZah</p>
             </div>
         </a>
@@ -38,7 +38,7 @@
             <img src="../assets/icon_insta.svg" alt="instagram" :class="size" />
             
             <div v-if="text" class="flex flex-col text-left">
-                <p class="sizing font-shrikhand">Instagram</p>
+                <h4>Instagram</h4>
                 <p class="sizing text-outline-white">@clube.rainbow</p>
             </div>
         </a>
@@ -52,7 +52,7 @@
             <div v-if="text" class="flex flex-col text-left">
                 
                 <div class="flex items-center gap-2">
-                    <p class="sizing font-shrikhand">Email</p>
+                    <h4>Email</h4>
                     <div class="brightness-125 whitespace-nowrap">
                         <span v-if="copy_confirm" class="text-xs md:text-sm">(Email copiado!)</span>
                         <span v-else-if="hover_email" class="text-xs md:text-sm">(Clica para copiar)</span>

@@ -71,13 +71,11 @@
                 </p>
 
                 <p>
-                    <span class="font-shrikhand">Próxima Game Night: </span>
-                    <span>{{ events.online.game_night ? events.online.game_night : 'Por anunciar...' }}</span>
-                </p>
-
-                <p>
-                    <span class="font-shrikhand">Próxima Film Night: </span>
-                    <span>{{ events.online.film_night ? events.online.film_night : 'Por anunciar...' }}</span>
+                    <span class="font-shrikhand">Próximo: </span>
+                    <span v-if="events.online.name">
+                        {{ events.online.name }}, {{ events.online.date }}
+                    </span>
+                    <span v-else>Por anunciar...</span>
                 </p>
             </div>
 

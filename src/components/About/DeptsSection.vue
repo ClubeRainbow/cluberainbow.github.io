@@ -30,7 +30,7 @@
                     </div>
                 </div>
 
-                <img src="../../assets/kaku2.png" alt="panda"/>   
+                <img src="../../assets/ped.png" alt="panda" />   
             </div>
             
             <div class="flex flex-wrap flex-row-reverse gap-x-8 box">
@@ -88,7 +88,7 @@
                     </div>
                 </div>
 
-                <img src="../../assets/kaku2.png" alt="panda"/>
+                <img src="../../assets/comms.png" alt="panda"/>
             </div>
             
         </div>

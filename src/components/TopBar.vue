@@ -123,7 +123,7 @@
         @apply absolute top-full w-full flex flex-col gap-1 z-20
     }
     .sub_option {
-        @apply bg-cr-red-beige border py-1 font-shrikhand
+        @apply bg-cr-red-beige border py-1 font-semibold
         hover:brightness-110 focus:brightness-110
     }
 </style>
