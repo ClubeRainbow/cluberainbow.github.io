@@ -22,13 +22,15 @@
                         <b>palestras</b> e outros eventos educativos para discutir temas de grande importância
                         com pessoas conhecedoras dos mesmos.
                     </p>
+
+                    <div class="relative flex flex-col gap-4 md:mt-2">
+                        <MemberList :members="members.ped" type="dept" :cand_btn="cands.open" />
                     
-                    <MemberList :members="members.ped" type="dept" />
-                    
-                    <div v-if="cands.open">
-                        <button class="cand_btn" :disabled="!cands.ped.open" @click="$emit('show_modal', cands.ped)">
-                            {{ cands.ped.open ? 'Candidaturas Abertas!' : 'Candidaturas Indisponíveis' }}
-                        </button>
+                        <div v-if="cands.open" class="static md:absolute md:top-0 md:right-0">
+                            <button class="cand_btn" :disabled="!cands.ped.open" @click="$emit('show_modal', cands.ped)">
+                                {{ cands.ped.open ? 'Candidaturas Abertas!' : 'Candidaturas Indisponíveis' }}
+                            </button>
+                        </div>
                     </div>
                 </template>
             </Box>
@@ -49,12 +51,14 @@
                         e outros eventos online.
                     </p>
                     
-                    <MemberList :members="members.recr" type="dept" />
-                    
-                    <div v-if="cands.open" class="mt-auto">
-                        <button class="cand_btn" :disabled="!cands.recr.open" @click="$emit('show_modal', cands.recr)">
-                            {{ cands.recr.open ? 'Candidaturas Abertas!' : 'Candidaturas Indisponíveis' }}
-                        </button>
+                    <div class="relative flex flex-col gap-4 md:mt-2">
+                        <MemberList :members="members.recr" type="dept" :cand_btn="cands.open" />
+                        
+                        <div v-if="cands.open" class="static md:absolute md:top-0 md:right-0">
+                            <button class="cand_btn" :disabled="!cands.recr.open" @click="$emit('show_modal', cands.recr)">
+                                {{ cands.recr.open ? 'Candidaturas Abertas!' : 'Candidaturas Indisponíveis' }}
+                            </button>
+                        </div>
                     </div>
                 </template>
             </Box>
@@ -79,12 +83,14 @@
                         cuja venda ajuda a financiar o Clube e as suas atividades.
                     </p>
                     
-                    <MemberList :members="members.comms" type="dept" />
+                    <div class="relative flex flex-col gap-4 md:mt-2">
+                        <MemberList :members="members.comms" type="dept" :cand_btn="cands.open" />
 
-                    <div v-if="cands.open" class="mt-auto">
-                        <button class="cand_btn" :disabled="!cands.comms.open" @click="$emit('show_modal', cands.comms)">
-                            {{ cands.comms.open ? 'Candidaturas Abertas!' : 'Candidaturas Indisponíveis' }}
-                        </button>
+                        <div v-if="cands.open" class="static md:absolute md:top-0 md:right-0">
+                            <button class="cand_btn" :disabled="!cands.comms.open" @click="$emit('show_modal', cands.comms)">
+                                {{ cands.comms.open ? 'Candidaturas Abertas!' : 'Candidaturas Indisponíveis' }}
+                            </button>
+                        </div>
                     </div>
                 </template>
             </Box>
@@ -96,12 +102,9 @@
 <style scoped>
     .cand_btn {
         @apply font-shrikhand text-base md:text-lg sm:whitespace-nowrap
-        mt-2 w-full border-2 px-6 md:px-10 py-1 rounded-lg bg-cr-medium-brown
+        border-2 py-1.5 px-6 md:px-10 rounded-lg bg-cr-medium-brown
+        w-full md:w-auto
         hover:brightness-110 focus:brightness-110
         disabled:bg-stone-300 disabled:text-stone-500 disabled:hover:brightness-100
-    }
-
-    img {
-        @apply m-auto w-60 h-60 md:w-64 md:h-64 lg:w-72 lg:h-72
     }
 </style>
