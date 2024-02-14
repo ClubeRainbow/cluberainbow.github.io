@@ -58,7 +58,7 @@
     }
 
     .custom_btn {
-        @apply w-full sm:w-2/3 bg-cr-red-beige border-2 rounded-lg p-2 
+        @apply w-full sm:w-2/3 bg-cr-medium-brown border-2 rounded-lg p-2 
         text-xl md:text-2xl font-shrikhand
         hover:brightness-110 focus:brightness-110
     }

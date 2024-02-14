@@ -64,7 +64,7 @@
 <style scoped>
     div > button {
         @apply w-full md:w-2/3 mt-2 mx-auto py-2 px-4 
-        border-2 rounded-lg bg-cr-red-beige drop-shadow-lg
+        border-2 rounded-lg bg-cr-medium-brown drop-shadow-lg
         font-shrikhand text-lg md:text-xl
         hover:brightness-110 focus:brightness-110
     }

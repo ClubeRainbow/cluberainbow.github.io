@@ -1,6 +1,7 @@
 <script setup lang="ts">
     import cands from '../../jsons/candidaturas.json';
     import members from '../../jsons/members.json';
+    import Box from '../Box.vue';
     import MemberList from './MemberList.vue';
 </script>
 
@@ -10,10 +11,11 @@
 
         <div class="flex flex-col gap-8">
             
-            <div class="flex flex-wrap gap-x-8 box">
-                
-                <div class="flex flex-col gap-2 flex-1">
+            <Box title_bg_color="bg-cr-light-orange">
+                <template #title>
                     <h2 class="text-cr-orange">Departamento Pedagógico</h2>
+                </template>
+                <template #content>
                     <p>
                         O Departamento Pedagógico é responsável pela <b>componente educativa</b> do Clube, e pela
                         <b>organização de parcerias</b> com outras organizações. Graças a ele podemos organizar
@@ -23,20 +25,19 @@
                     
                     <MemberList :members="members.ped" type="dept" />
                     
-                    <div v-if="cands.open" class="mt-auto">
+                    <div v-if="cands.open">
                         <button class="cand_btn" :disabled="!cands.ped.open" @click="$emit('show_modal', cands.ped)">
                             {{ cands.ped.open ? 'Candidaturas Abertas!' : 'Candidaturas Indisponíveis' }}
                         </button>
                     </div>
-                </div>
+                </template>
+            </Box>
 
-                <img src="../../assets/ped.png" alt="panda" />   
-            </div>
-            
-            <div class="flex flex-wrap flex-row-reverse gap-x-8 box">
-                
-                <div class="flex flex-col gap-2 flex-1">
+            <Box title_bg_color="bg-cr-light-purple">
+                <template #title>
                     <h2 class="text-cr-purple">Departamento Recreativo</h2>
+                </template>
+                <template #content>
                     <p>
                         O Departamento Recreativo é o responsável pela organização de <b>encontros e atividades</b>
                         mais informais, focando-se especialmente na <b>componente social e de convívio</b> do Clube.
@@ -47,7 +48,7 @@
                         Para além disto, este é também responsável por gerir o nosso <b>servidor do Discord</b>
                         e outros eventos online.
                     </p>
-
+                    
                     <MemberList :members="members.recr" type="dept" />
                     
                     <div v-if="cands.open" class="mt-auto">
@@ -55,15 +56,14 @@
                             {{ cands.recr.open ? 'Candidaturas Abertas!' : 'Candidaturas Indisponíveis' }}
                         </button>
                     </div>
-                </div>
+                </template>
+            </Box>
 
-                <img src="../../assets/kaku2.png" alt="panda"/>                
-            </div>
-
-            <div class="flex flex-wrap gap-x-8 box">
-                
-                <div class="flex flex-col gap-2 flex-1">
+            <Box title_bg_color="bg-cr-light-teal">
+                <template #title>
                     <h2 class="text-cr-teal">Departamento de Comunicação</h2>
+                </template>
+                <template #content>
                     <p>
                         O Departamento de Comunicação é o responsável por <b>gerir as nossas redes sociais</b>,
                         <b>criar posts</b> informativos, e <b>divulgar</b> atividades e eventos do Clube.
@@ -86,10 +86,8 @@
                             {{ cands.comms.open ? 'Candidaturas Abertas!' : 'Candidaturas Indisponíveis' }}
                         </button>
                     </div>
-                </div>
-
-                <img src="../../assets/comms.png" alt="panda"/>
-            </div>
+                </template>
+            </Box>
             
         </div>
     </div>
@@ -98,7 +96,7 @@
 <style scoped>
     .cand_btn {
         @apply font-shrikhand text-base md:text-lg sm:whitespace-nowrap
-        mt-2 w-full border-2 px-6 md:px-10 py-1 rounded-lg bg-cr-red-beige
+        mt-2 w-full border-2 px-6 md:px-10 py-1 rounded-lg bg-cr-medium-brown
         hover:brightness-110 focus:brightness-110
         disabled:bg-stone-300 disabled:text-stone-500 disabled:hover:brightness-100
     }

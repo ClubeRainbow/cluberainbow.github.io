@@ -1,5 +1,6 @@
 <script setup lang="ts">
     import members from '../../jsons/members.json';
+    import Box from '../Box.vue';
     import MemberList from './MemberList.vue';
 </script>
 
@@ -9,32 +10,41 @@
 
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
             
-            <div class="flex flex-col gap-2 box">
-                <h3>Direção</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                
-                <MemberList :members="members.direçao" type="dir" />
-            </div>
+            <Box>
+                <template #title>
+                    <h3>Direção</h3>
+                </template>
+                <template #content>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <MemberList :members="members.direçao" type="dir" />
+                </template>
+            </Box>
 
-            <div class="flex flex-col gap-2 box">
-                <h3>Mesa da Assembleia Geral</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
+            <Box>
+                <template #title>
+                    <h3>Mesa da Assembleia Geral</h3>
+                </template>
+                <template #content>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <MemberList :members="members.mesa" type="dir" />
+                </template>
+            </Box>
 
-                <MemberList :members="members.mesa" type="dir" />
-            </div>
-
-            <div class="flex flex-col gap-2 box">
-                <h3>Conselho Fiscal e Jurisdicional</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-
-                <MemberList :members="members.fiscal" type="dir" />
-            </div>
+            <Box>
+                <template #title>
+                    <h3>Conselho Fiscal e Jurisdicional</h3>
+                </template>
+                <template #content>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <MemberList :members="members.fiscal" type="dir" />
+                </template>
+            </Box>
 
         </div>
 

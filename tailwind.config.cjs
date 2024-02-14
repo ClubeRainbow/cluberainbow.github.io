@@ -15,16 +15,17 @@ module.exports = {
     },
     extend: {
       colors: {
-        "cr-beige": "#e8ded4",
-        "cr-brown": "#745952",
-        "cr-red-beige": "#e9c9b7",
+        "cr-beige": "#e4ddd3",
+        "cr-brown": "#745854",
+        "cr-medium-brown": "#d4b9a5",
+        "cr-light-brown": "#e0cdbc",
         "cr-off-white": "#f8f5f2",
         "cr-purple": "#9b59b6",
-        "cr-light-purple": "#dfcae7",
+        "cr-light-purple": "#c09bc5",
         "cr-orange": "#e67e22",
-        "cr-light-orange": "#f6d1b1",
+        "cr-light-orange": "#e5ae7b",
         "cr-teal": "#1abc9c",
-        "cr-light-teal": "#c6f6ee"
+        "cr-light-teal": "#99d1bf"
       },
       screens: {
         "sm": "500px",

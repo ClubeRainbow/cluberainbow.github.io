@@ -29,7 +29,7 @@
 <style scoped>
     .title_btn {
         @apply flex items-center justify-between md:justify-start text-left gap-2 
-        bg-cr-red-beige
+        bg-cr-medium-brown
         hover:brightness-110 focus:brightness-110
     }
     .v-enter-active, .v-leave-active {

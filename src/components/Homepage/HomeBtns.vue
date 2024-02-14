@@ -4,15 +4,15 @@
 
 <template>
     <div class="flex flex-col sm:flex-row gap-x-4 gap-y-2">
-        <button @click="$router.push({name: 'info'})" class="bg-cr-red-beige">
+        <button @click="$router.push({name: 'info'})" class="bg-cr-medium-brown">
             Eventos
         </button>
-        <button @click="$router.push({name: 'info', hash: '#faq'})" class="bg-cr-red-beige">
+        <button @click="$router.push({name: 'info', hash: '#faq'})" class="bg-cr-medium-brown">
             FAQ
         </button>
         <button @click="$emit('show_modal')" 
             :class="{'bg-stone-300 text-stone-500' : !cands.open,
-                     'bg-cr-red-beige' : cands.open }">
+                     'bg-cr-medium-brown' : cands.open }">
             Candidaturas
         </button>
     </div>

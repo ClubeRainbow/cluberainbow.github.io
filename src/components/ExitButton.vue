@@ -21,7 +21,7 @@
         @apply 
         fixed bottom-4 md:bottom-8 right-4 md:right-8 
         flex gap-3 items-center 
-        border-2 rounded-lg bg-cr-red-beige shadow-md z-30
+        border-2 rounded-lg bg-cr-medium-brown shadow-md z-30
         py-1 px-2.5 md:py-1.5 md:px-3
         hover:brightness-110 focus:brightness-110
     }

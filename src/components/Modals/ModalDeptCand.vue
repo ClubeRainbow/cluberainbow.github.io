@@ -76,7 +76,7 @@
 <style scoped>
     .custom_btn {
         @apply font-shrikhand text-base md:text-lg 
-        border-2 rounded-lg bg-cr-red-beige
+        border-2 rounded-lg bg-cr-medium-brown
         flex items-center justify-center px-4 py-1
         w-full max-w-lg mx-auto mt-2 
         no-underline

@@ -17,7 +17,7 @@
 
         <h3 class="z-30">Próximo Evento</h3>
 
-        <div class="absolute top-0 w-full h-full box bg-cr-red-beige">
+        <div class="absolute top-0 w-full h-full box bg-cr-medium-brown">
         </div>
     </div>
 </template>
