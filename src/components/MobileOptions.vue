@@ -111,20 +111,17 @@
         border-2 rounded-xl bg-cr-light-brown shadow-md py-2 px-4
         w-full text-center
     }
-    .reg_option:hover > h3,
-    .reg_option:focus > h3 {
-        @apply brightness-125
+    .reg_option:hover, .highlighted_option:hover,
+    .reg_option:focus, .highlighted_option:focus {
+        @apply brightness-110
     }
     .highlighted_option {
         @apply 
         flex justify-center items-center gap-2
         border-2 rounded-xl bg-cr-medium-brown shadow-md py-2 px-4
         w-full text-center
-        hover:brightness-110 
-        focus:brightness-110
     }
-    .highlighted_option > h3,
-    .reg_option > h3 {
+    .reg_option > h3, .highlighted_option > h3 {
         text-shadow: none
     }
 </style>
