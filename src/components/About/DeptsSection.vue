@@ -26,11 +26,9 @@
                     <div class="relative flex flex-col gap-4 md:mt-2">
                         <MemberList :members="members.ped" type="dept" :cand_btn="cands.open" />
                     
-                        <div v-if="cands.open" class="static md:absolute md:top-0 md:right-0">
-                            <button class="cand_btn" :disabled="!cands.ped.open" @click="$emit('show_modal', cands.ped)">
-                                {{ cands.ped.open ? 'Candidaturas Abertas!' : 'Candidaturas Indisponíveis' }}
-                            </button>
-                        </div>
+                        <button v-if="cands.open" :disabled="!cands.ped.open" @click="$emit('show_modal', cands.ped)">
+                            {{ cands.ped.open ? 'Candidaturas Abertas!' : 'Candidaturas Indisponíveis' }}
+                        </button>
                     </div>
                 </template>
             </Box>
@@ -54,11 +52,9 @@
                     <div class="relative flex flex-col gap-4 md:mt-2">
                         <MemberList :members="members.recr" type="dept" :cand_btn="cands.open" />
                         
-                        <div v-if="cands.open" class="static md:absolute md:top-0 md:right-0">
-                            <button class="cand_btn" :disabled="!cands.recr.open" @click="$emit('show_modal', cands.recr)">
-                                {{ cands.recr.open ? 'Candidaturas Abertas!' : 'Candidaturas Indisponíveis' }}
-                            </button>
-                        </div>
+                        <button v-if="cands.open" :disabled="!cands.recr.open" @click="$emit('show_modal', cands.recr)">
+                            {{ cands.recr.open ? 'Candidaturas Abertas!' : 'Candidaturas Indisponíveis' }}
+                        </button>
                     </div>
                 </template>
             </Box>
@@ -76,7 +72,7 @@
                         A equipa de design deste departamento ajuda também no
                         <b>
                             desenvolvimento de
-                            <button class="click" @click="$router.push({ name: 'merch' })">
+                            <button class="clickable" @click="$router.push({ name: 'merch' })">
                                 merch
                             </button>
                         </b>
@@ -86,11 +82,9 @@
                     <div class="relative flex flex-col gap-4 md:mt-2">
                         <MemberList :members="members.comms" type="dept" :cand_btn="cands.open" />
 
-                        <div v-if="cands.open" class="static md:absolute md:top-0 md:right-0">
-                            <button class="cand_btn" :disabled="!cands.comms.open" @click="$emit('show_modal', cands.comms)">
-                                {{ cands.comms.open ? 'Candidaturas Abertas!' : 'Candidaturas Indisponíveis' }}
-                            </button>
-                        </div>
+                        <button v-if="cands.open" :disabled="!cands.comms.open" @click="$emit('show_modal', cands.comms)">
+                            {{ cands.comms.open ? 'Candidaturas Abertas!' : 'Candidaturas Indisponíveis' }}
+                        </button>
                     </div>
                 </template>
             </Box>
@@ -100,9 +94,11 @@
 </template>
 
 <style scoped>
-    .cand_btn {
-        @apply font-shrikhand text-base md:text-lg sm:whitespace-nowrap
-        border-2 py-1.5 px-6 md:px-10 rounded-lg bg-cr-medium-brown
+    div>button {
+        @apply flex items-center justify-center 
+        md:absolute md:top-0 md:right-0
+        font-shrikhand text-base md:text-lg sm:whitespace-nowrap
+        border-2 py-1.5 px-4 md:px-6 rounded-lg bg-cr-medium-brown
         w-full md:w-auto
         hover:brightness-110 focus:brightness-110
         disabled:bg-stone-300 disabled:text-stone-500 disabled:hover:brightness-100

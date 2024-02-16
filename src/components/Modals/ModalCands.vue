@@ -29,7 +29,7 @@
                     <li>O trabalho é <b>voluntário e não remunerado;</b></li>
                     <li>Apenas podem fazer parte <b>estudantes e alumni</b> da Universidade do Minho.</li>
                 </ul>
-                <button class="w-full" @click="$router.push({ name: 'about', hash: '#depts' })">
+                <button @click="$router.push({ name: 'about', hash: '#depts' })">
                     Consultar Departamentos
                 </button>
             </template>
@@ -50,7 +50,7 @@
                     <button class="clickable" @click="$router.push({ name: 'contacts' })">redes sociais</button> para que
                     possas ser notificade quando estas abrirem novamente!
                 </p>
-                <button class="w-full" @click="$emit('close')">
+                <button @click="$emit('close')">
                     Voltar
                 </button>
             </template>
@@ -60,7 +60,10 @@
 </template>
 
 <style scoped>
-div>button {
-    @apply w-full md:w-2/3 mt-2 mx-auto py-2 px-4 border-2 rounded-lg bg-cr-medium-brown drop-shadow-lg font-shrikhand text-lg md:text-xl hover:brightness-110 focus:brightness-110
-}
+    div>button {
+        @apply w-full md:w-2/3 mt-2 mx-auto py-2 px-4 
+        border-2 rounded-lg bg-cr-medium-brown font-shrikhand 
+        text-lg md:text-xl 
+        hover:brightness-110 focus:brightness-110
+    }
 </style>

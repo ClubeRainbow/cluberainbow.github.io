@@ -66,7 +66,7 @@
                 </b>
             </p>
 
-            <a class="custom_btn" :href="dept.link" target="_blank">
+            <a :href="dept.link" target="_blank">
                 Formulário
             </a>
         </template>
@@ -74,11 +74,11 @@
 </template>
 
 <style scoped>
-    .custom_btn {
-        @apply font-shrikhand text-base md:text-lg 
-        border-2 rounded-lg bg-cr-medium-brown
-        flex items-center justify-center px-4 py-1
-        w-full max-w-lg mx-auto mt-2 
+    div>a {
+        @apply flex items-center justify-center
+        w-full md:w-2/3 mt-2 mx-auto py-2 px-4 
+        border-2 rounded-lg bg-cr-medium-brown font-shrikhand 
+        text-lg md:text-xl
         no-underline
     }
 </style>

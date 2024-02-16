@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div class="flex flex-col gap-10 max-w-6xl mx-auto">
+    <div class="flex flex-col gap-4 max-w-6xl mx-auto">
         <Faq id="faq" />
     </div>
 </template>

@@ -4,10 +4,10 @@
 
 <template>
     <div class="flex flex-col sm:flex-row gap-x-4 gap-y-2">
-        <button @click="$router.push({name: 'info'})" class="bg-cr-medium-brown">
-            Eventos
+        <button @click="$router.push({name: 'contacts'})" class="bg-cr-medium-brown">
+            Contactos
         </button>
-        <button @click="$router.push({name: 'info', hash: '#faq'})" class="bg-cr-medium-brown">
+        <button @click="$router.push({name: 'info'})" class="bg-cr-medium-brown">
             FAQ
         </button>
         <button @click="$emit('show_modal')" 

@@ -2,7 +2,7 @@
     "open" : true,
     "timelimit" : "xx/xx/xxxx",
     "ped" : {
-        "open" : true,
+        "open" : false,
         "timelimit" : "xx/xx/xxxx",
         "name" : "Departamento Pedagógico",
         "color" : "orange",

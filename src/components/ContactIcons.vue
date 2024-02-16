@@ -9,7 +9,7 @@
 </script>
 
 <template>
-    <div>
+    <div class="flex items-center justify-center">
         <a href="https://discord.gg/5Z9YshrZah" target="_blank">
             <img src="../assets/icon_discord.svg" alt="discord" :class="size" />
         </a>
