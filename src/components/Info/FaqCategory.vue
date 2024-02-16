@@ -13,8 +13,8 @@
 <template>
     <div class="flex flex-col">
         
-        <button class="title_btn box py-3 md:py-4" @click="show_answer = !show_answer; list_size = (200*items).toString() + 'px'">
-            <h3 style="text-shadow:none">{{ title }}</h3>
+        <button class="title_btn" @click="show_answer = !show_answer; list_size = (200*items).toString() + 'px'">
+            <h3>{{ title }}</h3>
             <img src="../../assets/icon_arrow.svg" alt="toggle list" class="h-4 w-4" :class="{ 'rotate-180' : show_answer }"/>
         </button>
 
@@ -29,7 +29,8 @@
 <style scoped>
     .title_btn {
         @apply flex items-center justify-between md:justify-start text-left gap-2 
-        bg-cr-medium-brown
+        border-2 rounded-xl bg-cr-medium-brown shadow-md
+        px-4 md:px-6 py-3 md:py-4
         hover:brightness-110 focus:brightness-110
     }
     .v-enter-active, .v-leave-active {

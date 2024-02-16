@@ -16,7 +16,7 @@
 </script>
 
 <template>
-    <div class="flex flex-col gap-2 box py-4">
+    <div class="box">
         
         <Slides :path="path" :max="max" :size="img_size"/>
         
@@ -45,3 +45,11 @@
 
     </div>
 </template>
+
+<style scoped>
+    .box {
+        @apply flex flex-col gap-2 
+        border-2 rounded-xl bg-cr-beige shadow-md
+        py-4 px-6 md:px-8
+    }
+</style>

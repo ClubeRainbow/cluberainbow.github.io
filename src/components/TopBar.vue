@@ -21,7 +21,7 @@
 </script>
 
 <template>
-    <div v-if="windowWidth >= 1180" class="mx-8 flex justify-between gap-x-4 z-20">
+    <div v-if="windowWidth >= 1180" class="mx-8 flex justify-between gap-x-4 z-30">
       
         <button class="topbar_option hover:bg-[rgba(190,0,0,0.25)] focus:bg-[rgba(190,0,0,0.25)]" 
             @click="redirect('home')">
@@ -38,16 +38,16 @@
             </button>
 
             <div v-if="about_options" class="sub_section">
-                <button class="sub_option" @click="redirect('about')">
+                <button @click="redirect('about')">
                     Sobre o Clube
                 </button>
-                <button class="sub_option" @click="redirect('about', '#depts')">
+                <button @click="redirect('about', '#depts')">
                     Departamentos
                 </button>
-                <button class="sub_option" @click="redirect('about', '#dir')">
+                <button @click="redirect('about', '#dir')">
                     Direção
                 </button>
-                <button class="sub_option rounded-b-lg" @click="redirect('about', '#partners')" @focusout="about_options=false">
+                <button @click="redirect('about', '#partners')" @focusout="about_options=false">
                     Parcerias
                 </button>
             </div>
@@ -63,10 +63,7 @@
             </button>
 
             <div v-if="info_options" class="sub_section">
-                <button class="sub_option" @click="redirect('info')">
-                    Eventos
-                </button>
-                <button class="sub_option rounded-b-lg" @click="redirect('info', '#faq')" @focusout="info_options=false">
+                <button @click="redirect('info')" @focusout="info_options=false">
                     FAQ
                 </button>
             </div>
@@ -85,7 +82,7 @@
             </button>
 
             <div v-if="merch_options" class="sub_section">
-                <button class="sub_option rounded-b-lg" @click="redirect('merch')" @focusout="merch_options=false">
+                <button @click="redirect('merch')" @focusout="merch_options=false">
                     Autocolantes
                 </button>
             </div>
@@ -117,13 +114,17 @@
 
 <style scoped>
     .sub_button {
-        @apply flex justify-center items-center gap-2.5 px-2 xl-topbar:px-3 h-full
+        @apply h-full flex justify-center items-center gap-2.5 px-2 xl-topbar:px-3 
     }
     .sub_section {
-        @apply absolute top-full w-full flex flex-col gap-1 z-20
+        @apply absolute top-full w-full 
+        flex flex-col gap-1
     }
-    .sub_option {
-        @apply bg-cr-light-brown border py-1 font-semibold
-        hover:brightness-110 focus:brightness-110 hover:underline focus:underline
+    .sub_section > button {
+        @apply bg-cr-light-brown border 
+        py-1 font-semibold
+        hover:brightness-110 focus:brightness-110 
+        hover:underline focus:underline
     }
+    .sub_section > button:last-child { @apply rounded-b-lg }
 </style>

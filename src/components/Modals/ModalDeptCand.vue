@@ -18,15 +18,16 @@
 <template>
     <Modal>
         
-        <h2>
-            Candidaturas para o 
-            <h2 :class="dept.color + ' inline'">
-                {{ dept.name }}
+        <template #title>
+            <h2>
+                Candidaturas para o 
+                <h2 :class="dept.color + ' inline'">
+                    {{ dept.name }}
+                </h2>
             </h2>
-        </h2>
+        </template>
 
-        <div class="flex flex-col gap-2 md:mx-4">
-            
+        <template #content>
             <p>
                 Gostarias de fazer parte do Clube? 
                 <b>
@@ -59,17 +60,16 @@
                 Mais informações estarão lá disponíveis, mas  
                 <b>
                     qualquer dúvida não hesites em nos 
-                    <button class="click" @click="$router.push({ name: 'contacts' })">
+                    <button class="clickable" @click="$router.push({ name: 'contacts' })">
                         contactar
                     </button>.
                 </b>
             </p>
-        </div>
 
-        <a class="custom_btn" :href="dept.link" target="_blank">
-            Formulário
-        </a>
-        
+            <a class="custom_btn" :href="dept.link" target="_blank">
+                Formulário
+            </a>
+        </template>
     </Modal>
 </template>
 

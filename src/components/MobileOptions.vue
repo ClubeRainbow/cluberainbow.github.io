@@ -33,16 +33,16 @@
 
             <Transition>
                 <div v-if="about_options" class="sub_section">
-                    <button class="reg_option mt-3" @click="redirect('about')">
+                    <button @click="redirect('about')">
                         <h3>Sobre o Clube</h3>
                     </button>
-                    <button class="reg_option" @click="redirect('about', '#depts')">
+                    <button @click="redirect('about', '#depts')">
                         <h3>Departamentos</h3>
                     </button>
-                    <button class="reg_option" @click="redirect('about', '#dir')">
+                    <button @click="redirect('about', '#dir')">
                         <h3>Direção</h3>
                     </button>
-                    <button class="reg_option mb-1" @click="redirect('about', '#partners')">
+                    <button @click="redirect('about', '#partners')">
                         <h3>Parcerias</h3>
                     </button>
                 </div>
@@ -57,10 +57,7 @@
 
             <Transition>
                 <div v-if="info_options" class="sub_section">
-                    <button class="reg_option mt-3" @click="redirect('info')">
-                        <h3>Eventos</h3>
-                    </button>
-                    <button class="reg_option mb-1" @click="redirect('info', '#faq')">
+                    <button @click="redirect('info')">
                         <h3>FAQ</h3>
                     </button>
                 </div>
@@ -75,7 +72,7 @@
             
             <Transition>
                 <div v-if="merch_options" class="sub_section">
-                    <button class="reg_option mt-3 mb-1" @click="redirect('merch')">
+                    <button @click="redirect('merch')">
                         <h3>Autocolantes</h3>
                     </button>
                 </div>
@@ -103,17 +100,10 @@
         transition: max-height 0.5s ease;
         overflow: hidden;
     }
-    .sub_section {
-        @apply mx-auto w-11/12 flex flex-col gap-2
-    }
     .reg_option {
         @apply 
         border-2 rounded-xl bg-cr-light-brown shadow-md py-2 px-4
         w-full text-center
-    }
-    .reg_option:hover, .highlighted_option:hover,
-    .reg_option:focus, .highlighted_option:focus {
-        @apply brightness-110
     }
     .highlighted_option {
         @apply 
@@ -121,7 +111,13 @@
         border-2 rounded-xl bg-cr-medium-brown shadow-md py-2 px-4
         w-full text-center
     }
-    .reg_option > h3, .highlighted_option > h3 {
-        text-shadow: none
+    .reg_option:hover, .highlighted_option:hover,
+    .reg_option:focus, .highlighted_option:focus { @apply brightness-110 }
+    .reg_option > h3, .highlighted_option > h3 { text-shadow: none }
+    .sub_section {
+        @apply mx-auto w-11/12 flex flex-col gap-2
     }
+    .sub_section > button { @apply reg_option }
+    .sub_section > button:first-child { @apply mt-3 }
+    .sub_section > button:last-child { @apply mb-1 }
 </style>

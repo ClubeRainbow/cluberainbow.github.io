@@ -1,22 +1,28 @@
 <script setup lang="ts">
-import MerchItem from '../components/Merch/MerchItem.vue';
+    import Box from '../components/Box.vue';
+    import MerchItem from '../components/Merch/MerchItem.vue';
 </script>
 
 <template>
     <div class="flex flex-col gap-4 max-w-6xl mx-auto">
         
-        <h1> Autocolantes </h1>
+        <h1> Merch </h1>
 
-        <div>
-            <p>
-                Somos uma iniciativa sem fins lucrativos, no entanto precisamos sempre de fundos para 
-                nos ajudar a organizar e publicitar eventos futuros. Para tal, vendemos diferentes 
-                autocolantes LGBTQIA+ nos nossos eventos.
-            </p>
-            <p>
-                Nesta página podes consultar os vários autocolantes que temos disponíveis!
-            </p>
-        </div>
+        <Box>
+            <template #title>
+                <h2>Autocolantes</h2>
+            </template>
+            <template #content>
+                <p>
+                    Somos uma iniciativa sem fins lucrativos, no entanto precisamos sempre de fundos para 
+                    nos ajudar a organizar e publicitar eventos futuros. Para tal, vendemos diferentes 
+                    autocolantes LGBTQIA+ nos nossos eventos.
+                </p>
+                <p>
+                    Nesta página podes consultar os vários autocolantes que temos disponíveis!
+                </p>
+            </template>
+        </Box>
 
         <div class="custom_grid">
             <MerchItem path="/stickers/flags/" :max="10" img_size="h-32 top-3"

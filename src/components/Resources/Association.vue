@@ -22,7 +22,7 @@
 </script>
 
 <template>
-    <div class="flex flex-wrap md:flex-nowrap gap-6 box">
+    <div class="box">
         
         <a class="h-fit mx-auto md:mx-0" :href="ass.page" target="_blank">
             <img :src="ass.logo" :alt="ass.name" class="max-h-40 border-2 rounded-xl" />
@@ -92,6 +92,11 @@
 </template>
 
 <style scoped>
+    .box {
+        @apply flex flex-wrap md:flex-nowrap gap-6 
+        border-2 rounded-xl bg-cr-beige shadow-md
+        py-4 md:py-6 px-6 md:px-8
+    }
     .item {
         @apply flex items-center gap-1 
     }
