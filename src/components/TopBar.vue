@@ -21,7 +21,7 @@
 </script>
 
 <template>
-    <div v-if="windowWidth >= 1180" class="mx-8 flex justify-between gap-x-4 z-30">
+    <div v-if="windowWidth >= 1180" class="mx-8 flex justify-between gap-x-4 z-20">
       
         <button class="topbar_option hover:bg-[rgba(190,0,0,0.25)] focus:bg-[rgba(190,0,0,0.25)]" 
             @click="redirect('home')">
@@ -122,7 +122,7 @@
     }
     .sub_section > button {
         @apply bg-cr-light-brown border 
-        py-1 font-semibold
+        font-semibold py-1 z-20
         hover:brightness-110 focus:brightness-110 
         hover:underline focus:underline
     }

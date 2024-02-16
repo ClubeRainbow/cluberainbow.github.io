@@ -45,15 +45,3 @@
 
   </div>
 </template>
-
-<style scoped>
-  .bg-gradient {
-    background: linear-gradient(
-        90deg, 
-        #FF9393 0%, 
-        #F3A86A 25%, 
-        #FFD85A 50%, 
-        #79E8AC 75%, 
-        #A3A0E7 100% )
-  }
-</style>

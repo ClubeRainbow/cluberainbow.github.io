@@ -5,7 +5,7 @@
         "open" : true,
         "timelimit" : "xx/xx/xxxx",
         "name" : "Departamento Pedagógico",
-        "color" : "text-cr-orange",
+        "color" : "orange",
         "link" : "https://google.com",
         "functions" : [
             "função 1", 
@@ -21,7 +21,7 @@
         "open" : true,
         "timelimit" : "xx/xx/xxxx",
         "name" : "Departamento Recreativo",
-        "color" : "text-cr-purple",
+        "color" : "purple",
         "link" : "https://google.com",
         "functions" : [
             "função 1", 
@@ -37,7 +37,7 @@
         "open" : true,
         "timelimit" : "xx/xx/xxxx",
         "name" : "Departamento de Comunicação",
-        "color" : "text-cr-teal",
+        "color" : "teal",
         "link" : "https://google.com",
         "functions" : [
             "função 1", 

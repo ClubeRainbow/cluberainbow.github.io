@@ -3,10 +3,8 @@
 
     const hover_email = ref(false)
     const copy_confirm = ref(false)
-    const email = 'rainbow.clube.estudantes@gmail.com'
-
     const clickEmail = () => {
-        navigator.clipboard.writeText(email)
+        navigator.clipboard.writeText('rainbow.clube.estudantes@gmail.com')
         copy_confirm.value = true
     }
 </script>
@@ -28,7 +26,7 @@
                     </div>
                 </div>
 
-                <p class="text-outline-white">{{ email }}</p>
+                <p class="text-outline-white">rainbow.clube.estudantes<wbr/>@gmail.com</p>
             </div>
         </button>
 
@@ -78,6 +76,6 @@
         @apply flex flex-col text-left
     }
     div > p {
-        @apply whitespace-nowrap text-base md:text-lg
+        @apply text-base md:text-lg
     }
 </style>

@@ -37,7 +37,7 @@
                     Qualquer pessoa pode participar nos nossos eventos, mas se quiseres fazer
                     parte da organização do Clube Rainbow, <b>deves candidatar-te a
                         um dos nossos departamentos -
-                        <button class="click" @click="$router.push({ name: 'about', hash: '#depts' })">
+                        <button class="clickable" @click="$router.push({ name: 'about', hash: '#depts' })">
                             podes saber mais sobre eles aqui!
                         </button></b>
                 </p>
@@ -62,7 +62,7 @@
                 </p>
                 <p>
                     Relativamente à frequência dos eventos,
-                    <button class="click" @click="$router.push({ name: 'info', hash: '#events' })">
+                    <button class="clickable" @click="$router.push({ name: 'info', hash: '#events' })">
                         consulta a nossa calendarização acima.
                     </button>
                 </p>
@@ -114,11 +114,11 @@
                 <p>
                     <b>
                         Para te juntares ao nosso servidor do Discord, consulta a nossa
-                        <button class="click" @click="$router.push({ name: 'contacts' })">
+                        <button class="clickable" @click="$router.push({ name: 'contacts' })">
                             página de contactos
                         </button>
                         ou
-                        <a class="click" href="https://discord.gg/5Z9YshrZah" target="_blank">
+                        <a class="clickable" href="https://discord.gg/5Z9YshrZah" target="_blank">
                             utiliza este link!
                         </a>
                     </b>
@@ -141,7 +141,7 @@
             <p>
                 <b>
                     Consulta a nossa
-                    <button class="click" @click="$router.push({ name: 'resources' })">
+                    <button class="clickable" @click="$router.push({ name: 'resources' })">
                         página de recursos úteis,
                     </button>
                 </b>
@@ -153,7 +153,7 @@
         <FaqItem question="Tenho outra dúvida...">
             <p>
                 Sem problema,
-                <button class="click" @click="$router.push({ name: 'contacts' })">
+                <button class="clickable" @click="$router.push({ name: 'contacts' })">
                     entra em contacto connosco
                 </button>
                 e teremos todo o gosto em ajudar!

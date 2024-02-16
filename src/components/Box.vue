@@ -1,8 +1,5 @@
 <script setup lang="ts">
-    interface Props {
-        title_bg_color?: string
-    }
-    defineProps<Props>();
+    defineProps<{title_bg_color?: string}>();
 </script>
 
 <template>

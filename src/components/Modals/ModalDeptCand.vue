@@ -16,12 +16,12 @@
 </script>
 
 <template>
-    <Modal>
+    <Modal :title_bg_color="'bg-cr-light-'+dept.color">
         
         <template #title>
             <h2>
                 Candidaturas para o 
-                <h2 :class="dept.color + ' inline'">
+                <h2 :class="'text-cr-'+dept.color+' inline'">
                     {{ dept.name }}
                 </h2>
             </h2>
