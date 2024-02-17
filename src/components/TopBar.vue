@@ -63,7 +63,10 @@
             </button>
 
             <div v-if="info_options" class="sub_section">
-                <button @click="redirect('info')" @focusout="info_options=false">
+                <button @click="redirect('info')">
+                    Eventos
+                </button>
+                <button @click="redirect('info', '#faq')" @focusout="info_options=false">
                     FAQ
                 </button>
             </div>

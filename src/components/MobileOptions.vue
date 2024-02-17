@@ -58,6 +58,9 @@
             <Transition>
                 <div v-if="info_options" class="sub_section">
                     <button @click="redirect('info')">
+                        <h3>Eventos</h3>
+                    </button>
+                    <button @click="redirect('info', '#faq')">
                         <h3>FAQ</h3>
                     </button>
                 </div>

@@ -1,6 +1,6 @@
 <script setup lang="ts">
     import { ref } from "vue";
-    const show_answer = ref(false)
+    const show_list = ref(false)
     const list_size = ref('')
 
     interface Props {
@@ -13,14 +13,16 @@
 <template>
     <div class="flex flex-col">
         
-        <button class="title_btn" @click="show_answer = !show_answer; list_size = (200*items).toString() + 'px'">
+        <button class="title_btn" @click="show_list = !show_list; list_size = (200*items).toString() + 'px'">
             <h3>{{ title }}</h3>
-            <img src="../../assets/icon_arrow.svg" alt="toggle list" class="h-4 w-4" :class="{ 'rotate-180' : show_answer }"/>
+            <img src="../../assets/icon_arrow.svg" alt="toggle list" class="h-4 w-4" :class="{ 'rotate-180' : show_list }"/>
         </button>
 
         <Transition> 
-            <div v-if="show_answer" class="flex flex-col gap-3 w-11/12 mx-auto">
-                <slot></slot>
+            <div v-if="show_list">
+                <div class="flex flex-col w-11/12 mx-auto -mb-3.5">
+                    <slot></slot>
+                </div>
             </div>
         </Transition>
     </div>

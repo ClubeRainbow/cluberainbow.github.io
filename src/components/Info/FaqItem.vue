@@ -19,7 +19,7 @@
         <div class="answer">
             <Transition>
                 <div v-if="show_answer">
-                    <div class="px-4 md:px-6 pt-8 pb-5">
+                    <div class="px-4 md:px-6 pt-8 pb-1.5">
                         <slot></slot>
                     </div>
                 </div>
@@ -39,7 +39,7 @@
     .answer {
         @apply flex flex-col text-left gap-2
         bg-cr-beige border-x-2 border-b-2 rounded-b-xl 
-        z-10
+        pb-3.5 z-10
     }
     button:hover > .question,
     button:focus > .question {
