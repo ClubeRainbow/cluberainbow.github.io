@@ -15,13 +15,12 @@
 
 <style scoped>
     .title {
-        @apply border-2 rounded-xl 
+        @apply border-t-2 border-x-2 rounded-t-xl 
         py-3 px-6 md:px-8 
-        -mb-4 z-10
     }
     .content {
         @apply flex flex-col h-full gap-2 
         border-2 rounded-b-xl
-        pt-7 pb-5 px-6 md:px-8
+        pt-3 pb-5 px-6 md:px-8
     }
 </style>

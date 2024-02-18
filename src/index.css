@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Shrikhand');
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@500');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700');
 
 @tailwind base;
 @tailwind components;

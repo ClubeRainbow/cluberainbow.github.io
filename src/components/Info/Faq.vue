@@ -10,7 +10,7 @@
         <h1> FAQ </h1>
 
         <FaqCategory title="Perguntas Gerais" :items="3">
-            <FaqItem question="O Clube Rainbow é apenas para estudantes da UM?" class="mt-4">
+            <FaqItem question="O Clube Rainbow é apenas para estudantes da UM?">
                 <p>
                     O Clube Rainbow foi criado com es estudantes da Universidade do Minho em mente,
                     mas <b>todes são bem-vindes a participar nos nossos eventos e atividades!</b>
@@ -32,7 +32,7 @@
                 </p>
             </FaqItem>
 
-            <FaqItem question="Como posso fazer parte?" class="mb-1">
+            <FaqItem question="Como posso fazer parte?">
                 <p>
                     Qualquer pessoa pode participar nos nossos eventos, mas se quiseres fazer
                     parte da organização do Clube Rainbow, <b>deves candidatar-te a
@@ -51,8 +51,13 @@
             </FaqItem>
         </FaqCategory>
 
-        <FaqCategory title="Eventos" :items="2">
-            <FaqItem question="Onde/quando são os eventos?" class="mt-4">
+        <FaqCategory title="Eventos" :items="3">
+            <FaqItem question="Que tipo de eventos organizam?">
+                <p>
+                    ...
+                </p>
+            </FaqItem>
+            <FaqItem question="Onde/quando são os eventos?">
                 <p>
                     Os nossos eventos decorrem <b>sobretudo no campus de Gualtar da Universidade do Minho</b>, mas
                     ocasionalmente
@@ -68,7 +73,7 @@
                 </p>
             </FaqItem>
 
-            <FaqItem question="É preciso inscrição para os eventos?" class="mb-1">
+            <FaqItem question="É preciso inscrição para os eventos?">
                 <p>
                     <b>Não é necessária inscrição para a maior parte dos nossos eventos, mas quando tal for necessária,
                         iremos indicá-lo
@@ -83,7 +88,7 @@
         </FaqCategory>
 
         <FaqCategory title="Merch" :items="1">
-            <FaqItem question="Posso comprar merch fora dos eventos?" class="mt-4 mb-1">
+            <FaqItem question="Posso comprar merch fora dos eventos?">
                 <p>
                     <b>Atualmente, não.</b> Apenas vendemos merch nos nossos eventos ou quando vamos a marchas do pride,
                     pois,
@@ -93,7 +98,7 @@
         </FaqCategory>
 
         <FaqCategory title="Discord" :items="2">
-            <FaqItem question="O que é o Discord?" class="mt-4">
+            <FaqItem question="O que é o Discord?">
                 <p>
                     O Discord é uma aplicação de chat, que permite criar e participar em vários servidores.
                     Cada servidor opera como um chat de grupo com vários canais ou fóruns,
@@ -125,7 +130,7 @@
                 </p>
             </FaqItem>
 
-            <FaqItem question="Posso entrar no servidor do Discord se não for estudante da UM?" class="mb-1">
+            <FaqItem question="Posso entrar no servidor do Discord se não for estudante da UM?">
                 <p>
                     Sim! O servidor do Discord, tal como os nossos eventos, é <b>aberto a todes</b>.
                     Podes entrar mesmo que não estudes na UM ou não sejas LGBTQIA+.
@@ -133,32 +138,36 @@
             </FaqItem>
         </FaqCategory>
 
-        <FaqItem question="Preciso de ajuda!">
-            <p>
-                O Clube Rainbow não é qualificado para prestar apoio de emergência,
-                mas existem várias outras associações que te poderão ajudar!
-            </p>
-            <p>
-                <b>
-                    Consulta a nossa
-                    <button class="clickable" @click="$router.push({ name: 'resources' })">
-                        página de recursos úteis,
-                    </button>
-                </b>
-                onde poderás encontrar os contactos de várias associações portuguesas
-                que te poderão prestar auxílio, dependendo daquilo que precisas.
-            </p>
-        </FaqItem>
+        <div class="w-full -mb-3.5">
+            <FaqItem question="Preciso de ajuda!" class="w-full">
+                <p>
+                    O Clube Rainbow não é qualificado para prestar apoio de emergência,
+                    mas existem várias outras associações que te poderão ajudar!
+                </p>
+                <p>
+                    <b>
+                        Consulta a nossa
+                        <button class="clickable" @click="$router.push({ name: 'resources' })">
+                            página de recursos úteis,
+                        </button>
+                    </b>
+                    onde poderás encontrar os contactos de várias associações portuguesas
+                    que te poderão prestar auxílio, dependendo daquilo que precisas.
+                </p>
+            </FaqItem>
+        </div>
 
-        <FaqItem question="Tenho outra dúvida...">
-            <p>
-                Sem problema,
-                <button class="clickable" @click="$router.push({ name: 'contacts' })">
-                    entra em contacto connosco
-                </button>
-                e teremos todo o gosto em ajudar!
-            </p>
-        </FaqItem>
+        <div class="w-full -mb-3.5">
+            <FaqItem question="Tenho outra dúvida..." class="w-full">
+                <p>
+                    Sem problema,
+                    <button class="clickable" @click="$router.push({ name: 'contacts' })">
+                        entra em contacto connosco
+                    </button>
+                    e teremos todo o gosto em ajudar!
+                </p>
+            </FaqItem>
+        </div>
 
     </div>
 </template>

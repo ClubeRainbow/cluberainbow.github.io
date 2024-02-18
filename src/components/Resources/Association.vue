@@ -1,4 +1,21 @@
 <script setup lang="ts">
+    import { Ref, ref, onMounted } from 'vue';
+    
+    const logoArea : Ref<Element | null> = ref(null)
+    const titleArea : Ref<Element | null> = ref(null)
+    const descArea : Ref<Element | null> = ref(null)
+    const descHeight = ref(0)
+    const intersection = ref(0)
+
+    onMounted(() => {
+        if (logoArea.value && titleArea.value && descArea.value) {
+            const logoHeight = logoArea.value.clientHeight
+            const titleHeight = titleArea.value.clientHeight
+            descHeight.value = descArea.value.clientHeight
+            intersection.value = logoHeight - titleHeight
+        }
+    })
+    
     interface UsefulLink {
         desc: string,
         link: string
@@ -22,26 +39,28 @@
 </script>
 
 <template>
-    <div class="box">
+    <div class="flex border-2 rounded-xl bg-cr-beige shadow-md custom-bg-total">
         
-        <a class="h-fit mx-auto md:mx-0" :href="ass.page" target="_blank">
-            <img :src="ass.logo" :alt="ass.name" class="max-h-40 border-2 rounded-xl" />
-        </a>
-        
-        <div class="flex flex-col gap-2 w-full">
-            
-            <a class="flex items-center gap-2" :href="ass.page" target="_blank">
-                <h3>{{ ass.name }}</h3>
-                <img src="../../assets/icon_email.svg" alt="link" class="h-6 w-6" />
+        <div ref="logoArea" class="logoArea" >
+            <a :href="ass.page" target="_blank" class="rounded-xl">
+                <img :src="ass.logo" :alt="ass.name" class="border-2 rounded-xl"/>
             </a>
+        </div>
+        
+        <div class="flex flex-col w-full">
+            
+            <div ref="titleArea" class="titleArea">
+                <a class="flex items-center gap-2" :href="ass.page" target="_blank">
+                    <h3>{{ ass.name }}</h3>
+                    <img src="../../assets/icon_email.svg" alt="link" class="h-6 w-6" />
+                </a>
 
-            <p>{{ ass.desc }}</p>
+                <p class="font-semibold">{{ ass.desc }}</p>
+            </div>
 
-            <hr class="border w-full my-2">
-
-            <div class="flex flex-wrap gap-y-2 gap-x-8">
+            <div ref="descArea" class="descArea">
                 
-                <div class="flex flex-col gap-1">
+                <div>
                     <h3 class="mb-1">
                         Contactos:
                     </h3>
@@ -66,7 +85,7 @@
                     </template>
                 </div>
 
-                <div v-if="ass.location && ass.schedule" class="flex flex-col gap-1">
+                <div v-if="ass.location && ass.schedule">
                     <h3 class="mb-1">
                         Local & Horário:
                     </h3>
@@ -74,7 +93,7 @@
                     <p>{{ ass.schedule }}</p>
                 </div>
 
-                <div v-if="ass.useful_links" class="flex flex-col gap-1">
+                <div v-if="ass.useful_links">
                     <h3 class="mb-1">
                         Links Úteis:
                     </h3>
@@ -92,11 +111,50 @@
 </template>
 
 <style scoped>
-    .box {
-        @apply flex flex-wrap md:flex-nowrap gap-6 
-        border-2 rounded-xl bg-cr-beige shadow-md
-        py-4 md:py-6 px-6 md:px-8
+    .logoArea {
+        @apply custom-bg-logo
+        w-full aspect-square 
+        max-w-[160px] max-h-[160px]
     }
+
+    .titleArea {
+        @apply flex flex-col gap-2 
+        w-full rounded-tr-xl
+        pt-5 pb-3
+    }
+
+    .descArea {
+        @apply flex flex-wrap gap-x-4 xl:gap-x-8 
+        custom-bg-desc -ml-0.5 mb-2
+    }
+
+    .descArea > div {
+        @apply flex flex-col gap-1
+        px-4 py-2
+    }
+
+    .custom-bg-total {
+        background: linear-gradient(to top, #e4ddd3 v-bind(descHeight-4+'px'), #d4b9a5 1px)
+    }
+    .custom-bg-logo {
+        border-bottom-right-radius: 12px;
+        border-top-left-radius: 12px;
+        padding: 20px;
+        border-bottom: 2px solid transparent;
+        border-right: 2px solid transparent;
+        background: linear-gradient(#d4b9a5 0 0) padding-box,
+            linear-gradient(to top, #745854 v-bind(intersection-12+'px'), #d4b9a5 1px) border-box;
+    }
+
+    .custom-bg-desc {
+        border-bottom-right-radius: 12px;
+        border-top-left-radius: 12px;
+        padding: 2px;
+        border-top: 2px solid transparent;
+        border-left: 2px solid transparent;
+        background: linear-gradient(#e4ddd3 0 0) padding-box,
+            linear-gradient(to top, transparent v-bind(descHeight-intersection+12+'px'), #745854 1px) border-box;
+    }    
     .item {
         @apply flex items-center gap-1 
     }

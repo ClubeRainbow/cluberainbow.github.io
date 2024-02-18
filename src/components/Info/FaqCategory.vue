@@ -20,7 +20,7 @@
 
         <Transition> 
             <div v-if="show_list">
-                <div class="flex flex-col w-11/12 mx-auto -mb-3.5">
+                <div class="flex flex-col w-11/12 mx-auto -mb-3.5 mt-4">
                     <slot></slot>
                 </div>
             </div>
