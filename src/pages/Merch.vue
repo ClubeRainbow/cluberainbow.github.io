@@ -9,7 +9,7 @@
         <h1> Merch </h1>
 
         <Box>
-            <template #title>
+            <template #header>
                 <h2>Autocolantes</h2>
             </template>
             <template #content>

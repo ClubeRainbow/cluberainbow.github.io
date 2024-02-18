@@ -11,8 +11,8 @@
 
         <div class="flex flex-col gap-8">
             
-            <Box title_bg_color="bg-cr-light-orange">
-                <template #title>
+            <Box header_bg_color="bg-cr-light-orange">
+                <template #header>
                     <h2 class="text-cr-orange">Departamento Pedagógico</h2>
                 </template>
                 <template #content>
@@ -33,8 +33,8 @@
                 </template>
             </Box>
 
-            <Box title_bg_color="bg-cr-light-purple">
-                <template #title>
+            <Box header_bg_color="bg-cr-light-purple">
+                <template #header>
                     <h2 class="text-cr-purple">Departamento Recreativo</h2>
                 </template>
                 <template #content>
@@ -59,8 +59,8 @@
                 </template>
             </Box>
 
-            <Box title_bg_color="bg-cr-light-teal">
-                <template #title>
+            <Box header_bg_color="bg-cr-light-teal">
+                <template #header>
                     <h2 class="text-cr-teal">Departamento de Comunicação</h2>
                 </template>
                 <template #content>

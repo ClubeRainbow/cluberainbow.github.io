@@ -1,15 +1,14 @@
 <script setup lang="ts">
     import Box from '../Box.vue';
-    defineProps<{title_bg_color?: string}>();
 </script>
 
 <template>
     <div class="fixed z-30 top-0 left-0 h-full w-full bg-[rgba(0,0,0,0.25)] px-4 sm:px-8 pt-12 md:pt-24">
 
-        <Box class="w-full md:max-w-[1000px] mx-auto" :title_bg_color="title_bg_color">
-            <template #title>
+        <Box class="w-full md:max-w-[1000px] mx-auto">
+            <template #header>
                 <div class="flex gap-2">
-                    <slot name="title"></slot>
+                    <slot name="header"></slot>
                     <button @click="$emit('close')" class="close">
                         <img src="../../assets/icon_x.svg" alt="close" class="h-7 w-7 md:h-9 md:w-9"/>
                     </button>

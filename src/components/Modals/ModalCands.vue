@@ -5,7 +5,7 @@
 
 <template>
     <Modal>
-        <template #title>
+        <template #header>
             <h2 class="text-center sm:text-start">
                 {{ cands.open ? 'Candidaturas Abertas!' : 'Candidaturas Fechadas' }}
             </h2>

@@ -1,11 +1,11 @@
 <script setup lang="ts">
-    defineProps<{title_bg_color?: string}>();
+    defineProps<{header_bg_color?: string}>();
 </script>
 
 <template>
     <div class="flex flex-col bg-cr-beige rounded-xl shadow-md">
-        <div class="title" :class="title_bg_color ? title_bg_color : 'bg-cr-medium-brown'">
-            <slot name="title"></slot>
+        <div class="header" :class="header_bg_color ? header_bg_color : 'bg-cr-medium-brown'">
+            <slot name="header"></slot>
         </div>
         <div class="content">
             <slot name="content"></slot>
@@ -14,7 +14,7 @@
 </template>
 
 <style scoped>
-    .title {
+    .header {
         @apply border-t-2 border-x-2 rounded-t-xl 
         py-3 px-6 md:px-8 
     }

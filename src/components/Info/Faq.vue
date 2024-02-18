@@ -138,7 +138,7 @@
             </FaqItem>
         </FaqCategory>
 
-        <div class="w-full -mb-3.5">
+        <div class="w-full -mb-4">
             <FaqItem question="Preciso de ajuda!" class="w-full">
                 <p>
                     O Clube Rainbow não é qualificado para prestar apoio de emergência,
@@ -157,7 +157,7 @@
             </FaqItem>
         </div>
 
-        <div class="w-full -mb-3.5">
+        <div class="w-full -mb-4">
             <FaqItem question="Tenho outra dúvida..." class="w-full">
                 <p>
                     Sem problema,

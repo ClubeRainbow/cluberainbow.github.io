@@ -15,7 +15,7 @@
 
 <template>
     <Box>
-        <template #title>
+        <template #header>
             <h2>Fala connosco!</h2>
         </template>
 

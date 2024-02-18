@@ -16,9 +16,8 @@
 </script>
 
 <template>
-    <Modal :title_bg_color="'bg-cr-light-'+dept.color">
-        
-        <template #title>
+    <Modal>
+        <template #header>
             <h2>
                 Candidaturas para o 
                 <h2 :class="'text-cr-'+dept.color+' inline'">

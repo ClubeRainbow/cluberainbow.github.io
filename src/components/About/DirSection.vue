@@ -11,7 +11,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
             
             <Box>
-                <template #title>
+                <template #header>
                     <h3>Direção</h3>
                 </template>
                 <template #content>
@@ -23,7 +23,7 @@
             </Box>
 
             <Box>
-                <template #title>
+                <template #header>
                     <h3>Mesa da Assembleia Geral</h3>
                 </template>
                 <template #content>
@@ -35,7 +35,7 @@
             </Box>
 
             <Box>
-                <template #title>
+                <template #header>
                     <h3>Conselho Fiscal e Jurisdicional</h3>
                 </template>
                 <template #content>

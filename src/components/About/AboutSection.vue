@@ -7,8 +7,8 @@
 
         <h1> Sobre o Clube Rainbow </h1>
 
-        <Box id="clube">
-            <template #title>
+        <Box>
+            <template #header>
                 <h2> Quem Somos? </h2>
             </template>
             <template #content>
