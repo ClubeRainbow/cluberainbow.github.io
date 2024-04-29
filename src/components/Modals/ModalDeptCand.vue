@@ -1,4 +1,5 @@
 <script setup lang="ts">
+    import Box from '../Box.vue';
     import Modal from './Modal.vue';
 
     interface Props {
@@ -16,11 +17,11 @@
 </script>
 
 <template>
-    <Modal>
+    <Modal :header_bg_color="`bg-cr-light-${dept.color}`">
         <template #header>
             <h2>
                 Candidaturas para o 
-                <h2 :class="'text-cr-'+dept.color+' inline'">
+                <h2 :class="`text-cr-${dept.color} inline`">
                     {{ dept.name }}
                 </h2>
             </h2>
@@ -30,27 +31,34 @@
             <p>
                 Gostarias de fazer parte do Clube? 
                 <b>
-                    As candidaturas estão abertas para o {{ dept.name }}
-                    até {{ dept.timelimit }}!
+                    As candidaturas estão abertas para o {{ dept.name }}{{ dept.timelimit ? ` até ${dept.timelimit}!` : '!' }}
                 </b>
             </p>
 
-            <div class="flex flex-wrap gap-y-2 gap-x-12">
-                <div>
-                    <p><u>Para este departamento, estamos à procura de:</u></p>
-                    <ul class="ml-6">
-                        <li v-for="(func, i) in dept.functions"> {{ func }} </li>
-                    </ul>
-                </div>
+            <div class="flex flex-col md:flex-row my-2 gap-4">
+                <Box class="flex-1">
+                    <template #header>
+                        <p><b>Para este departamento, estamos à procura de:</b></p>
+                    </template>
+                    <template #content>
+                        <ul>
+                            <li v-for="func in dept.functions"> {{ func }} </li>
+                        </ul>
+                    </template>
+                </Box>
 
-                <div>
-                    <p><u>Para fazeres parte, precisas de:</u></p>
-                    <ul class="ml-6">
-                        <li>Ser estudante ou alumni da Universidade do Minho</li>
-                        <li>Ter Discord (é a nossa principal plataforma de organização)</li>
-                        <li v-for="(req, i) in dept.reqs"> {{ req }} </li>
-                    </ul>
-                </div>
+                <Box class="flex-1">
+                    <template #header>
+                        <p><b>Para fazeres parte, precisas de:</b></p>
+                    </template>
+                    <template #content>
+                        <ul>
+                            <li>Ser <b>estudante ou alumni</b> da Universidade do Minho</li>
+                            <li>Ter <b>Discord</b> (é a nossa principal plataforma de organização)</li>
+                            <li v-for="req in dept.reqs"> {{ req }} </li>
+                        </ul>
+                    </template>
+                </Box>
             </div>
 
             <p>

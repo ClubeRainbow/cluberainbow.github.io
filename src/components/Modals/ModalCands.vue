@@ -18,9 +18,9 @@
                     Gostarias de fazer parte do Clube Rainbow?
                     Qualquer pessoa pode participar nos nossos eventos, mas caso queiras ajudar na organização por
                     de trás dos mesmos, aproveita agora - <b>as candidaturas para os departamentos do
-                        Clube Rainbow estão abertas até {{ cands.timelimit }}!</b>
+                        Clube Rainbow estão abertas{{ cands.timelimit ? ` até ${cands.timelimit}!` : '!' }}</b>
                 </p>
-                <ul class="mx-auto flex flex-col gap-2">
+                <ul>
                     <li>Cada departamento tem diferentes funções -
                         sabe mais sobre eles e consulta quais estão abertos <b>através do botão abaixo!</b>
                     </li>
@@ -65,5 +65,11 @@
         border-2 rounded-lg bg-cr-medium-brown font-shrikhand 
         text-lg md:text-xl 
         hover:brightness-110 focus:brightness-110
+    }
+
+    ul {
+        @apply flex flex-col gap-2
+        mx-auto my-2 border-2 rounded-lg bg-cr-beige shadow-md
+        px-6 py-4
     }
 </style>

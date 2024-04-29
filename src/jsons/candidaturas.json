@@ -1,9 +1,9 @@
 {
     "open" : true,
-    "timelimit" : "xx/xx/xxxx",
+    "timelimit" : "",
     "ped" : {
-        "open" : false,
-        "timelimit" : "xx/xx/xxxx",
+        "open" : true,
+        "timelimit" : "",
         "name" : "Departamento Pedagógico",
         "color" : "orange",
         "link" : "https://google.com",
@@ -19,7 +19,7 @@
     },
     "recr" : {
         "open" : true,
-        "timelimit" : "xx/xx/xxxx",
+        "timelimit" : "",
         "name" : "Departamento Recreativo",
         "color" : "purple",
         "link" : "https://google.com",
@@ -35,7 +35,7 @@
     },
     "comms" : {
         "open" : true,
-        "timelimit" : "xx/xx/xxxx",
+        "timelimit" : "",
         "name" : "Departamento de Comunicação",
         "color" : "teal",
         "link" : "https://google.com",

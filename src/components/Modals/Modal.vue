@@ -1,11 +1,12 @@
 <script setup lang="ts">
     import Box from '../Box.vue';
+    defineProps<{header_bg_color?: string}>();
 </script>
 
 <template>
-    <div class="fixed z-30 top-0 left-0 h-full w-full bg-[rgba(0,0,0,0.25)] px-4 sm:px-8 pt-12 md:pt-24">
+    <div class="fixed z-30 top-0 left-0 h-full w-full bg-[rgba(0,0,0,0.25)] px-4 sm:px-8 pt-12 md:pt-20">
 
-        <Box class="w-full md:max-w-[1000px] mx-auto">
+        <Box class="w-full md:max-w-[1000px] mx-auto" :header_bg_color="header_bg_color">
             <template #header>
                 <div class="flex gap-2">
                     <slot name="header"></slot>
