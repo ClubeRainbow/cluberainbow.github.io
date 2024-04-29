@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <Box>
+    <Box header_bg_color="bg-gradient">
         <template #header>
             <h1 class="text-center">Clube Rainbow</h1>
         </template>
