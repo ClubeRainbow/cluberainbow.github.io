@@ -7,15 +7,21 @@
     const descHeight = ref(0)
     const intersection = ref(0)
 
-    onMounted(() => {
+    const windowWidth = ref(window.innerWidth);
+
+    function updateSize() {
         const logoHeight = logoArea.value?.clientHeight || 0
         const titleHeight = titleArea.value?.clientHeight || 0
         descHeight.value = descArea.value?.clientHeight || 0
         intersection.value = logoHeight - titleHeight
-    })
+    }
 
-    const windowWidth = ref(window.innerWidth);
-    addEventListener("resize", () => { windowWidth.value = window.innerWidth});
+    onMounted(() => { updateSize() });
+
+    addEventListener("resize", () => {  
+        windowWidth.value = window.innerWidth
+        updateSize()
+    });
     
     interface UsefulLink {
         desc: string,

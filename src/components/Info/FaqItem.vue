@@ -31,13 +31,13 @@
 
 <style scoped>
     .question {
-        @apply flex items-center justify-between md:justify-start text-left gap-3 
+        @apply w-full flex items-center justify-between md:justify-start text-left gap-3 
         bg-cr-light-brown border-2 rounded-xl
         px-4 md:px-6 py-3 md:py-4 
         -mb-4 z-20
     }
     .answer {
-        @apply flex flex-col text-left gap-2
+        @apply w-full flex flex-col text-left gap-2
         bg-cr-beige border-x-2 border-b-2 rounded-b-xl 
         pb-3 z-10
     }
