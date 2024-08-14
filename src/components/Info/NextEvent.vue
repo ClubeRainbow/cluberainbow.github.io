@@ -8,7 +8,7 @@
 
         <h1> Próximo Evento </h1>
 
-        <div class="flex flex-col md:flex-row gap-4">
+        <div class="flex flex-col lg:flex-row gap-4">
 
             <Box class="w-full">
                 <template #header>
@@ -26,18 +26,11 @@
                 </template>
             </Box>
 
-            <a v-if="nextevent.img && nextevent.link" :href="nextevent.link" target="_blank">
-                <img :src="nextevent.img" alt="próximo evento" class="rounded-xl" />
+            <a v-if="nextevent.img && nextevent.link" :href="nextevent.link" target="_blank" class="img_box">
+                <img :src="nextevent.img" alt="próximo evento" class="border-2 rounded-xl" />
             </a>
 
         </div>
 
     </div>
 </template>
-
-<style scoped>
-    a {
-        @apply border-2 rounded-xl shadow-md h-fit mx-auto
-        max-w-sm md:max-w-xs lg:max-w-sm xl:max-w-md
-    }
-</style>

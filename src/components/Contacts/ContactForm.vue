@@ -32,7 +32,7 @@
                         <option value="[CR Website] Dúvida">Dúvida (Geral)</option>
                         <option value="[CR Website] Dúvida LGBTQIA+">Dúvida LGBTQIA+</option>
                         <option value="[CR Website] Sugestão">Sugestão (Geral)</option>
-                        <option value="[CR Website] Candidatura">Candidatura Espontânea</option>
+                        <option value="[CR Website] Candidatura">Candidatura</option>
                         <option value="[CR Website] Parceria">Parceria ou Colaboração</option>
                         <option value="[CR Website] Outro">Outro</option>
                     </select>

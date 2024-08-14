@@ -14,9 +14,9 @@
             </template>
             <template #content>
                 <p>
-                    Somos uma iniciativa sem fins lucrativos, no entanto precisamos sempre de fundos para 
+                    Somos uma iniciativa <b>sem fins lucrativos</b>, no entanto precisamos sempre de fundos para 
                     nos ajudar a organizar e publicitar eventos futuros. Para tal, vendemos diferentes 
-                    autocolantes LGBTQIA+ nos nossos eventos.
+                    <b>autocolantes LGBTQIA+</b> nos nossos eventos.
                 </p>
                 <p>
                     Nesta página podes consultar os vários autocolantes que temos disponíveis!

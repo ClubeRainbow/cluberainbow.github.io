@@ -11,10 +11,10 @@
         show_members.value = !show_members.value
         
         if (type==='dept' && windowWidth.value > 500)
-            list_size.value = (75*(Math.ceil(members/2))) + 'px'
+            list_size.value = (90*(Math.ceil(members/2))) + 'px'
         
         else if (members > 0)
-            list_size.value = (75*members) + 'px'
+            list_size.value = (80*members) + 'px'
         
         else
             list_size.value = '30px'

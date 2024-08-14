@@ -53,6 +53,9 @@
         @apply w-full rounded-t-lg xl-topbar:text-xl 
         whitespace-nowrap font-shrikhand text-lg text-outline-white
     }
+    .img_box {
+        @apply rounded-xl shadow-md m-auto h-full max-w-xs aspect-square
+    }
     .text-outline-white {
         text-shadow:
             -1px -1px 0 white,  

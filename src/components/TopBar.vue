@@ -44,11 +44,8 @@
                 <button @click="redirect('about', '#depts')">
                     Departamentos
                 </button>
-                <button @click="redirect('about', '#dir')">
+                <button @click="redirect('about', '#dir')" @focusout="about_options=false">
                     Direção
-                </button>
-                <button @click="redirect('about', '#partners')" @focusout="about_options=false">
-                    Parcerias
                 </button>
             </div>
         </div>
@@ -64,7 +61,7 @@
 
             <div v-if="info_options" class="sub_section">
                 <button @click="redirect('info')">
-                    Eventos
+                    Próximo Evento
                 </button>
                 <button @click="redirect('info', '#faq')" @focusout="info_options=false">
                     FAQ

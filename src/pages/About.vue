@@ -17,7 +17,7 @@
         <AboutSection id="clube" />
         <DeptsSection id="depts" @show_modal="dept => { dept_data = dept; show_modal = true; }"/>
         <DirSection id="dir" />
-        <PartnersSection id="partners" />
+        <PartnersSection id="partners" class="hidden" />
     </div>
 </template>
 

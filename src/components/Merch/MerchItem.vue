@@ -35,12 +35,12 @@
                 {{ price }}
             </p>
 
-            <div class="my-1.5">
+            <div class="mt-1.5 mb-3">
                 <p> {{ desc }} </p>
                 <p v-if="collab" class="text-xs md:text-sm"> {{ collab }} </p>
             </div>
             
-            <p class="mt-auto w-fit font-semibold"> {{ availability }} </p>
+            <p class="mt-auto mx-auto w-fit font-semibold"> {{ availability }} </p>
         </div>
 
     </div>

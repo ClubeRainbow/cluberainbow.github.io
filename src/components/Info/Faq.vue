@@ -54,16 +54,26 @@
         <FaqCategory title="Eventos" :items="3">
             <FaqItem question="Que tipo de eventos organizam?">
                 <p>
-                    ...
+                    Nós organizamos vários tipos de eventos, nomeadamente...
+                </p>
+                <p>
+                    <b>Palestras</b> - eventos em que convidamos uma pessoa com conhecimento sobre um dado tema a falar e apresentar algo sobre o mesmo. Estas pessoas são normalmente convidades de outras organizações que fazem trabalho relevante para o tema.
+                </p>
+                <p>
+                    <b>Mesas Redondas</b> - eventos semelhantes às palestras, mas em que temos várias pessoas convidadas e também perguntas preparadas para lhes dirigir, de maneira a melhor compreender um dada temática.
+                </p>
+                <p>
+                    <b>Encontros</b> - eventos mais informais, em que procuramos abrir a discussão entre todas as pessoas participantes sobre um certo tema. Normalmente, preparamos algumas questões para ajudar a fomentar a conversa e debate.
+                </p>
+                <p>
+                    <b>Convívios</b> - saídas e outros eventos mais lúdicos que têm como fim apenas promover o convívio num ambiente mais casual.
                 </p>
             </FaqItem>
             <FaqItem question="Onde/quando são os eventos?">
                 <p>
-                    Os nossos eventos decorrem <b>sobretudo no campus de Gualtar da Universidade do Minho</b>, mas
-                    ocasionalmente
-                    poderemos organizar algo no resto da cidade de Braga. Futuramente, gostaríamos também de organizar
-                    eventos
-                    no campus de Azurém!
+                    Os nossos eventos decorrem <b>sobretudo no campus de Gualtar da Universidade do Minho</b>, 
+                    mas ocasionalmente poderemos organizar algo no resto da cidade de Braga. 
+                    Futuramente, gostaríamos também de organizar eventos no campus de Azurém!
                 </p>
                 <p>
                     Relativamente à frequência dos eventos,
@@ -91,8 +101,12 @@
             <FaqItem question="Posso comprar merch fora dos eventos?">
                 <p>
                     <b>Atualmente, não.</b> Apenas vendemos merch nos nossos eventos ou quando vamos a marchas do pride,
-                    pois,
-                    de momento, não teríamos facilidade em realizar vendas de outro modo para todes es interessades.
+                    pois, de momento, não teríamos facilidade em realizar vendas de outro modo para todes es interessades.
+                </p>
+            </FaqItem>
+            <FaqItem question="Vão ter mais merch disponível para além de autocolantes?">
+                <p>
+                    <b>De momento estamos apenas a vender autocolantes</b>, mas é algo que consideramos fazer de futuro! 
                 </p>
             </FaqItem>
         </FaqCategory>
@@ -133,7 +147,7 @@
             <FaqItem question="Posso entrar no servidor do Discord se não for estudante da UM?">
                 <p>
                     Sim! O servidor do Discord, tal como os nossos eventos, é <b>aberto a todes</b>.
-                    Podes entrar mesmo que não estudes na UM ou não sejas LGBTQIA+.
+                    Podes entrar mesmo que não estudes na UM ou não faças parte da comunidade LGBTQIA+.
                 </p>
             </FaqItem>
         </FaqCategory>

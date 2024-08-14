@@ -42,9 +42,6 @@
                     <button @click="redirect('about', '#dir')">
                         <h3>Direção</h3>
                     </button>
-                    <button @click="redirect('about', '#partners')">
-                        <h3>Parcerias</h3>
-                    </button>
                 </div>
             </Transition>
         </div>
@@ -58,7 +55,7 @@
             <Transition>
                 <div v-if="info_options" class="sub_section">
                     <button @click="redirect('info')">
-                        <h3>Eventos</h3>
+                        <h3>Próximo Evento</h3>
                     </button>
                     <button @click="redirect('info', '#faq')">
                         <h3>FAQ</h3>

@@ -67,7 +67,6 @@
     a:last-child {
         @apply grow border-x-2 border-b-2 xl:border-t-2
         rounded-b-xl md:rounded-bl-none xl:rounded-tr-xl
-        
     }
     a > img, button > img {
         @apply h-10 w-10
@@ -77,5 +76,9 @@
     }
     div > p {
         @apply text-base md:text-lg
+    }
+    a:hover > div > p:last-child,
+    button:hover > div > p:last-child {
+        @apply underline
     }
 </style>
